@@ -1,6 +1,7 @@
 Instance: anc-summary
 InstanceOf: GraphDefinition
 Usage: #definition
+Title: "GraphDefinition - ANC Summary"
 * insert GraphDefinitionMetadata(anc-summary)
 * description = "Example of a Graph Definition based on ANC guidleines"
 * name = "ANCSummary"

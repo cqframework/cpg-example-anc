@@ -5,6 +5,7 @@
 <artifactPageExtension value="-examples"/>
 <artifactPageExtension value="-mappings"/>
 <artifact id="CodeSystem/anc-reason-for-visit-cs" key="CodeSystem-anc-reason-for-visit-cs" name="CodeSystem - ANC Reason for Visit"/>
+<artifact id="GraphDefinition/anc-summary" key="GraphDefinition-anc-summary" name="GraphDefinition - ANC Summary"/>
 <artifact id="PlanDefinition/anc-contact" key="PlanDefinition-anc-contact" name="PlanDefinition - WHO ANC Guideline Contact"/>
 <artifact id="PlanDefinition/anc-contact-schedule" key="PlanDefinition-anc-contact-schedule" name="PlanDefinition - WHO ANC Guideline Contact Schedule"/>
 <artifact id="PlanDefinition/anc-recommendation-a2" key="PlanDefinition-anc-recommendation-a2" name="PlanDefinition - WHO ANC Guideline Recommendation #A2"/>
@@ -14,7 +15,6 @@
 <artifact id="ValueSet/anc-reason-for-visit-vs" key="ValueSet-anc-reason-for-visit-vs" name="ValueSet - ANC Reason for Visit"/>
 <artifact id="Library/ANCCommon" key="Library-ANCCommon" name="WHO Antenatal Care Guidelines Common Logic"/>
 <artifact id="Library/ANCRecommendationA2" key="Library-ANCRecommendationA2" name="WHO Antenatal Care Guidelines Logic for recommendation #A2"/>
-<artifact id="GraphDefinition/anc-summary" key="GraphDefinition-anc-summary" name="anc-summary"/>
 <page key="NA" name="(NA)"/>
 <page key="many" name="(many)"/>
 <page key="artifacts" name="Artifacts Summary"/>
