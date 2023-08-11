@@ -15,6 +15,10 @@
 <artifact id="ValueSet/anc-reason-for-visit-vs" key="ValueSet-anc-reason-for-visit-vs" name="ValueSet - ANC Reason for Visit"/>
 <artifact id="Library/ANCCommon" key="Library-ANCCommon" name="WHO Antenatal Care Guidelines Common Logic"/>
 <artifact id="Library/ANCRecommendationA2" key="Library-ANCRecommendationA2" name="WHO Antenatal Care Guidelines Logic for recommendation #A2"/>
+<artifact id="Condition/condition-ra2-iron-side-effects" key="Condition-condition-ra2-iron-side-effects" name="condition-ra2-iron-side-effects"/>
+<artifact id="Observation/observation-anc-ra2-gestational-age" key="Observation-observation-anc-ra2-gestational-age" name="observation-anc-ra2-gestational-age"/>
+<artifact id="Observation/observation-anc-ra2-hb-concentration" key="Observation-observation-anc-ra2-hb-concentration" name="observation-anc-ra2-hb-concentration"/>
+<artifact id="Patient/patient-anc-ra2" key="Patient-patient-anc-ra2" name="patient-anc-ra2"/>
 <page key="NA" name="(NA)"/>
 <page key="many" name="(many)"/>
 <page key="artifacts" name="Artifacts Summary"/>

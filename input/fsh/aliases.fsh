@@ -20,4 +20,5 @@ Alias: $anc-reason-for-visit-specific-complaint-image = http://example.org/image
 Alias: $anc-reason-for-visit-first-image = http://example.org/images/reason-for-visit-first.png
 Alias: $anc-reason-for-visit-follow-up-image = http://example.org/images/reason-for-visit-follow-up.png
 Alias: $anc-reason-for-visit-include-family-member-image = http://example.org/images/reason-for-visit-include-family-member.png
-
+Alias: $ct = http://snomed.info/ct
+Alias: $concepts = http://openmrs.org/concepts
