@@ -1,6 +1,7 @@
 Instance: observation-anc-ra2-gestational-age
 InstanceOf: Observation
 Usage: #example
+Description: "Test case scenario"
 * meta
   * versionId = "1"
   * lastUpdated = "2019-05-15T10:56:36.425+00:00"

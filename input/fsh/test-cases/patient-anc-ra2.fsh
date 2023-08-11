@@ -1,6 +1,7 @@
 Instance: patient-anc-ra2
 InstanceOf: Patient
 Usage: #example
+Description: "Test case scenario"
 * meta
   * versionId = "1"
   * lastUpdated = "2019-05-15T10:37:22.568+00:00"
