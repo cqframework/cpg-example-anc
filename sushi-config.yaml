@@ -4,9 +4,9 @@
 # │  see: https://fshschool.org/docs/sushi/configuration/.                                         │
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
 id: hl7.fhir.uv.cpg.antenatalcare
-canonical: http://fhir.org/guides/who/anc-cds
-name: CPGAntenatalCareExamples
-title: CPG Antenatal Care Examples
+canonical: http://hl7.org/fhir/uv/cpg/antenatalcare
+name: CPGAntenatalCareExample
+title: CPG Antenatal Care Example
 description: Examples of CPG computable content from the WHO Antenatal Care Guidelines
 status: active # draft | active | retired | unknown
 version: 1.0.0
