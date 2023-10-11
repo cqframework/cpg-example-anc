@@ -2,7 +2,7 @@ This CPG example defines computable content for two recommendations in the WHO A
 
 [WHO ANC Guideline](https://www.who.int/reproductivehealth/publications/maternal_perinatal_health/anc-positive-pregnancy-experience/en/)
 
-Overall, the guideline recommends a contact schedule consisting of 8 contacts at specific points in the pregnancy. This is represented with the [ANC Contact Schedule](PlanDefinition-anc-contact-schedule.html) (a [pathway](StructureDefinition-cpg-pathwaydefinition.html)) describing the expected schedule:
+Overall, the guideline recommends a contact schedule consisting of 8 contacts at specific points in the pregnancy. This is represented with the [ANC Contact Schedule](PlanDefinition-anc-contact-schedule.html) (a [pathway](http://hl7.org/fhir/uv/cpg/StructureDefinition-cpg-pathwaydefinition.html)) describing the expected schedule:
 
 <pre><code>ANC Contact 1: up to 12 weeks
 ANC Contact 2: 20 weeks
@@ -15,7 +15,7 @@ ANC Contact 8: 40 weeks
 ANC Delivery: 41+ weeks
 </code></pre>
 
-The protocol contains actions for each expected contact with an applicability condition to specify the timing, and pointing to the [ANC Contact](PlanDefinition-anc-contact.html) (a [strategy](StructureDefinition-cpg-strategydefinition.html)) describing each contact:
+The protocol contains actions for each expected contact with an applicability condition to specify the timing, and pointing to the [ANC Contact](PlanDefinition-anc-contact.html) (a [strategy](http://hl7.org/fhir/uv/cpg/StructureDefinition-cpg-strategydefinition.html)) describing each contact:
 
 <pre><code>Registration: PlanDefinition/cpg-common-registration
 Record health history:
