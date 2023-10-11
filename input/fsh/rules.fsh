@@ -8,11 +8,11 @@ RuleSet: CodeSystemMetadata(id-prefix)
 * ^extension[=].valueCode = #publishable
 * ^extension[+].url = $cpg-knowledgeRepresentationLevel
 * ^extension[=].valueCode = #structured
-* ^url = "http://fhir.org/guides/who/anc-cds/CodeSystem/{id-prefix}-cs"
+* ^url = "http://hl7.org/fhir/uv/cpg/antenatalcare/CodeSystem/{id-prefix}-cs"
 * ^experimental = true
 * ^content = #complete
 * ^caseSensitive = true
-* ^valueSet = "http://fhir.org/guides/who/anc-cds/ValueSet/{id-prefix}-vs"
+* ^valueSet = "http://hl7.org/fhir/uv/cpg/antenatalcare/ValueSet/{id-prefix}-vs"
 
 RuleSet: ValueSetMetadata(id)
 * ^meta.profile = $cpg-publishable-valueset
@@ -24,12 +24,12 @@ RuleSet: ValueSetMetadata(id)
 * ^extension[=].valueCode = #publishable
 * ^extension[+].url = $cpg-knowledgeRepresentationLevel
 * ^extension[=].valueCode = #structured
-* ^url = "http://fhir.org/guides/who/anc-cds/ValueSet/{id}"
+* ^url = "http://hl7.org/fhir/uv/cpg/antenatalcare/ValueSet/{id}"
 * ^status = #active
 * ^experimental = false
 
 RuleSet: LibraryMetaData(id)
-* url = "http://fhir.org/guides/who/anc-cds/Library/{id}"
+* url = "http://hl7.org/fhir/uv/cpg/antenatalcare/Library/{id}"
 * identifier
   * use = #official
   * value = "{id}"
@@ -41,7 +41,7 @@ RuleSet: LibraryMetaData(id)
 * type = $library-type#logic-library "Logic Library"
 
 RuleSet: PlanDefinitionMetadata(id, name)
-* url = "http://fhir.org/guides/who/anc-cds/PlanDefinition/{id}"
+* url = "http://hl7.org/fhir/uv/cpg/antenatalcare/PlanDefinition/{id}"
 * identifier
   * use = #official
   * value = "{name}"
@@ -51,11 +51,11 @@ RuleSet: PlanDefinitionMetadata(id, name)
 * copyright = "© WHO 2019+."
 
 RuleSet: QuestionnaireMetadata(id)
-* url = "http://fhir.org/guides/who/anc-cds/Questionnaire/{id}"
+* url = "http://hl7.org/fhir/uv/cpg/antenatalcare/Questionnaire/{id}"
 * status = #active
 
 RuleSet: GraphDefinitionMetadata(id)
-* url = "http://fhir.org/guides/who/anc-cds/GraphDefinition/{id}"
+* url = "http://hl7.org/fhir/uv/cpg/antenatalcare/GraphDefinition/{id}"
 * status = #active
 * experimental = true
 
