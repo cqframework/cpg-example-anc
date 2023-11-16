@@ -58,5 +58,5 @@ RuleSet: GraphDefinitionMetadata(id)
 * url = "http://hl7.org/fhir/uv/cpg/antenatalcare/GraphDefinition/{id}"
 * status = #active
 * experimental = true
-* version = 1.0.0
+* version = "1.0.0"
 
