@@ -1,6 +1,6 @@
 Instance: anc-first-contact
 InstanceOf: Questionnaire
-Usage: #example
+Usage: #definition
 Title: "Questionnaire - ANC First Contact"
 * insert QuestionnaireMetadata(anc-first-contact)
 * description = "Example of a Questionnaire for first ANC contact"

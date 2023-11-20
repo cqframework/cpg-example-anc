@@ -1,6 +1,6 @@
 Instance: anc-contact-schedule
 InstanceOf: PlanDefinition
-Usage: #example
+Usage: #definition
 Title: "PlanDefinition - WHO ANC Guideline Contact Schedule"
 * insert PlanDefinitionMetadata(anc-contact-schedule, ANCContactSchedule)
 * description = "Example of a Plan Definition Pathway based on the recommended ANC contact schedule"

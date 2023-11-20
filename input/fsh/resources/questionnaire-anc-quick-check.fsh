@@ -1,6 +1,6 @@
 Instance: anc-quick-check
 InstanceOf: Questionnaire
-Usage: #example
+Usage: #definition
 Title: "Questionnaire - ANC Quick Check"
 * insert QuestionnaireMetadata(anc-quick-check)
 * description = "Example of a Questionnaire for an ANC Quick Check"

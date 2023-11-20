@@ -1,6 +1,6 @@
 Instance: anc-recommendation-a2
 InstanceOf: PlanDefinition
-Usage: #example
+Usage: #definition
 Title: "PlanDefinition - WHO ANC Guideline Recommendation #A2"
 * insert PlanDefinitionMetadata(anc-recommendation-a2, Recommendation_A2)
 * description = "Example of a Plan Definition for ANC Recommendation A2.1"

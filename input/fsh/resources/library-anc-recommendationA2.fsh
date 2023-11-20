@@ -1,6 +1,6 @@
 Instance: ANCRecommendationA2
 InstanceOf: Library
-Usage: #example
+Usage: #definition
 Title: "WHO Antenatal Care Guidelines Logic for recommendation #A2"
 * insert LibraryMetaData(ANCRecommendationA2)
 * description = "Decision Support Logic for use in ANC Recommendation A2"

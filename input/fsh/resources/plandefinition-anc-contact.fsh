@@ -1,6 +1,6 @@
 Instance: anc-contact
 InstanceOf: PlanDefinition
-Usage: #example
+Usage: #definition
 Title: "PlanDefinition - WHO ANC Guideline Contact"
 * insert PlanDefinitionMetadata(anc-contact, ANCContact)
 * description = "Example of Plan Definition Strategy for an ANC Contact"

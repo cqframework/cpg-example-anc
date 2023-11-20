@@ -9,6 +9,7 @@ name: CPGExampleAntenatalCareGuidelines
 title: Clinical Practice Guidelines Example Implementation Guide - Antenatal Care Guidelines
 description: Examples of CPG computable content from the WHO Antenatal Care Guidelines
 status: active # draft | active | retired | unknown
+experimental: true
 version: 1.0.0
 fhirVersion: 4.0.1 # https://www.hl7.org/fhir/valueset-FHIR-version.html
 copyrightYear: 2023+

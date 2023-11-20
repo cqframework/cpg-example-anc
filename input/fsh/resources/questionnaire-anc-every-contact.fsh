@@ -1,6 +1,6 @@
 Instance: anc-every-contact
 InstanceOf: Questionnaire
-Usage: #example
+Usage: #definition
 Title: "Questionnaire - ANC Every Contact"
 * insert QuestionnaireMetadata(anc-every-contact)
 * description = "Example of a Questionnaire for each ANC contact"

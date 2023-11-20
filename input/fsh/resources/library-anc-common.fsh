@@ -1,6 +1,6 @@
 Instance: ANCCommon
 InstanceOf: Library
-Usage: #example
+Usage: #definition
 Title: "WHO Antenatal Care Guidelines Common Logic"
 * insert LibraryMetaData(ANCCommon)
 * description = "Decision Support Logic for use in WHO Antenatal Care Guidelines"
