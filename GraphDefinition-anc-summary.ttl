@@ -5,7 +5,7 @@
 
 # - resource -------------------------------------------------------------------
 
-<http://hl7.org/fhir/uv/cpg/antenatalcare/GraphDefinition/anc-summary> a fhir:GraphDefinition ;
+<http://github.com/cqframework/cpg-example-anc/GraphDefinition/anc-summary> a fhir:GraphDefinition ;
   fhir:nodeRole fhir:treeRoot ;
   fhir:id [ fhir:v "anc-summary"] ; # 
   fhir:text [

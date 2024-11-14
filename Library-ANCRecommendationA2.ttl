@@ -6,7 +6,7 @@
 
 # - resource -------------------------------------------------------------------
 
-<http://hl7.org/fhir/uv/cpg/antenatalcare/Library/ANCRecommendationA2> a fhir:Library ;
+<http://github.com/cqframework/cpg-example-anc/Library/ANCRecommendationA2> a fhir:Library ;
   fhir:nodeRole fhir:treeRoot ;
   fhir:id [ fhir:v "ANCRecommendationA2"] ; # 
   fhir:text [
@@ -30,7 +30,7 @@
        fhir:display [ fhir:v "Logic Library" ]
      ] )
   ] ; # 
-  fhir:date [ fhir:v "2024-11-14T19:16:54+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2024-11-14T21:29:13+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "HL7 International - Clinical Decision Support WG"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "HL7 International - Clinical Decision Support WG" ] ;

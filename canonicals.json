@@ -1,5 +1,12 @@
 [
   {
+    "id" : "cqframework.cpg-example-anc",
+    "type" : "ImplementationGuide",
+    "url" : "http://github.com/cqframework/cpg-example-anc//ImplementationGuide/cqframework.cpg-example-anc",
+    "version" : "1.0.0",
+    "name" : "CPGExampleAntenatalCareGuidelines"
+  },
+  {
     "id" : "anc-reason-for-visit-cs",
     "type" : "CodeSystem",
     "url" : "http://hl7.org/fhir/uv/cpg/antenatalcare/CodeSystem/anc-reason-for-visit-cs",
@@ -12,13 +19,6 @@
     "url" : "http://hl7.org/fhir/uv/cpg/antenatalcare/GraphDefinition/anc-summary",
     "version" : "1.0.0",
     "name" : "ANCSummary"
-  },
-  {
-    "id" : "hl7.fhir.uv.cpg.antenatalcare",
-    "type" : "ImplementationGuide",
-    "url" : "http://hl7.org/fhir/uv/cpg/antenatalcare/ImplementationGuide/hl7.fhir.uv.cpg.antenatalcare",
-    "version" : "1.0.0",
-    "name" : "CPGExampleAntenatalCareGuidelines"
   },
   {
     "id" : "ANCCommon",

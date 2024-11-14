@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <ImplementationGuide xmlns="http://hl7.org/fhir">
-  <id value="hl7.fhir.uv.cpg.antenatalcare"/>
+  <id value="cqframework.cpg-example-anc"/>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ImplementationGuide hl7.fhir.uv.cpg.antenatalcare</b></p><a name="hl7.fhir.uv.cpg.antenatalcare"> </a><a name="hchl7.fhir.uv.cpg.antenatalcare"> </a><a name="hl7.fhir.uv.cpg.antenatalcare-en-US"> </a><h2>CPGExampleAntenatalCareGuidelines</h2><p>The official URL for this implementation guide is: </p><pre>http://hl7.org/fhir/uv/cpg/antenatalcare/ImplementationGuide/hl7.fhir.uv.cpg.antenatalcare</pre><div><p>Examples of CPG computable content from the WHO Antenatal Care Guidelines</p>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ImplementationGuide cqframework.cpg-example-anc</b></p><a name="cqframework.cpg-example-anc"> </a><a name="hccqframework.cpg-example-anc"> </a><a name="cqframework.cpg-example-anc-en-US"> </a><h2>CPGExampleAntenatalCareGuidelines</h2><p>The official URL for this implementation guide is: </p><pre>http://github.com/cqframework/cpg-example-anc//ImplementationGuide/cqframework.cpg-example-anc</pre><div><p>Examples of CPG computable content from the WHO Antenatal Care Guidelines</p>
 </div></div>
   </text>
-  <url value="http://hl7.org/fhir/uv/cpg/antenatalcare/ImplementationGuide/hl7.fhir.uv.cpg.antenatalcare"/>
+  <url value="http://github.com/cqframework/cpg-example-anc//ImplementationGuide/cqframework.cpg-example-anc"/>
   <version value="1.0.0"/>
   <name value="CPGExampleAntenatalCareGuidelines"/>
   <title value="Clinical Practice Guidelines Example Implementation Guide - Antenatal Care Guidelines"/>
   <status value="active"/>
   <experimental value="true"/>
-  <date value="2024-11-14T19:16:54+00:00"/>
+  <date value="2024-11-14T21:29:13+00:00"/>
   <publisher value="HL7 International - Clinical Decision Support WG"/>
   <contact>
     <name value="HL7 International - Clinical Decision Support WG"/>
@@ -29,7 +29,7 @@
       <display value="World"/>
     </coding>
   </jurisdiction>
-  <packageId value="hl7.fhir.uv.cpg.antenatalcare"/>
+  <packageId value="cqframework.cpg-example-anc"/>
   <license value="CC0-1.0"/>
   <fhirVersion value="4.0.1"/>
   <dependsOn id="hl7tx">
@@ -128,14 +128,6 @@
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
       <extension url="code">
-        <valueString value="path-history"/>
-      </extension>
-      <extension url="value">
-        <valueString value="http://hl7.org/fhir/uv/cpg/antenatalcare/history.html"/>
-      </extension>
-    </extension>
-    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
-      <extension url="code">
         <valueString value="autoload-resources"/>
       </extension>
       <extension url="value">
@@ -188,6 +180,14 @@
       </extension>
       <extension url="value">
         <valueString value="input/ignoreWarnings.txt"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="path-history"/>
+      </extension>
+      <extension url="value">
+        <valueString value="http://github.com/cqframework/cpg-example-anc//history.html"/>
       </extension>
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
@@ -339,14 +339,6 @@
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
       <extension url="code">
-        <valueCode value="path-history"/>
-      </extension>
-      <extension url="value">
-        <valueString value="http://hl7.org/fhir/uv/cpg/antenatalcare/history.html"/>
-      </extension>
-    </extension>
-    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
-      <extension url="code">
         <valueCode value="autoload-resources"/>
       </extension>
       <extension url="value">
@@ -399,6 +391,14 @@
       </extension>
       <extension url="value">
         <valueString value="input/ignoreWarnings.txt"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="path-history"/>
+      </extension>
+      <extension url="value">
+        <valueString value="http://github.com/cqframework/cpg-example-anc//history.html"/>
       </extension>
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">

@@ -5,7 +5,7 @@
 
 # - resource -------------------------------------------------------------------
 
-<http://hl7.org/fhir/uv/cpg/antenatalcare/ValueSet/anc-reason-for-visit-vs> a fhir:ValueSet ;
+<http://github.com/cqframework/cpg-example-anc/ValueSet/anc-reason-for-visit-vs> a fhir:ValueSet ;
   fhir:nodeRole fhir:treeRoot ;
   fhir:id [ fhir:v "anc-reason-for-visit-vs"] ; # 
   fhir:meta [
@@ -37,7 +37,7 @@
   fhir:title [ fhir:v "ValueSet - ANC Reason for Visit"] ; # 
   fhir:status [ fhir:v "active"] ; # 
   fhir:experimental [ fhir:v "false"^^xsd:boolean] ; # 
-  fhir:date [ fhir:v "2024-11-14T19:16:54+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2024-11-14T21:29:13+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "HL7 International - Clinical Decision Support WG"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "HL7 International - Clinical Decision Support WG" ] ;

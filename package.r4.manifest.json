@@ -1,6 +1,6 @@
 {
   "version" : "1.0.0",
-  "date" : "20241114191612",
+  "date" : "20241114212833",
   "notForPublication" : true,
-  "name" : "hl7.fhir.uv.cpg.antenatalcare.r4"
+  "name" : "cqframework.cpg-example-anc.r4"
 }

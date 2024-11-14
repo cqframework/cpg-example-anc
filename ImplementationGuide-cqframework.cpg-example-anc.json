@@ -1,17 +1,17 @@
 {
   "resourceType" : "ImplementationGuide",
-  "id" : "hl7.fhir.uv.cpg.antenatalcare",
+  "id" : "cqframework.cpg-example-anc",
   "text" : {
     "status" : "generated",
-    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ImplementationGuide hl7.fhir.uv.cpg.antenatalcare</b></p><a name=\"hl7.fhir.uv.cpg.antenatalcare\"> </a><a name=\"hchl7.fhir.uv.cpg.antenatalcare\"> </a><a name=\"hl7.fhir.uv.cpg.antenatalcare-en-US\"> </a><h2>CPGExampleAntenatalCareGuidelines</h2><p>The official URL for this implementation guide is: </p><pre>http://hl7.org/fhir/uv/cpg/antenatalcare/ImplementationGuide/hl7.fhir.uv.cpg.antenatalcare</pre><div><p>Examples of CPG computable content from the WHO Antenatal Care Guidelines</p>\n</div></div>"
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ImplementationGuide cqframework.cpg-example-anc</b></p><a name=\"cqframework.cpg-example-anc\"> </a><a name=\"hccqframework.cpg-example-anc\"> </a><a name=\"cqframework.cpg-example-anc-en-US\"> </a><h2>CPGExampleAntenatalCareGuidelines</h2><p>The official URL for this implementation guide is: </p><pre>http://github.com/cqframework/cpg-example-anc//ImplementationGuide/cqframework.cpg-example-anc</pre><div><p>Examples of CPG computable content from the WHO Antenatal Care Guidelines</p>\n</div></div>"
   },
-  "url" : "http://hl7.org/fhir/uv/cpg/antenatalcare/ImplementationGuide/hl7.fhir.uv.cpg.antenatalcare",
+  "url" : "http://github.com/cqframework/cpg-example-anc//ImplementationGuide/cqframework.cpg-example-anc",
   "version" : "1.0.0",
   "name" : "CPGExampleAntenatalCareGuidelines",
   "title" : "Clinical Practice Guidelines Example Implementation Guide - Antenatal Care Guidelines",
   "status" : "active",
   "experimental" : true,
-  "date" : "2024-11-14T19:16:54+00:00",
+  "date" : "2024-11-14T21:29:13+00:00",
   "publisher" : "HL7 International - Clinical Decision Support WG",
   "contact" : [{
     "name" : "HL7 International - Clinical Decision Support WG",
@@ -28,7 +28,7 @@
       "display" : "World"
     }]
   }],
-  "packageId" : "hl7.fhir.uv.cpg.antenatalcare",
+  "packageId" : "cqframework.cpg-example-anc",
   "license" : "CC0-1.0",
   "fhirVersion" : ["4.0.1"],
   "dependsOn" : [{
@@ -160,17 +160,6 @@
     {
       "extension" : [{
         "url" : "code",
-        "valueString" : "path-history"
-      },
-      {
-        "url" : "value",
-        "valueString" : "http://hl7.org/fhir/uv/cpg/antenatalcare/history.html"
-      }],
-      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
-    },
-    {
-      "extension" : [{
-        "url" : "code",
         "valueString" : "autoload-resources"
       },
       {
@@ -242,6 +231,17 @@
       {
         "url" : "value",
         "valueString" : "input/ignoreWarnings.txt"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "path-history"
+      },
+      {
+        "url" : "value",
+        "valueString" : "http://github.com/cqframework/cpg-example-anc//history.html"
       }],
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
     },
@@ -450,17 +450,6 @@
     {
       "extension" : [{
         "url" : "code",
-        "valueCode" : "path-history"
-      },
-      {
-        "url" : "value",
-        "valueString" : "http://hl7.org/fhir/uv/cpg/antenatalcare/history.html"
-      }],
-      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
-    },
-    {
-      "extension" : [{
-        "url" : "code",
         "valueCode" : "autoload-resources"
       },
       {
@@ -532,6 +521,17 @@
       {
         "url" : "value",
         "valueString" : "input/ignoreWarnings.txt"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "path-history"
+      },
+      {
+        "url" : "value",
+        "valueString" : "http://github.com/cqframework/cpg-example-anc//history.html"
       }],
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
     },
