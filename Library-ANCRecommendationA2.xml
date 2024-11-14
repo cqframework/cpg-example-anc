@@ -75,7 +75,7 @@ define &quot;Has Iron Side-Effects&quot;:
   )
 </code></pre><p><code>No Content</code> (<code>application/elm+xml</code>)</p></div>
   </text>
-  <url value="http://hl7.org/fhir/uv/cpg/antenatalcare/Library/ANCRecommendationA2"/>
+  <url value="http://github.com/cqframework/cpg-example-anc/Library/ANCRecommendationA2"/>
   <identifier>
     <use value="official"/>
     <value value="ANCRecommendationA2"/>
@@ -92,7 +92,7 @@ define &quot;Has Iron Side-Effects&quot;:
       <display value="Logic Library"/>
     </coding>
   </type>
-  <date value="2024-11-14T21:29:13+00:00"/>
+  <date value="2024-11-14T21:47:49+00:00"/>
   <publisher value="HL7 International - Clinical Decision Support WG"/>
   <contact>
     <name value="HL7 International - Clinical Decision Support WG"/>

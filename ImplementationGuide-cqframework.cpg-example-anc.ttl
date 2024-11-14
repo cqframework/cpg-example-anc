@@ -18,7 +18,7 @@
   fhir:title [ fhir:v "Clinical Practice Guidelines Example Implementation Guide - Antenatal Care Guidelines"] ; # 
   fhir:status [ fhir:v "active"] ; # 
   fhir:experimental [ fhir:v "true"^^xsd:boolean] ; # 
-  fhir:date [ fhir:v "2024-11-14T21:29:13+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2024-11-14T21:47:49+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "HL7 International - Clinical Decision Support WG"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "HL7 International - Clinical Decision Support WG" ] ;

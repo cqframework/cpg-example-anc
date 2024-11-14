@@ -1,26 +1,26 @@
 CPGExampleAntenatalCareGuidelines : Validation Results
 =========================================
 
-err = 55, warn = 18, info = 2
+err = 33, warn = 18, info = 1
 IG Publisher Version: 1.7.2
-Generated Thu Nov 14 21:29:32 UTC 2024. FHIR version 4.0.1 for cqframework.cpg-example-anc#1.0.0 (canonical = http://github.com/cqframework/cpg-example-anc/)
+Generated Thu Nov 14 21:48:08 UTC 2024. FHIR version 4.0.1 for cqframework.cpg-example-anc#1.0.0 (canonical = http://github.com/cqframework/cpg-example-anc/)
  Build Errors : 89 / 4 / 0
- /github/workspace/fsh-generated/resources/CodeSystem-anc-reason-for-visit-cs : 12 / 1 / 2
+ /github/workspace/fsh-generated/resources/CodeSystem-anc-reason-for-visit-cs : 10 / 1 / 1
  /github/workspace/fsh-generated/resources/Condition-condition-ra2-iron-side-effects : 0 / 1 / 1
- /github/workspace/fsh-generated/resources/GraphDefinition-anc-summary : 3 / 1 / 1
+ /github/workspace/fsh-generated/resources/GraphDefinition-anc-summary : 1 / 1 / 1
  /github/workspace/fsh-generated/resources/ImplementationGuide-cqframework.cpg-example-anc : 1 / 0 / 1
- /github/workspace/fsh-generated/resources/Library-ANCCommon : 3 / 4 / 2
- /github/workspace/fsh-generated/resources/Library-ANCRecommendationA2 : 6 / 4 / 1
+ /github/workspace/fsh-generated/resources/Library-ANCCommon : 1 / 4 / 2
+ /github/workspace/fsh-generated/resources/Library-ANCRecommendationA2 : 4 / 4 / 1
  /github/workspace/fsh-generated/resources/Observation-observation-anc-ra2-gestational-age : 0 / 2 / 1
  /github/workspace/fsh-generated/resources/Observation-observation-anc-ra2-hb-concentration : 0 / 2 / 1
  /github/workspace/fsh-generated/resources/Patient-patient-anc-ra2 : 0 / 0 / 1
- /github/workspace/fsh-generated/resources/PlanDefinition-anc-contact : 3 / 0 / 1
- /github/workspace/fsh-generated/resources/PlanDefinition-anc-contact-schedule : 3 / 0 / 1
- /github/workspace/fsh-generated/resources/PlanDefinition-anc-recommendation-a2 : 3 / 0 / 1
- /github/workspace/fsh-generated/resources/Questionnaire-anc-every-contact : 3 / 0 / 1
- /github/workspace/fsh-generated/resources/Questionnaire-anc-first-contact : 3 / 0 / 1
- /github/workspace/fsh-generated/resources/Questionnaire-anc-quick-check : 3 / 0 / 1
- /github/workspace/fsh-generated/resources/ValueSet-anc-reason-for-visit-vs : 12 / 1 / 1
+ /github/workspace/fsh-generated/resources/PlanDefinition-anc-contact : 1 / 0 / 1
+ /github/workspace/fsh-generated/resources/PlanDefinition-anc-contact-schedule : 1 / 0 / 1
+ /github/workspace/fsh-generated/resources/PlanDefinition-anc-recommendation-a2 : 1 / 0 / 1
+ /github/workspace/fsh-generated/resources/Questionnaire-anc-every-contact : 1 / 0 / 1
+ /github/workspace/fsh-generated/resources/Questionnaire-anc-first-contact : 1 / 0 / 1
+ /github/workspace/fsh-generated/resources/Questionnaire-anc-quick-check : 1 / 0 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-anc-reason-for-visit-vs : 10 / 1 / 1
 </table>
 == n/a ==
 ERROR: /github/workspace/output/CodeSystem-anc-reason-for-visit-cs-testing.html#/html/body/div/div/div/p/span/a at Line 231, column 136: The link 'license.html' for "License" cannot be resolved
@@ -45,7 +45,7 @@ ERROR: /github/workspace/output/Library-ANCCommon.change.history.html#/html/body
 ERROR: /github/workspace/output/Library-ANCCommon.html#/html/body/div/div/div/p/span/a at Line 324, column 136: The link 'license.html' for "License" cannot be resolved
 ERROR: /github/workspace/output/Library-ANCCommon.json.html#/html/body/div/div/div/p/span/a at Line 422, column 136: The link 'license.html' for "License" cannot be resolved
 ERROR: /github/workspace/output/Library-ANCCommon.ttl.html#/html/body/div/div/div/p/span/a at Line 388, column 136: The link 'license.html' for "License" cannot be resolved
-ERROR: /github/workspace/output/Library-ANCCommon.xml.html#/html/body/div/div/div/p/span/a at Line 449, column 136: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/Library-ANCCommon.xml.html#/html/body/div/div/div/p/span/a at Line 450, column 136: The link 'license.html' for "License" cannot be resolved
 ERROR: /github/workspace/output/Library-ANCRecommendationA2-testing.html#/html/body/div/div/div/p/span/a at Line 231, column 136: The link 'license.html' for "License" cannot be resolved
 ERROR: /github/workspace/output/Library-ANCRecommendationA2.change.history.html#/html/body/div/div/div/p/span/a at Line 200, column 136: The link 'license.html' for "License" cannot be resolved
 ERROR: /github/workspace/output/Library-ANCRecommendationA2.html#/html/body/div/div/div/p/span/a at Line 342, column 136: The link 'license.html' for "License" cannot be resolved
@@ -117,7 +117,6 @@ WARNING: 2: An HTML fragment from the set [cross-version-analysis.xhtml, cross-v
 WARNING: 3: An HTML fragment from the set [dependency-table.xhtml, dependency-table-short.xhtml] is not included anywhere in the produced implementation guide
 WARNING: 4: The HTML fragment 'globals-table.xhtml' is not included anywhere in the produced implementation guide
 == fsh-generated/resources/CodeSystem-anc-reason-for-visit-cs.json ==
-ERROR: CodeSystem.where(url = 'http://hl7.org/fhir/uv/cpg/antenatalcare/CodeSystem/anc-reason-for-visit-cs'): Conformance resource /github/workspace/fsh-generated/resources/CodeSystem-anc-reason-for-visit-cs.json - the canonical URL (http://github.com/cqframework/cpg-example-anc/CodeSystem/anc-reason-for-visit-cs) does not match the URL (http://hl7.org/fhir/uv/cpg/antenatalcare/CodeSystem/anc-reason-for-visit-cs)
 ERROR: CodeSystem/anc-reason-for-visit-cs: CodeSystem.meta.profile[0]: Canonical URL 'http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-publishablecodesystem' does not resolve
 ERROR: CodeSystem/anc-reason-for-visit-cs: CodeSystem.extension[0]: The extension http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability could not be found so is not allowed here
 ERROR: CodeSystem/anc-reason-for-visit-cs: CodeSystem.extension[0].url: URL value 'http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability' does not resolve
@@ -127,37 +126,29 @@ ERROR: CodeSystem/anc-reason-for-visit-cs: CodeSystem.extension[2]: The extensio
 ERROR: CodeSystem/anc-reason-for-visit-cs: CodeSystem.extension[2].url: URL value 'http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability' does not resolve
 ERROR: CodeSystem/anc-reason-for-visit-cs: CodeSystem.extension[3]: The extension http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeRepresentationLevel could not be found so is not allowed here
 ERROR: CodeSystem/anc-reason-for-visit-cs: CodeSystem.extension[3].url: URL value 'http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeRepresentationLevel' does not resolve
-ERROR: CodeSystem/anc-reason-for-visit-cs: CodeSystem: When HL7 is publishing a resource, the owning committee must be stated using the http://hl7.org/fhir/StructureDefinition/structuredefinition-wg extension
-INFORMATION: CodeSystem/anc-reason-for-visit-cs: CodeSystem: Most code systems defined in HL7 IGs will need to move to THO later during the process. Consider giving this code system a THO URL now (See https://confluence.hl7.org/display/TSMG/Terminology+Play+Book, and/or talk to TSMG)
 WARNING: CodeSystem/anc-reason-for-visit-cs: CodeSystem.meta.profile[0]: Profile reference 'http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-publishablecodesystem' has not been checked because it could not be found, and the validator is set to not fetch unknown profiles
-ERROR: /github/workspace/fsh-generated/resources/CodeSystem-anc-reason-for-visit-cs: URL Mismatch http://github.com/cqframework/cpg-example-anc//CodeSystem/anc-reason-for-visit-cs vs http://hl7.org/fhir/uv/cpg/antenatalcare/CodeSystem/anc-reason-for-visit-cs
+ERROR: /github/workspace/fsh-generated/resources/CodeSystem-anc-reason-for-visit-cs: URL Mismatch http://github.com/cqframework/cpg-example-anc//CodeSystem/anc-reason-for-visit-cs vs http://github.com/cqframework/cpg-example-anc/CodeSystem/anc-reason-for-visit-cs
 == fsh-generated/resources/Condition-condition-ra2-iron-side-effects.json ==
 WARNING: Condition/condition-ra2-iron-side-effects: Condition.code.coding[0].system: A definition for CodeSystem 'http://openmrs.org/concepts' could not be found, so the code cannot be validated
 == fsh-generated/resources/GraphDefinition-anc-summary.json ==
-ERROR: GraphDefinition.where(url = 'http://hl7.org/fhir/uv/cpg/antenatalcare/GraphDefinition/anc-summary'): Conformance resource /github/workspace/fsh-generated/resources/GraphDefinition-anc-summary.json - the canonical URL (http://github.com/cqframework/cpg-example-anc/GraphDefinition/anc-summary) does not match the URL (http://hl7.org/fhir/uv/cpg/antenatalcare/GraphDefinition/anc-summary)
-WARNING: GraphDefinition.where(url = 'http://hl7.org/fhir/uv/cpg/antenatalcare/GraphDefinition/anc-summary'): The resource needed to modified during loading to apply common headers version=1.0.0, contact, copyright=null, jurisdiction, publisher=HL7 International - Clinical Decision Support WG, date but this isn't possible for the type GraphDefinition because version conversion isn't working completely
-ERROR: GraphDefinition/anc-summary: GraphDefinition: When HL7 is publishing a resource, the owning committee must be stated using the http://hl7.org/fhir/StructureDefinition/structuredefinition-wg extension
-ERROR: /github/workspace/fsh-generated/resources/GraphDefinition-anc-summary: URL Mismatch http://github.com/cqframework/cpg-example-anc//GraphDefinition/anc-summary vs http://hl7.org/fhir/uv/cpg/antenatalcare/GraphDefinition/anc-summary
+WARNING: GraphDefinition.where(url = 'http://github.com/cqframework/cpg-example-anc/GraphDefinition/anc-summary'): The resource needed to modified during loading to apply common headers version=1.0.0, contact, copyright=null, jurisdiction, publisher=HL7 International - Clinical Decision Support WG, date but this isn't possible for the type GraphDefinition because version conversion isn't working completely
+ERROR: /github/workspace/fsh-generated/resources/GraphDefinition-anc-summary: URL Mismatch http://github.com/cqframework/cpg-example-anc//GraphDefinition/anc-summary vs http://github.com/cqframework/cpg-example-anc/GraphDefinition/anc-summary
 == fsh-generated/resources/ImplementationGuide-cqframework.cpg-example-anc.json ==
 ERROR: ImplementationGuide.where(url = 'http://github.com/cqframework/cpg-example-anc//ImplementationGuide/cqframework.cpg-example-anc'): Conformance resource /github/workspace/fsh-generated/resources/ImplementationGuide-cqframework.cpg-example-anc.json - the canonical URL (http://github.com/cqframework/cpg-example-anc/ImplementationGuide/cqframework.cpg-example-anc) does not match the URL (http://github.com/cqframework/cpg-example-anc//ImplementationGuide/cqframework.cpg-example-anc)
 == fsh-generated/resources/Library-ANCCommon.json ==
-ERROR: Library.where(url = 'http://hl7.org/fhir/uv/cpg/antenatalcare/Library/ANCCommon'): Conformance resource /github/workspace/fsh-generated/resources/Library-ANCCommon.json - the canonical URL (http://github.com/cqframework/cpg-example-anc/Library/ANCCommon) does not match the URL (http://hl7.org/fhir/uv/cpg/antenatalcare/Library/ANCCommon)
 WARNING: /github/workspace/./input/cql/ANCCommon.cql: The function FHIRHelpers.ToInterval has multiple overloads and due to the SignatureLevel setting (None), the overload signature is not being included in the output. This may result in ambiguous function resolution at runtime, consider setting the SignatureLevel to Overloads or All to ensure that the output includes sufficient information to support correct overload selection at runtime.
 WARNING: /github/workspace/./input/cql/ANCCommon.cql: The function FHIRHelpers.ToString has multiple overloads and due to the SignatureLevel setting (None), the overload signature is not being included in the output. This may result in ambiguous function resolution at runtime, consider setting the SignatureLevel to Overloads or All to ensure that the output includes sufficient information to support correct overload selection at runtime.
 WARNING: /github/workspace/./input/cql/ANCCommon.cql: The function FHIRHelpers.ToDateTime has multiple overloads and due to the SignatureLevel setting (None), the overload signature is not being included in the output. This may result in ambiguous function resolution at runtime, consider setting the SignatureLevel to Overloads or All to ensure that the output includes sufficient information to support correct overload selection at runtime.
 INFORMATION: Library/ANCCommon: Library.dataRequirement[0].codeFilter[0].code[0]: A definition for CodeSystem 'http://openmrs.org/concepts' could not be found, so the code cannot be validated
-ERROR: Library/ANCCommon: Library: When HL7 is publishing a resource, the owning committee must be stated using the http://hl7.org/fhir/StructureDefinition/structuredefinition-wg extension
-ERROR: /github/workspace/fsh-generated/resources/Library-ANCCommon: URL Mismatch http://github.com/cqframework/cpg-example-anc//Library/ANCCommon vs http://hl7.org/fhir/uv/cpg/antenatalcare/Library/ANCCommon
+ERROR: /github/workspace/fsh-generated/resources/Library-ANCCommon: URL Mismatch http://github.com/cqframework/cpg-example-anc//Library/ANCCommon vs http://github.com/cqframework/cpg-example-anc/Library/ANCCommon
 == fsh-generated/resources/Library-ANCRecommendationA2.json ==
-ERROR: Library.where(url = 'http://hl7.org/fhir/uv/cpg/antenatalcare/Library/ANCRecommendationA2'): Conformance resource /github/workspace/fsh-generated/resources/Library-ANCRecommendationA2.json - the canonical URL (http://github.com/cqframework/cpg-example-anc/Library/ANCRecommendationA2) does not match the URL (http://hl7.org/fhir/uv/cpg/antenatalcare/Library/ANCRecommendationA2)
 WARNING: /github/workspace/./input/cql/ANCRecommendationA2.cql: The function FHIRHelpers.ToInterval has multiple overloads and due to the SignatureLevel setting (None), the overload signature is not being included in the output. This may result in ambiguous function resolution at runtime, consider setting the SignatureLevel to Overloads or All to ensure that the output includes sufficient information to support correct overload selection at runtime.
 WARNING: /github/workspace/./input/cql/ANCRecommendationA2.cql: The function FHIRHelpers.ToString has multiple overloads and due to the SignatureLevel setting (None), the overload signature is not being included in the output. This may result in ambiguous function resolution at runtime, consider setting the SignatureLevel to Overloads or All to ensure that the output includes sufficient information to support correct overload selection at runtime.
 ERROR: ANCRecommendationA2: Could not resolve identifier Start of Current Pregnancy in library ANCCommon.
 WARNING: /github/workspace/./input/cql/ANCRecommendationA2.cql: The function FHIRHelpers.ToDateTime has multiple overloads and due to the SignatureLevel setting (None), the overload signature is not being included in the output. This may result in ambiguous function resolution at runtime, consider setting the SignatureLevel to Overloads or All to ensure that the output includes sufficient information to support correct overload selection at runtime.
 ERROR: ANCRecommendationA2: Could not resolve identifier Start of Current Pregnancy in library ANCCommon.
 ERROR: ANCRecommendationA2.cql: CQL Processing failed with (2) errors.
-ERROR: Library/ANCRecommendationA2: Library: When HL7 is publishing a resource, the owning committee must be stated using the http://hl7.org/fhir/StructureDefinition/structuredefinition-wg extension
-ERROR: /github/workspace/fsh-generated/resources/Library-ANCRecommendationA2: URL Mismatch http://github.com/cqframework/cpg-example-anc//Library/ANCRecommendationA2 vs http://hl7.org/fhir/uv/cpg/antenatalcare/Library/ANCRecommendationA2
+ERROR: /github/workspace/fsh-generated/resources/Library-ANCRecommendationA2: URL Mismatch http://github.com/cqframework/cpg-example-anc//Library/ANCRecommendationA2 vs http://github.com/cqframework/cpg-example-anc/Library/ANCRecommendationA2
 == fsh-generated/resources/Observation-observation-anc-ra2-gestational-age.json ==
 WARNING: Observation/observation-anc-ra2-gestational-age: Observation.code.coding[0]: A definition for CodeSystem 'http://openmrs.org/concepts' could not be found, so the code cannot be validated
 WARNING: Observation/observation-anc-ra2-gestational-age: Observation: Best Practice Recommendation: In general, all observations should have a performer
@@ -166,31 +157,18 @@ WARNING: Observation/observation-anc-ra2-hb-concentration: Observation.code.codi
 WARNING: Observation/observation-anc-ra2-hb-concentration: Observation: Best Practice Recommendation: In general, all observations should have a performer
 == fsh-generated/resources/Patient-patient-anc-ra2.json ==
 == fsh-generated/resources/PlanDefinition-anc-contact.json ==
-ERROR: PlanDefinition.where(url = 'http://hl7.org/fhir/uv/cpg/antenatalcare/PlanDefinition/anc-contact'): Conformance resource /github/workspace/fsh-generated/resources/PlanDefinition-anc-contact.json - the canonical URL (http://github.com/cqframework/cpg-example-anc/PlanDefinition/anc-contact) does not match the URL (http://hl7.org/fhir/uv/cpg/antenatalcare/PlanDefinition/anc-contact)
-ERROR: PlanDefinition/anc-contact: PlanDefinition: When HL7 is publishing a resource, the owning committee must be stated using the http://hl7.org/fhir/StructureDefinition/structuredefinition-wg extension
-ERROR: /github/workspace/fsh-generated/resources/PlanDefinition-anc-contact: URL Mismatch http://github.com/cqframework/cpg-example-anc//PlanDefinition/anc-contact vs http://hl7.org/fhir/uv/cpg/antenatalcare/PlanDefinition/anc-contact
+ERROR: /github/workspace/fsh-generated/resources/PlanDefinition-anc-contact: URL Mismatch http://github.com/cqframework/cpg-example-anc//PlanDefinition/anc-contact vs http://github.com/cqframework/cpg-example-anc/PlanDefinition/anc-contact
 == fsh-generated/resources/PlanDefinition-anc-contact-schedule.json ==
-ERROR: PlanDefinition.where(url = 'http://hl7.org/fhir/uv/cpg/antenatalcare/PlanDefinition/anc-contact-schedule'): Conformance resource /github/workspace/fsh-generated/resources/PlanDefinition-anc-contact-schedule.json - the canonical URL (http://github.com/cqframework/cpg-example-anc/PlanDefinition/anc-contact-schedule) does not match the URL (http://hl7.org/fhir/uv/cpg/antenatalcare/PlanDefinition/anc-contact-schedule)
-ERROR: PlanDefinition/anc-contact-schedule: PlanDefinition: When HL7 is publishing a resource, the owning committee must be stated using the http://hl7.org/fhir/StructureDefinition/structuredefinition-wg extension
-ERROR: /github/workspace/fsh-generated/resources/PlanDefinition-anc-contact-schedule: URL Mismatch http://github.com/cqframework/cpg-example-anc//PlanDefinition/anc-contact-schedule vs http://hl7.org/fhir/uv/cpg/antenatalcare/PlanDefinition/anc-contact-schedule
+ERROR: /github/workspace/fsh-generated/resources/PlanDefinition-anc-contact-schedule: URL Mismatch http://github.com/cqframework/cpg-example-anc//PlanDefinition/anc-contact-schedule vs http://github.com/cqframework/cpg-example-anc/PlanDefinition/anc-contact-schedule
 == fsh-generated/resources/PlanDefinition-anc-recommendation-a2.json ==
-ERROR: PlanDefinition.where(url = 'http://hl7.org/fhir/uv/cpg/antenatalcare/PlanDefinition/anc-recommendation-a2'): Conformance resource /github/workspace/fsh-generated/resources/PlanDefinition-anc-recommendation-a2.json - the canonical URL (http://github.com/cqframework/cpg-example-anc/PlanDefinition/anc-recommendation-a2) does not match the URL (http://hl7.org/fhir/uv/cpg/antenatalcare/PlanDefinition/anc-recommendation-a2)
-ERROR: PlanDefinition/anc-recommendation-a2: PlanDefinition: When HL7 is publishing a resource, the owning committee must be stated using the http://hl7.org/fhir/StructureDefinition/structuredefinition-wg extension
-ERROR: /github/workspace/fsh-generated/resources/PlanDefinition-anc-recommendation-a2: URL Mismatch http://github.com/cqframework/cpg-example-anc//PlanDefinition/anc-recommendation-a2 vs http://hl7.org/fhir/uv/cpg/antenatalcare/PlanDefinition/anc-recommendation-a2
+ERROR: /github/workspace/fsh-generated/resources/PlanDefinition-anc-recommendation-a2: URL Mismatch http://github.com/cqframework/cpg-example-anc//PlanDefinition/anc-recommendation-a2 vs http://github.com/cqframework/cpg-example-anc/PlanDefinition/anc-recommendation-a2
 == fsh-generated/resources/Questionnaire-anc-every-contact.json ==
-ERROR: Questionnaire.where(url = 'http://hl7.org/fhir/uv/cpg/antenatalcare/Questionnaire/anc-every-contact'): Conformance resource /github/workspace/fsh-generated/resources/Questionnaire-anc-every-contact.json - the canonical URL (http://github.com/cqframework/cpg-example-anc/Questionnaire/anc-every-contact) does not match the URL (http://hl7.org/fhir/uv/cpg/antenatalcare/Questionnaire/anc-every-contact)
-ERROR: Questionnaire/anc-every-contact: Questionnaire: When HL7 is publishing a resource, the owning committee must be stated using the http://hl7.org/fhir/StructureDefinition/structuredefinition-wg extension
-ERROR: /github/workspace/fsh-generated/resources/Questionnaire-anc-every-contact: URL Mismatch http://github.com/cqframework/cpg-example-anc//Questionnaire/anc-every-contact vs http://hl7.org/fhir/uv/cpg/antenatalcare/Questionnaire/anc-every-contact
+ERROR: /github/workspace/fsh-generated/resources/Questionnaire-anc-every-contact: URL Mismatch http://github.com/cqframework/cpg-example-anc//Questionnaire/anc-every-contact vs http://github.com/cqframework/cpg-example-anc/Questionnaire/anc-every-contact
 == fsh-generated/resources/Questionnaire-anc-first-contact.json ==
-ERROR: Questionnaire.where(url = 'http://hl7.org/fhir/uv/cpg/antenatalcare/Questionnaire/anc-first-contact'): Conformance resource /github/workspace/fsh-generated/resources/Questionnaire-anc-first-contact.json - the canonical URL (http://github.com/cqframework/cpg-example-anc/Questionnaire/anc-first-contact) does not match the URL (http://hl7.org/fhir/uv/cpg/antenatalcare/Questionnaire/anc-first-contact)
-ERROR: Questionnaire/anc-first-contact: Questionnaire: When HL7 is publishing a resource, the owning committee must be stated using the http://hl7.org/fhir/StructureDefinition/structuredefinition-wg extension
-ERROR: /github/workspace/fsh-generated/resources/Questionnaire-anc-first-contact: URL Mismatch http://github.com/cqframework/cpg-example-anc//Questionnaire/anc-first-contact vs http://hl7.org/fhir/uv/cpg/antenatalcare/Questionnaire/anc-first-contact
+ERROR: /github/workspace/fsh-generated/resources/Questionnaire-anc-first-contact: URL Mismatch http://github.com/cqframework/cpg-example-anc//Questionnaire/anc-first-contact vs http://github.com/cqframework/cpg-example-anc/Questionnaire/anc-first-contact
 == fsh-generated/resources/Questionnaire-anc-quick-check.json ==
-ERROR: Questionnaire.where(url = 'http://hl7.org/fhir/uv/cpg/antenatalcare/Questionnaire/anc-quick-check'): Conformance resource /github/workspace/fsh-generated/resources/Questionnaire-anc-quick-check.json - the canonical URL (http://github.com/cqframework/cpg-example-anc/Questionnaire/anc-quick-check) does not match the URL (http://hl7.org/fhir/uv/cpg/antenatalcare/Questionnaire/anc-quick-check)
-ERROR: Questionnaire/anc-quick-check: Questionnaire: When HL7 is publishing a resource, the owning committee must be stated using the http://hl7.org/fhir/StructureDefinition/structuredefinition-wg extension
-ERROR: /github/workspace/fsh-generated/resources/Questionnaire-anc-quick-check: URL Mismatch http://github.com/cqframework/cpg-example-anc//Questionnaire/anc-quick-check vs http://hl7.org/fhir/uv/cpg/antenatalcare/Questionnaire/anc-quick-check
+ERROR: /github/workspace/fsh-generated/resources/Questionnaire-anc-quick-check: URL Mismatch http://github.com/cqframework/cpg-example-anc//Questionnaire/anc-quick-check vs http://github.com/cqframework/cpg-example-anc/Questionnaire/anc-quick-check
 == fsh-generated/resources/ValueSet-anc-reason-for-visit-vs.json ==
-ERROR: ValueSet.where(url = 'http://hl7.org/fhir/uv/cpg/antenatalcare/ValueSet/anc-reason-for-visit-vs'): Conformance resource /github/workspace/fsh-generated/resources/ValueSet-anc-reason-for-visit-vs.json - the canonical URL (http://github.com/cqframework/cpg-example-anc/ValueSet/anc-reason-for-visit-vs) does not match the URL (http://hl7.org/fhir/uv/cpg/antenatalcare/ValueSet/anc-reason-for-visit-vs)
 ERROR: ValueSet/anc-reason-for-visit-vs: ValueSet.meta.profile[0]: Canonical URL 'http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-publishablevalueset' does not resolve
 ERROR: ValueSet/anc-reason-for-visit-vs: ValueSet.extension[0]: The extension http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability could not be found so is not allowed here
 ERROR: ValueSet/anc-reason-for-visit-vs: ValueSet.extension[0].url: URL value 'http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability' does not resolve
@@ -200,6 +178,5 @@ ERROR: ValueSet/anc-reason-for-visit-vs: ValueSet.extension[2]: The extension ht
 ERROR: ValueSet/anc-reason-for-visit-vs: ValueSet.extension[2].url: URL value 'http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability' does not resolve
 ERROR: ValueSet/anc-reason-for-visit-vs: ValueSet.extension[3]: The extension http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeRepresentationLevel could not be found so is not allowed here
 ERROR: ValueSet/anc-reason-for-visit-vs: ValueSet.extension[3].url: URL value 'http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeRepresentationLevel' does not resolve
-ERROR: ValueSet/anc-reason-for-visit-vs: ValueSet: When HL7 is publishing a resource, the owning committee must be stated using the http://hl7.org/fhir/StructureDefinition/structuredefinition-wg extension
 WARNING: ValueSet/anc-reason-for-visit-vs: ValueSet.meta.profile[0]: Profile reference 'http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-publishablevalueset' has not been checked because it could not be found, and the validator is set to not fetch unknown profiles
-ERROR: /github/workspace/fsh-generated/resources/ValueSet-anc-reason-for-visit-vs: URL Mismatch http://github.com/cqframework/cpg-example-anc//ValueSet/anc-reason-for-visit-vs vs http://hl7.org/fhir/uv/cpg/antenatalcare/ValueSet/anc-reason-for-visit-vs
+ERROR: /github/workspace/fsh-generated/resources/ValueSet-anc-reason-for-visit-vs: URL Mismatch http://github.com/cqframework/cpg-example-anc//ValueSet/anc-reason-for-visit-vs vs http://github.com/cqframework/cpg-example-anc/ValueSet/anc-reason-for-visit-vs

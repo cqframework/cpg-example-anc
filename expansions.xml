@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="953fc5b1-ae16-42e0-a4b0-13343d52dbe4"/>
+  <id value="104f8627-dcf5-4fba-907b-54cd83907730"/>
   <meta>
-    <lastUpdated value="2024-11-14T21:29:13.472+00:00"/>
+    <lastUpdated value="2024-11-14T21:47:49.434+00:00"/>
   </meta>
   <type value="collection"/>
   <entry>
-    <fullUrl value="http://hl7.org/fhir/uv/cpg/antenatalcare/ValueSet/anc-reason-for-visit-vs"/>
+    <fullUrl value="http://github.com/cqframework/cpg-example-anc/ValueSet/anc-reason-for-visit-vs"/>
     <resource>
       <ValueSet>
         <meta>
@@ -40,10 +40,10 @@
               </tr>
               <tr>
                 <td style="white-space:nowrap">
-                  <a name="x-http://hl7.org/fhir/uv/cpg/antenatalcare/CodeSystem/anc-reason-for-visit-cs-routine"> </a>  
+                  <a name="x-http://github.com/cqframework/cpg-example-anc/CodeSystem/anc-reason-for-visit-cs-routine"> </a>  
                   <a href="CodeSystem-anc-reason-for-visit-cs.html#anc-reason-for-visit-cs-routine">routine</a>
                 </td>
-                <td>http://hl7.org/fhir/uv/cpg/antenatalcare/CodeSystem/anc-reason-for-visit-cs</td>
+                <td>http://github.com/cqframework/cpg-example-anc/CodeSystem/anc-reason-for-visit-cs</td>
                 <td>Routine</td>
                 <td>
                   <div>
@@ -54,10 +54,10 @@
               </tr>
               <tr>
                 <td style="white-space:nowrap">
-                  <a name="x-http://hl7.org/fhir/uv/cpg/antenatalcare/CodeSystem/anc-reason-for-visit-cs-specific-complaint"> </a>  
+                  <a name="x-http://github.com/cqframework/cpg-example-anc/CodeSystem/anc-reason-for-visit-cs-specific-complaint"> </a>  
                   <a href="CodeSystem-anc-reason-for-visit-cs.html#anc-reason-for-visit-cs-specific-complaint">specific-complaint</a>
                 </td>
-                <td>http://hl7.org/fhir/uv/cpg/antenatalcare/CodeSystem/anc-reason-for-visit-cs</td>
+                <td>http://github.com/cqframework/cpg-example-anc/CodeSystem/anc-reason-for-visit-cs</td>
                 <td>Specific complaint</td>
                 <td>
                   <div>
@@ -68,10 +68,10 @@
               </tr>
               <tr>
                 <td style="white-space:nowrap">
-                  <a name="x-http://hl7.org/fhir/uv/cpg/antenatalcare/CodeSystem/anc-reason-for-visit-cs-first-visit"> </a>  
+                  <a name="x-http://github.com/cqframework/cpg-example-anc/CodeSystem/anc-reason-for-visit-cs-first-visit"> </a>  
                   <a href="CodeSystem-anc-reason-for-visit-cs.html#anc-reason-for-visit-cs-first-visit">first-visit</a>
                 </td>
-                <td>http://hl7.org/fhir/uv/cpg/antenatalcare/CodeSystem/anc-reason-for-visit-cs</td>
+                <td>http://github.com/cqframework/cpg-example-anc/CodeSystem/anc-reason-for-visit-cs</td>
                 <td>First visit</td>
                 <td>
                   <div>
@@ -82,10 +82,10 @@
               </tr>
               <tr>
                 <td style="white-space:nowrap">
-                  <a name="x-http://hl7.org/fhir/uv/cpg/antenatalcare/CodeSystem/anc-reason-for-visit-cs-follow-up-visit"> </a>  
+                  <a name="x-http://github.com/cqframework/cpg-example-anc/CodeSystem/anc-reason-for-visit-cs-follow-up-visit"> </a>  
                   <a href="CodeSystem-anc-reason-for-visit-cs.html#anc-reason-for-visit-cs-follow-up-visit">follow-up-visit</a>
                 </td>
-                <td>http://hl7.org/fhir/uv/cpg/antenatalcare/CodeSystem/anc-reason-for-visit-cs</td>
+                <td>http://github.com/cqframework/cpg-example-anc/CodeSystem/anc-reason-for-visit-cs</td>
                 <td>Follow-up visit</td>
                 <td>
                   <div>
@@ -96,10 +96,10 @@
               </tr>
               <tr>
                 <td style="white-space:nowrap">
-                  <a name="x-http://hl7.org/fhir/uv/cpg/antenatalcare/CodeSystem/anc-reason-for-visit-cs-include-family-member"> </a>  
+                  <a name="x-http://github.com/cqframework/cpg-example-anc/CodeSystem/anc-reason-for-visit-cs-include-family-member"> </a>  
                   <a href="CodeSystem-anc-reason-for-visit-cs.html#anc-reason-for-visit-cs-include-family-member">include-family-member</a>
                 </td>
-                <td>http://hl7.org/fhir/uv/cpg/antenatalcare/CodeSystem/anc-reason-for-visit-cs</td>
+                <td>http://github.com/cqframework/cpg-example-anc/CodeSystem/anc-reason-for-visit-cs</td>
                 <td>Include family member</td>
                 <td>
                   <div>
@@ -111,13 +111,13 @@
             </table>
           </div>
         </text>
-        <url value="http://hl7.org/fhir/uv/cpg/antenatalcare/ValueSet/anc-reason-for-visit-vs"/>
+        <url value="http://github.com/cqframework/cpg-example-anc/ValueSet/anc-reason-for-visit-vs"/>
         <version value="1.0.0"/>
         <name value="ANCReasonForVisitVS"/>
         <title value="ValueSet - ANC Reason for Visit"/>
         <status value="active"/>
         <experimental value="false"/>
-        <date value="2024-11-14T21:29:13+00:00"/>
+        <date value="2024-11-14T21:47:49+00:00"/>
         <jurisdiction>
           <coding>
             <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
@@ -126,8 +126,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:73798835-8d0d-41fc-816a-780c439d35b1"/>
-          <timestamp value="2024-11-14T21:29:24+00:00"/>
+          <identifier value="urn:uuid:2c461945-7e19-4556-bac1-45fe355cda9d"/>
+          <timestamp value="2024-11-14T21:48:01+00:00"/>
           <total value="5"/>
           <offset value="0"/>
           <parameter>
@@ -144,34 +144,34 @@
           </parameter>
           <parameter>
             <name value="warning-experimental"/>
-            <valueUri value="http://hl7.org/fhir/uv/cpg/antenatalcare/CodeSystem/anc-reason-for-visit-cs|1.0.0"/>
+            <valueUri value="http://github.com/cqframework/cpg-example-anc/CodeSystem/anc-reason-for-visit-cs|1.0.0"/>
           </parameter>
           <parameter>
             <name value="used-codesystem"/>
-            <valueUri value="http://hl7.org/fhir/uv/cpg/antenatalcare/CodeSystem/anc-reason-for-visit-cs|1.0.0"/>
+            <valueUri value="http://github.com/cqframework/cpg-example-anc/CodeSystem/anc-reason-for-visit-cs|1.0.0"/>
           </parameter>
           <contains>
-            <system value="http://hl7.org/fhir/uv/cpg/antenatalcare/CodeSystem/anc-reason-for-visit-cs"/>
+            <system value="http://github.com/cqframework/cpg-example-anc/CodeSystem/anc-reason-for-visit-cs"/>
             <code value="routine"/>
             <display value="Routine"/>
           </contains>
           <contains>
-            <system value="http://hl7.org/fhir/uv/cpg/antenatalcare/CodeSystem/anc-reason-for-visit-cs"/>
+            <system value="http://github.com/cqframework/cpg-example-anc/CodeSystem/anc-reason-for-visit-cs"/>
             <code value="specific-complaint"/>
             <display value="Specific complaint"/>
           </contains>
           <contains>
-            <system value="http://hl7.org/fhir/uv/cpg/antenatalcare/CodeSystem/anc-reason-for-visit-cs"/>
+            <system value="http://github.com/cqframework/cpg-example-anc/CodeSystem/anc-reason-for-visit-cs"/>
             <code value="first-visit"/>
             <display value="First visit"/>
           </contains>
           <contains>
-            <system value="http://hl7.org/fhir/uv/cpg/antenatalcare/CodeSystem/anc-reason-for-visit-cs"/>
+            <system value="http://github.com/cqframework/cpg-example-anc/CodeSystem/anc-reason-for-visit-cs"/>
             <code value="follow-up-visit"/>
             <display value="Follow-up visit"/>
           </contains>
           <contains>
-            <system value="http://hl7.org/fhir/uv/cpg/antenatalcare/CodeSystem/anc-reason-for-visit-cs"/>
+            <system value="http://github.com/cqframework/cpg-example-anc/CodeSystem/anc-reason-for-visit-cs"/>
             <code value="include-family-member"/>
             <display value="Include family member"/>
           </contains>

@@ -1,7 +1,7 @@
 {
   "codeSystems" : [
     {
-      "url" : "http://hl7.org/fhir/uv/cpg/antenatalcare/CodeSystem/anc-reason-for-visit-cs",
+      "url" : "http://github.com/cqframework/cpg-example-anc/CodeSystem/anc-reason-for-visit-cs",
       "version" : "1.0.0",
       "status" : "active",
       "name" : "ANCReasonForVisitCS",
