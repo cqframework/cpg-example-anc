@@ -1,0 +1,43 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://hl7.org/fhir/uv/cpg/antenatalcare/Observation/observation-anc-ra2-gestational-age> a fhir:Observation ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "observation-anc-ra2-gestational-age"] ; # 
+  fhir:meta [
+     fhir:versionId [ fhir:v "1" ] ;
+     fhir:lastUpdated [ fhir:v "2019-05-15T10:56:36.425+00:00"^^xsd:dateTime ]
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Observation observation-anc-ra2-gestational-age</b></p><a name=\"observation-anc-ra2-gestational-age\"> </a><a name=\"hcobservation-anc-ra2-gestational-age\"> </a><a name=\"observation-anc-ra2-gestational-age-en-US\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">version: 1; Last updated: 2019-05-15 10:56:36+0000</p></div><p><b>status</b>: Final</p><p><b>code</b>: <span title=\"Codes:{http://openmrs.org/concepts 1438AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA}\">Weeks of gestational age</span></p><p><b>subject</b>: <a href=\"Patient-patient-anc-ra2.html\">Grace Taylor(official) Female, DoB: 1997-05-15 ( http://clinfhir.com/fhir/NamingSystem/identifier#patient-anc-ra2)</a></p><p><b>effective</b>: 2019-05-01 12:37:23+0200</p><p><b>value</b>: 16 wk<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codewk = 'wk')</span></p></div>"
+  ] ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:code [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://openmrs.org/concepts"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "1438AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA" ]
+     ] ) ;
+     fhir:text [ fhir:v "Weeks of gestational age" ]
+  ] ; # 
+  fhir:subject [
+     fhir:link <http://hl7.org/fhir/uv/cpg/antenatalcare/Patient/patient-anc-ra2> ;
+     fhir:reference [ fhir:v "Patient/patient-anc-ra2" ]
+  ] ; # 
+  fhir:effective [ fhir:v "2019-05-01T12:37:23+02:00"^^xsd:dateTime] ; # 
+  fhir:value [
+     a fhir:Quantity ;
+     fhir:value [ fhir:v "16"^^xsd:decimal ] ;
+     fhir:unit [ fhir:v "wk" ] ;
+     fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
+     fhir:code [ fhir:v "wk" ]
+  ] . # 
+
+<http://hl7.org/fhir/uv/cpg/antenatalcare/Patient/patient-anc-ra2> a fhir:uv .
+
+# -------------------------------------------------------------------------------------
+

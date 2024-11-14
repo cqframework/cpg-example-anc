@@ -1,0 +1,60 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://hl7.org/fhir/uv/cpg/antenatalcare/Condition/condition-ra2-iron-side-effects> a fhir:Condition ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "condition-ra2-iron-side-effects"] ; # 
+  fhir:meta [
+     fhir:versionId [ fhir:v "1" ] ;
+     fhir:lastUpdated [ fhir:v "2019-05-15T10:37:24.287+00:00"^^xsd:dateTime ]
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Condition condition-ra2-iron-side-effects</b></p><a name=\"condition-ra2-iron-side-effects\"> </a><a name=\"hccondition-ra2-iron-side-effects\"> </a><a name=\"condition-ra2-iron-side-effects-en-US\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">version: 1; Last updated: 2019-05-15 10:37:24+0000</p></div><p><b>category</b>: <span title=\"Codes:{http://snomed.info/sct 14657009}\">Diagnosis</span></p><p><b>severity</b>: <span title=\"Codes:{http://snomed.info/sct 6736007}\">moderate</span></p><p><b>code</b>: <span title=\"Codes:{http://openmrs.org/concepts 165273AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA}\">Iron side effects</span></p><p><b>subject</b>: <a href=\"Patient-patient-anc-ra2.html\">Grace Taylor(official) Female, DoB: 1997-05-15 ( http://clinfhir.com/fhir/NamingSystem/identifier#patient-anc-ra2)</a></p><p><b>onset</b>: 15 a<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codea = 'a')</span></p></div>"
+  ] ; # 
+  fhir:category ( [
+     fhir:coding ( [
+       a sct:14657009 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "14657009" ] ;
+       fhir:display [ fhir:v "Established diagnosis" ]
+     ] ) ;
+     fhir:text [ fhir:v "Diagnosis" ]
+  ] ) ; # 
+  fhir:severity [
+     fhir:coding ( [
+       a sct:6736007 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "6736007" ] ;
+       fhir:display [ fhir:v "Moderate severity" ]
+     ] ) ;
+     fhir:text [ fhir:v "moderate" ]
+  ] ; # 
+  fhir:code [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://openmrs.org/concepts"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "165273AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA" ] ;
+       fhir:display [ fhir:v "Iron side effects" ]
+     ] ) ;
+     fhir:text [ fhir:v "Iron side effects" ]
+  ] ; # 
+  fhir:subject [
+     fhir:link <http://hl7.org/fhir/uv/cpg/antenatalcare/Patient/patient-anc-ra2> ;
+     fhir:reference [ fhir:v "Patient/patient-anc-ra2" ]
+  ] ; # 
+  fhir:onset [
+     a fhir:Age ;
+     fhir:value [ fhir:v "15"^^xsd:decimal ] ;
+     fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
+     fhir:code [ fhir:v "a" ]
+  ] . # 
+
+<http://hl7.org/fhir/uv/cpg/antenatalcare/Patient/patient-anc-ra2> a fhir:uv .
+
+# -------------------------------------------------------------------------------------
+

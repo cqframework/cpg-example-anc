@@ -1,0 +1,79 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "anc-reason-for-visit-cs",
+  "meta" : {
+    "profile" : ["http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-publishablecodesystem"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem anc-reason-for-visit-cs</b></p><a name=\"anc-reason-for-visit-cs\"> </a><a name=\"hcanc-reason-for-visit-cs\"> </a><a name=\"anc-reason-for-visit-cs-en-US\"> </a><p>This case-sensitive code system <code>http://hl7.org/fhir/uv/cpg/antenatalcare/CodeSystem/anc-reason-for-visit-cs</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">routine<a name=\"anc-reason-for-visit-cs-routine\"> </a></td><td>Routine</td><td>For a scheduled (routine) visit</td></tr><tr><td style=\"white-space:nowrap\">specific-complaint<a name=\"anc-reason-for-visit-cs-specific-complaint\"> </a></td><td>Specific complaint</td><td>For specific complaints about you or your baby</td></tr><tr><td style=\"white-space:nowrap\">first-visit<a name=\"anc-reason-for-visit-cs-first-visit\"> </a></td><td>First visit</td><td>First visit</td></tr><tr><td style=\"white-space:nowrap\">follow-up-visit<a name=\"anc-reason-for-visit-cs-follow-up-visit\"> </a></td><td>Follow-up visit</td><td>Follow-up visit</td></tr><tr><td style=\"white-space:nowrap\">include-family-member<a name=\"anc-reason-for-visit-cs-include-family-member\"> </a></td><td>Include family member</td><td>Do you want to include your companion or other family member (parent if adolescent) in the examination and discussion?</td></tr></table></div>"
+  },
+  "extension" : [{
+    "url" : "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability",
+    "valueCode" : "shareable"
+  },
+  {
+    "url" : "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability",
+    "valueCode" : "computable"
+  },
+  {
+    "url" : "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability",
+    "valueCode" : "publishable"
+  },
+  {
+    "url" : "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeRepresentationLevel",
+    "valueCode" : "structured"
+  }],
+  "url" : "http://hl7.org/fhir/uv/cpg/antenatalcare/CodeSystem/anc-reason-for-visit-cs",
+  "version" : "1.0.0",
+  "name" : "ANCReasonForVisitCS",
+  "title" : "CodeSystem - ANC Reason for Visit",
+  "status" : "active",
+  "experimental" : true,
+  "date" : "2024-11-14T19:16:54+00:00",
+  "publisher" : "HL7 International - Clinical Decision Support WG",
+  "contact" : [{
+    "name" : "HL7 International - Clinical Decision Support WG",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://www.hl7.org/Special/committees/dss/index.cfm"
+    }]
+  }],
+  "description" : "Codes used to identify the reason for an antenatal care visit",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+      "code" : "001",
+      "display" : "World"
+    }]
+  }],
+  "caseSensitive" : true,
+  "valueSet" : "http://hl7.org/fhir/uv/cpg/antenatalcare/ValueSet/anc-reason-for-visit-vs",
+  "content" : "complete",
+  "count" : 5,
+  "concept" : [{
+    "code" : "routine",
+    "display" : "Routine",
+    "definition" : "For a scheduled (routine) visit"
+  },
+  {
+    "code" : "specific-complaint",
+    "display" : "Specific complaint",
+    "definition" : "For specific complaints about you or your baby"
+  },
+  {
+    "code" : "first-visit",
+    "display" : "First visit",
+    "definition" : "First visit"
+  },
+  {
+    "code" : "follow-up-visit",
+    "display" : "Follow-up visit",
+    "definition" : "Follow-up visit"
+  },
+  {
+    "code" : "include-family-member",
+    "display" : "Include family member",
+    "definition" : "Do you want to include your companion or other family member (parent if adolescent) in the examination and discussion?"
+  }]
+}

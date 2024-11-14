@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Library xmlns="http://hl7.org/fhir">
+  <id value="ANCRecommendationA2"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Library ANCRecommendationA2</b></p><a name="ANCRecommendationA2"> </a><a name="hcANCRecommendationA2"> </a><a name="ANCRecommendationA2-en-US"> </a><h2>Related Artifacts</h2><table class="grid"><tr><td>Documentation</td><td>WHO guideline for a positive pregnancy experience</td><td>https://www.who.int/reproductivehealth/publications/maternal_perinatal_health/anc-positive-pregnancy-experience/en</td></tr></table><h2>Contents</h2><p><code>text/cql</code></p><pre><code class="language-sql">library ANCRecommendationA2 version '0.1.0'
+
+using FHIR version '4.0.1'
+
+include FHIRHelpers version '4.0.1'
+include ANCCommon version '0.1.0' called Common
+
+code &quot;Hb&quot;: '165395AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA' from Common.OpenMRSEntity display 'Haemoglobin measured from haemoglobinometer (g/dl)'
+code &quot;Iron Intake Compliance&quot;: '165272AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA' from Common.OpenMRSEntity display 'Iron intake compliance'
+code &quot;Iron Side Effects&quot;: '165273AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA' from Common.OpenMRSEntity display 'Iron side effects' // NOTE: OpenMRS concept is just side effects from medication
+
+// TODO: How do parameters like this get configured for local/site usage
+//parameter &quot;Anaemia Prevalence&quot; System.Quantity default 40 '%'
+
+context Patient
+
+// TODO: Configuring in-line directly for now
+define &quot;Anaemia Prevalence&quot;: 40 '%'
+
+/*
+IAF - Iron and Folic Acid Supplements
+
+RECOMMENDATION A.2.1: Daily oral iron and folic acid supplementation with 30 mg to
+60 mg of elemental iron and 400 μg (0.4 mg) folic acid is recommended for pregnant
+women to prevent maternal anaemia, puerperal sepsis, low birth weight, and preterm birth.
+(Recommended)
+
+RECOMMENDATION A.2.2: Intermittent oral iron and folic acid supplementation with 120 mg
+of elemental iron and 2800 μg (2.8 mg) of folic acid once weekly is recommended for pregnant
+women to improve maternal and neonatal outcomes if daily iron is not acceptable due to sideeffects,
+and in populations with an anaemia prevalence among pregnant women of less than
+20%. (Context-specific recommendation)
+
+On every contact,
+  if anaemia detected
+    recommend 120 mg of elemental iron daily (Recommendation A.2.1)
+  else if population anaemia prevalence &gt;= 40%
+    recommend 60 mg of elemental iron and 400 ug of folic acid, daily (Recommendation A.2.1)
+  else if population anaemia prevalence &lt; 20% or daily iron not acceptable due to side-effects
+    recommend intermittent oral iron: 120 mg of oral iron, and 2.8 ug of folic acid, weekly (Recommendation A.2.2)
+  else
+    recommend 30 to 60 mg of elemental iron and 400 ug of folic acid, daily (Recommendation A.2.1)
+  check iron-intake compliance;
+  check iron-side effects;
+
+Has Anaemia
+  Hb Concentration &lt; 11 g/dL and Gestational Age &lt; 12 weeks or Gestational Age &gt; 28 weeks
+  Hb Concentration &lt; 10.5 g/dL and Gestational Age between 13 weeks and 27 weeks
+*/
+
+define &quot;Has Anaemia&quot;:
+  if Common.&quot;Gestational Age in Weeks&quot; between 13 weeks and 27 weeks then
+    &quot;Hb Concentration&quot; &lt; 10.5 'g/dL'
+  else
+    &quot;Hb Concentration&quot; &lt; 11 'g/dL'
+
+define &quot;Hb Concentration&quot;:
+  First(
+    [&quot;Observation&quot;: &quot;Hb&quot;] O
+		  where O.status = 'final'
+			  and O.effective after Common.&quot;Start of Current Pregnancy&quot;
+      sort by FHIRHelpers.ToDateTime(effective as FHIR.dateTime) descending
+  ).value as Quantity
+
+define &quot;Has Iron Side-Effects&quot;:
+  exists (
+    [&quot;Condition&quot;: &quot;Iron Side Effects&quot;] C
+		  where C.onset on or after Common.&quot;Start of Current Pregnancy&quot;
+			  and C.clinicalStatus in Common.&quot;Active Condition&quot;
+  )
+</code></pre><p><code>No Content</code> (<code>application/elm+xml</code>)</p></div>
+  </text>
+  <url value="http://hl7.org/fhir/uv/cpg/antenatalcare/Library/ANCRecommendationA2"/>
+  <identifier>
+    <use value="official"/>
+    <value value="ANCRecommendationA2"/>
+  </identifier>
+  <version value="1.0.0"/>
+  <name value="ANCRecommendationA2"/>
+  <title value="WHO Antenatal Care Guidelines Logic for recommendation #A2"/>
+  <status value="active"/>
+  <experimental value="true"/>
+  <type>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/library-type"/>
+      <code value="logic-library"/>
+      <display value="Logic Library"/>
+    </coding>
+  </type>
+  <date value="2024-11-14T19:16:54+00:00"/>
+  <publisher value="HL7 International - Clinical Decision Support WG"/>
+  <contact>
+    <name value="HL7 International - Clinical Decision Support WG"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://www.hl7.org/Special/committees/dss/index.cfm"/>
+    </telecom>
+  </contact>
+  <description value="Decision Support Logic for use in ANC Recommendation A2"/>
+  <useContext>
+    <code>
+      <system value="http://terminology.hl7.org/CodeSystem/usage-context-type"/>
+      <code value="focus"/>
+    </code>
+    <valueCodeableConcept>
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="77386006"/>
+        <display value="Pregnancy (finding)"/>
+      </coding>
+    </valueCodeableConcept>
+  </useContext>
+  <jurisdiction>
+    <coding>
+      <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+      <code value="001"/>
+      <display value="World"/>
+    </coding>
+  </jurisdiction>
+  <copyright value="© WHO 2019+."/>
+  <topic>
+    <text value="Pregnancy"/>
+  </topic>
+  <relatedArtifact>
+    <type value="documentation"/>
+    <display value="WHO guideline for a positive pregnancy experience"/>
+    <url value="https://www.who.int/reproductivehealth/publications/maternal_perinatal_health/anc-positive-pregnancy-experience/en"/>
+    <document>
+      <url value="https://www.who.int/reproductivehealth/publications/maternal_perinatal_health/anc-positive-pregnancy-experience/en"/>
+    </document>
+  </relatedArtifact>
+  <content>
+    <contentType value="text/cql"/>
+    <data value="bGlicmFyeSBBTkNSZWNvbW1lbmRhdGlvbkEyIHZlcnNpb24gJzAuMS4wJwoKdXNpbmcgRkhJUiB2ZXJzaW9uICc0LjAuMScKCmluY2x1ZGUgRkhJUkhlbHBlcnMgdmVyc2lvbiAnNC4wLjEnCmluY2x1ZGUgQU5DQ29tbW9uIHZlcnNpb24gJzAuMS4wJyBjYWxsZWQgQ29tbW9uCgpjb2RlICJIYiI6ICcxNjUzOTVBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUEnIGZyb20gQ29tbW9uLk9wZW5NUlNFbnRpdHkgZGlzcGxheSAnSGFlbW9nbG9iaW4gbWVhc3VyZWQgZnJvbSBoYWVtb2dsb2Jpbm9tZXRlciAoZy9kbCknCmNvZGUgIklyb24gSW50YWtlIENvbXBsaWFuY2UiOiAnMTY1MjcyQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBJyBmcm9tIENvbW1vbi5PcGVuTVJTRW50aXR5IGRpc3BsYXkgJ0lyb24gaW50YWtlIGNvbXBsaWFuY2UnCmNvZGUgIklyb24gU2lkZSBFZmZlY3RzIjogJzE2NTI3M0FBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQScgZnJvbSBDb21tb24uT3Blbk1SU0VudGl0eSBkaXNwbGF5ICdJcm9uIHNpZGUgZWZmZWN0cycgLy8gTk9URTogT3Blbk1SUyBjb25jZXB0IGlzIGp1c3Qgc2lkZSBlZmZlY3RzIGZyb20gbWVkaWNhdGlvbgoKLy8gVE9ETzogSG93IGRvIHBhcmFtZXRlcnMgbGlrZSB0aGlzIGdldCBjb25maWd1cmVkIGZvciBsb2NhbC9zaXRlIHVzYWdlCi8vcGFyYW1ldGVyICJBbmFlbWlhIFByZXZhbGVuY2UiIFN5c3RlbS5RdWFudGl0eSBkZWZhdWx0IDQwICclJwoKY29udGV4dCBQYXRpZW50CgovLyBUT0RPOiBDb25maWd1cmluZyBpbi1saW5lIGRpcmVjdGx5IGZvciBub3cKZGVmaW5lICJBbmFlbWlhIFByZXZhbGVuY2UiOiA0MCAnJScKCi8qCklBRiAtIElyb24gYW5kIEZvbGljIEFjaWQgU3VwcGxlbWVudHMKClJFQ09NTUVOREFUSU9OIEEuMi4xOiBEYWlseSBvcmFsIGlyb24gYW5kIGZvbGljIGFjaWQgc3VwcGxlbWVudGF0aW9uIHdpdGggMzAgbWcgdG8KNjAgbWcgb2YgZWxlbWVudGFsIGlyb24gYW5kIDQwMCDOvGcgKDAuNCBtZykgZm9saWMgYWNpZCBpcyByZWNvbW1lbmRlZCBmb3IgcHJlZ25hbnQKd29tZW4gdG8gcHJldmVudCBtYXRlcm5hbCBhbmFlbWlhLCBwdWVycGVyYWwgc2Vwc2lzLCBsb3cgYmlydGggd2VpZ2h0LCBhbmQgcHJldGVybSBiaXJ0aC4KKFJlY29tbWVuZGVkKQoKUkVDT01NRU5EQVRJT04gQS4yLjI6IEludGVybWl0dGVudCBvcmFsIGlyb24gYW5kIGZvbGljIGFjaWQgc3VwcGxlbWVudGF0aW9uIHdpdGggMTIwIG1nCm9mIGVsZW1lbnRhbCBpcm9uIGFuZCAyODAwIM68ZyAoMi44IG1nKSBvZiBmb2xpYyBhY2lkIG9uY2Ugd2Vla2x5IGlzIHJlY29tbWVuZGVkIGZvciBwcmVnbmFudAp3b21lbiB0byBpbXByb3ZlIG1hdGVybmFsIGFuZCBuZW9uYXRhbCBvdXRjb21lcyBpZiBkYWlseSBpcm9uIGlzIG5vdCBhY2NlcHRhYmxlIGR1ZSB0byBzaWRlZWZmZWN0cywKYW5kIGluIHBvcHVsYXRpb25zIHdpdGggYW4gYW5hZW1pYSBwcmV2YWxlbmNlIGFtb25nIHByZWduYW50IHdvbWVuIG9mIGxlc3MgdGhhbgoyMCUuIChDb250ZXh0LXNwZWNpZmljIHJlY29tbWVuZGF0aW9uKQoKT24gZXZlcnkgY29udGFjdCwKICBpZiBhbmFlbWlhIGRldGVjdGVkCiAgICByZWNvbW1lbmQgMTIwIG1nIG9mIGVsZW1lbnRhbCBpcm9uIGRhaWx5IChSZWNvbW1lbmRhdGlvbiBBLjIuMSkKICBlbHNlIGlmIHBvcHVsYXRpb24gYW5hZW1pYSBwcmV2YWxlbmNlID49IDQwJQogICAgcmVjb21tZW5kIDYwIG1nIG9mIGVsZW1lbnRhbCBpcm9uIGFuZCA0MDAgdWcgb2YgZm9saWMgYWNpZCwgZGFpbHkgKFJlY29tbWVuZGF0aW9uIEEuMi4xKQogIGVsc2UgaWYgcG9wdWxhdGlvbiBhbmFlbWlhIHByZXZhbGVuY2UgPCAyMCUgb3IgZGFpbHkgaXJvbiBub3QgYWNjZXB0YWJsZSBkdWUgdG8gc2lkZS1lZmZlY3RzCiAgICByZWNvbW1lbmQgaW50ZXJtaXR0ZW50IG9yYWwgaXJvbjogMTIwIG1nIG9mIG9yYWwgaXJvbiwgYW5kIDIuOCB1ZyBvZiBmb2xpYyBhY2lkLCB3ZWVrbHkgKFJlY29tbWVuZGF0aW9uIEEuMi4yKQogIGVsc2UKICAgIHJlY29tbWVuZCAzMCB0byA2MCBtZyBvZiBlbGVtZW50YWwgaXJvbiBhbmQgNDAwIHVnIG9mIGZvbGljIGFjaWQsIGRhaWx5IChSZWNvbW1lbmRhdGlvbiBBLjIuMSkKICBjaGVjayBpcm9uLWludGFrZSBjb21wbGlhbmNlOwogIGNoZWNrIGlyb24tc2lkZSBlZmZlY3RzOwoKSGFzIEFuYWVtaWEKICBIYiBDb25jZW50cmF0aW9uIDwgMTEgZy9kTCBhbmQgR2VzdGF0aW9uYWwgQWdlIDwgMTIgd2Vla3Mgb3IgR2VzdGF0aW9uYWwgQWdlID4gMjggd2Vla3MKICBIYiBDb25jZW50cmF0aW9uIDwgMTAuNSBnL2RMIGFuZCBHZXN0YXRpb25hbCBBZ2UgYmV0d2VlbiAxMyB3ZWVrcyBhbmQgMjcgd2Vla3MKKi8KCmRlZmluZSAiSGFzIEFuYWVtaWEiOgogIGlmIENvbW1vbi4iR2VzdGF0aW9uYWwgQWdlIGluIFdlZWtzIiBiZXR3ZWVuIDEzIHdlZWtzIGFuZCAyNyB3ZWVrcyB0aGVuCiAgICAiSGIgQ29uY2VudHJhdGlvbiIgPCAxMC41ICdnL2RMJwogIGVsc2UKICAgICJIYiBDb25jZW50cmF0aW9uIiA8IDExICdnL2RMJwoKZGVmaW5lICJIYiBDb25jZW50cmF0aW9uIjoKICBGaXJzdCgKICAgIFsiT2JzZXJ2YXRpb24iOiAiSGIiXSBPCgkJICB3aGVyZSBPLnN0YXR1cyA9ICdmaW5hbCcKCQkJICBhbmQgTy5lZmZlY3RpdmUgYWZ0ZXIgQ29tbW9uLiJTdGFydCBvZiBDdXJyZW50IFByZWduYW5jeSIKICAgICAgc29ydCBieSBGSElSSGVscGVycy5Ub0RhdGVUaW1lKGVmZmVjdGl2ZSBhcyBGSElSLmRhdGVUaW1lKSBkZXNjZW5kaW5nCiAgKS52YWx1ZSBhcyBRdWFudGl0eQoKZGVmaW5lICJIYXMgSXJvbiBTaWRlLUVmZmVjdHMiOgogIGV4aXN0cyAoCiAgICBbIkNvbmRpdGlvbiI6ICJJcm9uIFNpZGUgRWZmZWN0cyJdIEMKCQkgIHdoZXJlIEMub25zZXQgb24gb3IgYWZ0ZXIgQ29tbW9uLiJTdGFydCBvZiBDdXJyZW50IFByZWduYW5jeSIKCQkJICBhbmQgQy5jbGluaWNhbFN0YXR1cyBpbiBDb21tb24uIkFjdGl2ZSBDb25kaXRpb24iCiAgKQo="/>
+  </content>
+  <content>
+    <contentType value="application/elm+xml"/>
+  </content>
+</Library>

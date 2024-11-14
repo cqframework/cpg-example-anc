@@ -1,0 +1,87 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://hl7.org/fhir/uv/cpg/antenatalcare/CodeSystem/anc-reason-for-visit-cs> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "anc-reason-for-visit-cs"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-publishablecodesystem"^^xsd:anyURI ;
+       fhir:link <http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-publishablecodesystem>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem anc-reason-for-visit-cs</b></p><a name=\"anc-reason-for-visit-cs\"> </a><a name=\"hcanc-reason-for-visit-cs\"> </a><a name=\"anc-reason-for-visit-cs-en-US\"> </a><p>This case-sensitive code system <code>http://hl7.org/fhir/uv/cpg/antenatalcare/CodeSystem/anc-reason-for-visit-cs</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">routine<a name=\"anc-reason-for-visit-cs-routine\"> </a></td><td>Routine</td><td>For a scheduled (routine) visit</td></tr><tr><td style=\"white-space:nowrap\">specific-complaint<a name=\"anc-reason-for-visit-cs-specific-complaint\"> </a></td><td>Specific complaint</td><td>For specific complaints about you or your baby</td></tr><tr><td style=\"white-space:nowrap\">first-visit<a name=\"anc-reason-for-visit-cs-first-visit\"> </a></td><td>First visit</td><td>First visit</td></tr><tr><td style=\"white-space:nowrap\">follow-up-visit<a name=\"anc-reason-for-visit-cs-follow-up-visit\"> </a></td><td>Follow-up visit</td><td>Follow-up visit</td></tr><tr><td style=\"white-space:nowrap\">include-family-member<a name=\"anc-reason-for-visit-cs-include-family-member\"> </a></td><td>Include family member</td><td>Do you want to include your companion or other family member (parent if adolescent) in the examination and discussion?</td></tr></table></div>"
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [ fhir:v "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "shareable" ]
+  ] [
+     fhir:url [ fhir:v "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "computable" ]
+  ] [
+     fhir:url [ fhir:v "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "publishable" ]
+  ] [
+     fhir:url [ fhir:v "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeRepresentationLevel"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "structured" ]
+  ] ) ; # 
+  fhir:url [ fhir:v "http://hl7.org/fhir/uv/cpg/antenatalcare/CodeSystem/anc-reason-for-visit-cs"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "1.0.0"] ; # 
+  fhir:name [ fhir:v "ANCReasonForVisitCS"] ; # 
+  fhir:title [ fhir:v "CodeSystem - ANC Reason for Visit"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:date [ fhir:v "2024-11-14T19:16:54+00:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "HL7 International - Clinical Decision Support WG"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "HL7 International - Clinical Decision Support WG" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "http://www.hl7.org/Special/committees/dss/index.cfm" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Codes used to identify the reason for an antenatal care visit"] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://unstats.un.org/unsd/methods/m49/m49.htm"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "001" ] ;
+       fhir:display [ fhir:v "World" ]
+     ] )
+  ] ) ; # 
+  fhir:caseSensitive [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:valueSet [
+     fhir:v "http://hl7.org/fhir/uv/cpg/antenatalcare/ValueSet/anc-reason-for-visit-vs"^^xsd:anyURI ;
+     fhir:link <http://hl7.org/fhir/uv/cpg/antenatalcare/ValueSet/anc-reason-for-visit-vs>
+  ] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "5"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "routine" ] ;
+     fhir:display [ fhir:v "Routine" ] ;
+     fhir:definition [ fhir:v "For a scheduled (routine) visit" ]
+  ] [
+     fhir:code [ fhir:v "specific-complaint" ] ;
+     fhir:display [ fhir:v "Specific complaint" ] ;
+     fhir:definition [ fhir:v "For specific complaints about you or your baby" ]
+  ] [
+     fhir:code [ fhir:v "first-visit" ] ;
+     fhir:display [ fhir:v "First visit" ] ;
+     fhir:definition [ fhir:v "First visit" ]
+  ] [
+     fhir:code [ fhir:v "follow-up-visit" ] ;
+     fhir:display [ fhir:v "Follow-up visit" ] ;
+     fhir:definition [ fhir:v "Follow-up visit" ]
+  ] [
+     fhir:code [ fhir:v "include-family-member" ] ;
+     fhir:display [ fhir:v "Include family member" ] ;
+     fhir:definition [ fhir:v "Do you want to include your companion or other family member (parent if adolescent) in the examination and discussion?" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

@@ -1,0 +1,17 @@
+Source File	Size	loadResources	load-configure	scan	loadDepInfo	loadInfo	load	generateSnapshots	checkR4R4B	generateNarratives	validate	loadLists	checkConformanceResources	checkConformanceResources2	checkConformanceResources3	generateLogicalMaps	validateExpressions	scanForUsageStats	checkURLsUnique	processProvenanceDetails	generate1	generate2	responsesForQuestionnaire	generateLogicals	makeDependencies	generateExampleZip	generateValidationPack	scanProfilesForR5	scanExamplesForR5
+/fsh-generated/resources/ImplementationGuide-hl7.fhir.uv.cpg.antenatalcare.json	6535	-	0	0	0	0	0	0	5	202	0	0	0	0	0	0	0	0	0	0	117	71	0	0	0	1	4	0	1
+fsh-generated/resources/CodeSystem-anc-reason-for-visit-cs.json	1960	19	1	0	0	0	0	0	1	9	0	0	0	0	0	0	0	0	0	0	25	1536	0	0	0	0	1	0	0
+fsh-generated/resources/Condition-condition-ra2-iron-side-effects.json	979	12	0	0	0	0	0	0	0	430	0	0	0	0	0	0	0	1	0	0	16	14	0	0	0	0	0	0	0
+fsh-generated/resources/GraphDefinition-anc-summary.json	961	1	0	0	0	0	0	0	0	25	0	0	0	0	0	0	0	0	0	0	13	9	0	0	0	0	1	0	0
+fsh-generated/resources/Library-ANCCommon.json	1476	2	0	0	0	0	0	0	1	14	0	0	0	0	0	0	0	0	0	0	119	21	0	0	0	0	2	0	0
+fsh-generated/resources/Library-ANCRecommendationA2.json	1654	2	0	0	0	0	0	0	0	3	0	0	0	0	0	0	0	0	0	0	46	19	0	0	0	0	1	0	0
+fsh-generated/resources/Observation-observation-anc-ra2-gestational-age.json	629	1	1	0	0	0	0	0	0	57	0	0	0	0	0	0	0	0	0	0	13	12	0	0	0	0	0	0	0
+fsh-generated/resources/Observation-observation-anc-ra2-hb-concentration.json	662	2	0	0	0	0	0	0	0	55	0	0	0	0	0	0	0	0	0	0	13	7	0	0	0	0	0	0	0
+fsh-generated/resources/Patient-patient-anc-ra2.json	487	2	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	11	8	0	0	0	0	0	0	0
+fsh-generated/resources/PlanDefinition-anc-contact-schedule.json	14481	7	0	0	0	0	0	0	1	31	0	0	0	0	0	0	0	0	0	0	92	23	0	0	0	0	2	0	0
+fsh-generated/resources/PlanDefinition-anc-contact.json	3702	3	0	0	0	0	0	0	1	10	0	0	0	0	0	0	0	0	0	0	35	13	0	0	0	0	1	0	0
+fsh-generated/resources/PlanDefinition-anc-recommendation-a2.json	1315	3	0	0	0	0	0	0	0	5	0	0	0	0	0	0	0	0	0	0	21	11	0	0	0	0	0	0	0
+fsh-generated/resources/Questionnaire-anc-every-contact.json	593	2	0	0	0	0	0	0	0	19	0	0	0	0	0	0	0	0	0	0	42	18	0	0	0	0	1	0	0
+fsh-generated/resources/Questionnaire-anc-first-contact.json	594	21	0	0	0	0	0	0	0	3	0	0	0	0	0	0	0	0	0	0	40	14	0	0	0	0	1	0	0
+fsh-generated/resources/Questionnaire-anc-quick-check.json	2886	4	0	0	0	0	0	0	0	5	0	0	0	0	0	0	0	0	0	0	44	16	0	0	0	0	1	0	0
+fsh-generated/resources/ValueSet-anc-reason-for-visit-vs.json	1191	3	0	0	0	0	0	0	0	85	0	0	0	0	0	0	0	0	0	0	16	4273	0	0	1	0	1	0	0

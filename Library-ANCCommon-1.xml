@@ -1,0 +1,434 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<library xmlns="urn:hl7-org:elm:r1" xmlns:t="urn:hl7-org:elm-types:r1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:fhir="http://hl7.org/fhir" xmlns:qdm43="urn:healthit-gov:qdm:v4_3" xmlns:qdm53="urn:healthit-gov:qdm:v5_3" xmlns:a="urn:hl7-org:cql-annotations:r1">
+   <annotation translatorOptions="EnableAnnotations,EnableLocators,DisableListDemotion,DisableListPromotion" signatureLevel="None" xsi:type="a:CqlToElmInfo"/>
+   <annotation message="The function FHIRHelpers.ToInterval has multiple overloads and due to the SignatureLevel setting (None), the overload signature is not being included in the output. This may result in ambiguous function resolution at runtime, consider setting the SignatureLevel to Overloads or All to ensure that the output includes sufficient information to support correct overload selection at runtime." errorType="semantic" errorSeverity="warning" xsi:type="a:CqlToElmError"/>
+   <annotation message="The function FHIRHelpers.ToInterval has multiple overloads and due to the SignatureLevel setting (None), the overload signature is not being included in the output. This may result in ambiguous function resolution at runtime, consider setting the SignatureLevel to Overloads or All to ensure that the output includes sufficient information to support correct overload selection at runtime." errorType="semantic" errorSeverity="warning" xsi:type="a:CqlToElmError"/>
+   <annotation message="The function FHIRHelpers.ToString has multiple overloads and due to the SignatureLevel setting (None), the overload signature is not being included in the output. This may result in ambiguous function resolution at runtime, consider setting the SignatureLevel to Overloads or All to ensure that the output includes sufficient information to support correct overload selection at runtime." errorType="semantic" errorSeverity="warning" xsi:type="a:CqlToElmError"/>
+   <annotation message="The function FHIRHelpers.ToDateTime has multiple overloads and due to the SignatureLevel setting (None), the overload signature is not being included in the output. This may result in ambiguous function resolution at runtime, consider setting the SignatureLevel to Overloads or All to ensure that the output includes sufficient information to support correct overload selection at runtime." errorType="semantic" errorSeverity="warning" xsi:type="a:CqlToElmError"/>
+   <annotation xsi:type="a:Annotation">
+      <a:s r="65">
+         <a:s>library ANCCommon version '0.1.0'</a:s>
+      </a:s>
+   </annotation>
+   <identifier id="ANCCommon" system="http://hl7.org/fhir/uv/cpg/antenatalcare" version="0.1.0"/>
+   <schemaIdentifier id="urn:hl7-org:elm" version="r1"/>
+   <usings>
+      <def localIdentifier="System" uri="urn:hl7-org:elm-types:r1"/>
+      <def localId="1" locator="3:1-3:26" localIdentifier="FHIR" uri="http://hl7.org/fhir" version="4.0.1">
+         <annotation xsi:type="a:Annotation">
+            <a:s r="1">
+               <a:s>using </a:s>
+               <a:s>
+                  <a:s>FHIR</a:s>
+               </a:s>
+               <a:s> version '4.0.1'</a:s>
+            </a:s>
+         </annotation>
+      </def>
+   </usings>
+   <includes>
+      <def localId="2" locator="5:1-5:35" localIdentifier="FHIRHelpers" path="http://hl7.org/fhir/FHIRHelpers" version="4.0.1">
+         <annotation xsi:type="a:Annotation">
+            <a:s r="2">
+               <a:s>include </a:s>
+               <a:s>
+                  <a:s>FHIRHelpers</a:s>
+               </a:s>
+               <a:s> version '4.0.1'</a:s>
+            </a:s>
+         </annotation>
+      </def>
+   </includes>
+   <codeSystems>
+      <def localId="3" locator="7:1-7:55" name="OpenMRSEntity" id="http://openmrs.org/concepts" accessLevel="Public">
+         <annotation xsi:type="a:Annotation">
+            <a:s r="3">
+               <a:s>codesystem OpenMRSEntity: 'http://openmrs.org/concepts'</a:s>
+            </a:s>
+         </annotation>
+      </def>
+   </codeSystems>
+   <valueSets>
+      <def localId="4" locator="9:1-9:90" name="Active Condition" id="http://hl7.org/fhir/uv/cpg/ValueSet/cpg-active-condition-vs" accessLevel="Public">
+         <annotation xsi:type="a:Annotation">
+            <a:s r="4">
+               <a:s>valueset &quot;Active Condition&quot;: 'http://hl7.org/fhir/uv/cpg/ValueSet/cpg-active-condition-vs'</a:s>
+            </a:s>
+         </annotation>
+      </def>
+   </valueSets>
+   <codes>
+      <def localId="6" locator="11:1-11:107" name="LMP" id="1427AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA" display="Date of last menstrual period" accessLevel="Public">
+         <annotation xsi:type="a:Annotation">
+            <a:s r="6">
+               <a:s>code LMP: '1427AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA' from </a:s>
+               <a:s r="5">
+                  <a:s>OpenMRSEntity</a:s>
+               </a:s>
+               <a:s> display 'Date of last menstrual period'</a:s>
+            </a:s>
+         </annotation>
+         <codeSystem localId="5" locator="11:55-11:67" name="OpenMRSEntity"/>
+      </def>
+      <def localId="8" locator="12:1-12:127" name="UltrasoundGA" id="165220AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA" display="Gestational age in weeks from ultrasound" accessLevel="Public">
+         <annotation xsi:type="a:Annotation">
+            <a:s r="8">
+               <a:s>code UltrasoundGA: '165220AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA' from </a:s>
+               <a:s r="7">
+                  <a:s>OpenMRSEntity</a:s>
+               </a:s>
+               <a:s> display 'Gestational age in weeks from ultrasound'</a:s>
+            </a:s>
+         </annotation>
+         <codeSystem localId="7" locator="12:64-12:76" name="OpenMRSEntity"/>
+      </def>
+      <def localId="10" locator="13:1-13:100" name="FundalHeight" id="1439AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA" display="FUNDAL HEIGHT" accessLevel="Public">
+         <annotation xsi:type="a:Annotation">
+            <a:s r="10">
+               <a:s>code FundalHeight: '1439AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA' from </a:s>
+               <a:s r="9">
+                  <a:s>OpenMRSEntity</a:s>
+               </a:s>
+               <a:s> display 'FUNDAL HEIGHT'</a:s>
+            </a:s>
+         </annotation>
+         <codeSystem localId="9" locator="13:64-13:76" name="OpenMRSEntity"/>
+      </def>
+      <def localId="12" locator="14:1-14:125" name="Weeks of gestational age" id="1438AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA" display="Weeks of gestational age" accessLevel="Public">
+         <annotation xsi:type="a:Annotation">
+            <a:s r="12">
+               <a:s>code &quot;Weeks of gestational age&quot;: '1438AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA' from </a:s>
+               <a:s r="11">
+                  <a:s>OpenMRSEntity</a:s>
+               </a:s>
+               <a:s> display 'Weeks of gestational age'</a:s>
+            </a:s>
+         </annotation>
+         <codeSystem localId="11" locator="14:78-14:90" name="OpenMRSEntity"/>
+      </def>
+   </codes>
+   <contexts>
+      <def locator="16:1-16:15" name="Patient"/>
+   </contexts>
+   <statements>
+      <def locator="16:1-16:15" name="Patient" context="Patient">
+         <expression xsi:type="SingletonFrom">
+            <operand locator="16:1-16:15" dataType="fhir:Patient" templateId="http://hl7.org/fhir/StructureDefinition/Patient" xsi:type="Retrieve"/>
+         </expression>
+      </def>
+      <def localId="33" locator="24:1-29:21" name="Gestational Age in Weeks" context="Patient" accessLevel="Public">
+         <annotation xsi:type="a:Annotation">
+            <a:s r="33">
+               <a:s>//define GestationalAgeFromLMP:
+  // Calculate from LMP if known
+  // Observation from Ultrasound
+  // Observation from SFH or abdominal palpitation
+  // If Gestational Age and Estimated Due Date are calculated from different values, health worker should select gestational age
+
+define &quot;Gestational Age in Weeks&quot;:
+  </a:s>
+               <a:s r="32">
+                  <a:s r="30">
+                     <a:s r="29">
+                        <a:s>First(
+    </a:s>
+                        <a:s r="28">
+                           <a:s>
+                              <a:s r="14">
+                                 <a:s r="13">
+                                    <a:s r="13">
+                                       <a:s>[&quot;Observation&quot;: </a:s>
+                                       <a:s>
+                                          <a:s>&quot;Weeks of gestational age&quot;</a:s>
+                                       </a:s>
+                                       <a:s>]</a:s>
+                                    </a:s>
+                                 </a:s>
+                                 <a:s> O</a:s>
+                              </a:s>
+                           </a:s>
+                           <a:s>
+		  </a:s>
+                           <a:s r="20">
+                              <a:s>where </a:s>
+                              <a:s r="20">
+                                 <a:s r="16">
+                                    <a:s r="15">
+                                       <a:s>O</a:s>
+                                    </a:s>
+                                    <a:s>.</a:s>
+                                    <a:s r="16">
+                                       <a:s>status</a:s>
+                                    </a:s>
+                                 </a:s>
+                                 <a:s> in </a:s>
+                                 <a:s r="19">
+                                    <a:s>{ </a:s>
+                                    <a:s r="17">
+                                       <a:s>'final'</a:s>
+                                    </a:s>
+                                    <a:s>, </a:s>
+                                    <a:s r="18">
+                                       <a:s>'amended'</a:s>
+                                    </a:s>
+                                    <a:s> }</a:s>
+                                 </a:s>
+                              </a:s>
+                           </a:s>
+                           <a:s>
+      </a:s>
+                           <a:s r="27">
+                              <a:s>sort by </a:s>
+                              <a:s r="26">
+                                 <a:s r="25">
+                                    <a:s r="21">
+                                       <a:s>FHIRHelpers</a:s>
+                                    </a:s>
+                                    <a:s>.</a:s>
+                                    <a:s r="25">
+                                       <a:s>ToDateTime(</a:s>
+                                       <a:s r="24">
+                                          <a:s r="22">
+                                             <a:s>effective</a:s>
+                                          </a:s>
+                                          <a:s> as </a:s>
+                                          <a:s r="23">
+                                             <a:s>FHIR.dateTime</a:s>
+                                          </a:s>
+                                       </a:s>
+                                       <a:s>)</a:s>
+                                    </a:s>
+                                 </a:s>
+                                 <a:s> descending</a:s>
+                              </a:s>
+                           </a:s>
+                        </a:s>
+                        <a:s>
+  )</a:s>
+                     </a:s>
+                     <a:s>.</a:s>
+                     <a:s r="30">
+                        <a:s>value</a:s>
+                     </a:s>
+                  </a:s>
+                  <a:s> as </a:s>
+                  <a:s r="31">
+                     <a:s>Quantity</a:s>
+                  </a:s>
+               </a:s>
+            </a:s>
+         </annotation>
+         <expression localId="32" locator="25:3-29:21" strict="false" xsi:type="As">
+            <operand localId="30" locator="25:3-29:9" path="value" xsi:type="Property">
+               <source localId="29" locator="25:3-29:3" xsi:type="First">
+                  <source localId="28" locator="26:5-28:75" xsi:type="Query">
+                     <source localId="14" locator="26:5-26:49" alias="O">
+                        <expression localId="13" locator="26:5-26:47" dataType="fhir:Observation" templateId="http://hl7.org/fhir/StructureDefinition/Observation" codeProperty="code" codeComparator="~" xsi:type="Retrieve">
+                           <codes xsi:type="ToList">
+                              <operand locator="26:21-26:46" name="Weeks of gestational age" xsi:type="CodeRef"/>
+                           </codes>
+                        </expression>
+                     </source>
+                     <where localId="20" locator="27:5-27:44" xsi:type="In">
+                        <operand name="ToString" libraryName="FHIRHelpers" xsi:type="FunctionRef">
+                           <operand localId="16" locator="27:11-27:18" path="status" scope="O" xsi:type="Property"/>
+                        </operand>
+                        <operand localId="19" locator="27:23-27:44" xsi:type="List">
+                           <element localId="17" locator="27:25-27:31" valueType="t:String" value="final" xsi:type="Literal"/>
+                           <element localId="18" locator="27:34-27:42" valueType="t:String" value="amended" xsi:type="Literal"/>
+                        </operand>
+                     </where>
+                     <sort localId="27" locator="28:7-28:75">
+                        <by localId="26" locator="28:15-28:75" direction="descending" xsi:type="ByExpression">
+                           <expression localId="25" locator="28:15-28:64" name="ToDateTime" libraryName="FHIRHelpers" xsi:type="FunctionRef">
+                              <operand localId="24" locator="28:38-28:63" strict="false" xsi:type="As">
+                                 <operand localId="22" locator="28:38-28:46" name="effective" xsi:type="IdentifierRef"/>
+                                 <asTypeSpecifier localId="23" locator="28:51-28:63" name="fhir:dateTime" xsi:type="NamedTypeSpecifier"/>
+                              </operand>
+                           </expression>
+                        </by>
+                     </sort>
+                  </source>
+               </source>
+            </operand>
+            <asTypeSpecifier localId="31" locator="29:14-29:21" name="fhir:Quantity" xsi:type="NamedTypeSpecifier"/>
+         </expression>
+      </def>
+      <def localId="37" locator="31:1-32:34" name="Up to 12 Weeks" context="Patient" accessLevel="Public">
+         <annotation xsi:type="a:Annotation">
+            <a:s r="37">
+               <a:s>define &quot;Up to 12 Weeks&quot;:
+  </a:s>
+               <a:s r="36">
+                  <a:s r="34">
+                     <a:s>&quot;Gestational Age in Weeks&quot;</a:s>
+                  </a:s>
+                  <a:s r="35"> &lt;= 12</a:s>
+               </a:s>
+            </a:s>
+         </annotation>
+         <expression localId="36" locator="32:3-32:34" xsi:type="LessOrEqual">
+            <operand name="ToQuantity" libraryName="FHIRHelpers" xsi:type="FunctionRef">
+               <operand localId="34" locator="32:3-32:28" name="Gestational Age in Weeks" xsi:type="ExpressionRef"/>
+            </operand>
+            <operand xsi:type="ToQuantity">
+               <operand localId="35" locator="32:33-32:34" valueType="t:Integer" value="12" xsi:type="Literal"/>
+            </operand>
+         </expression>
+      </def>
+      <def localId="41" locator="34:1-35:33" name="20 weeks gestation" context="Patient" accessLevel="Public">
+         <annotation xsi:type="a:Annotation">
+            <a:s r="41">
+               <a:s>define &quot;20 weeks gestation&quot;:
+  </a:s>
+               <a:s r="40">
+                  <a:s r="38">
+                     <a:s>&quot;Gestational Age in Weeks&quot;</a:s>
+                  </a:s>
+                  <a:s r="39"> = 20</a:s>
+               </a:s>
+            </a:s>
+         </annotation>
+         <expression localId="40" locator="35:3-35:33" xsi:type="Equal">
+            <operand name="ToQuantity" libraryName="FHIRHelpers" xsi:type="FunctionRef">
+               <operand localId="38" locator="35:3-35:28" name="Gestational Age in Weeks" xsi:type="ExpressionRef"/>
+            </operand>
+            <operand xsi:type="ToQuantity">
+               <operand localId="39" locator="35:32-35:33" valueType="t:Integer" value="20" xsi:type="Literal"/>
+            </operand>
+         </expression>
+      </def>
+      <def localId="45" locator="37:1-38:32" name="26 weeks gestation" context="Patient" accessLevel="Public">
+         <annotation xsi:type="a:Annotation">
+            <a:s r="45">
+               <a:s>define &quot;26 weeks gestation&quot;:
+	</a:s>
+               <a:s r="44">
+                  <a:s r="42">
+                     <a:s>&quot;Gestational Age in Weeks&quot;</a:s>
+                  </a:s>
+                  <a:s r="43"> = 26</a:s>
+               </a:s>
+            </a:s>
+         </annotation>
+         <expression localId="44" locator="38:2-38:32" xsi:type="Equal">
+            <operand name="ToQuantity" libraryName="FHIRHelpers" xsi:type="FunctionRef">
+               <operand localId="42" locator="38:2-38:27" name="Gestational Age in Weeks" xsi:type="ExpressionRef"/>
+            </operand>
+            <operand xsi:type="ToQuantity">
+               <operand localId="43" locator="38:31-38:32" valueType="t:Integer" value="26" xsi:type="Literal"/>
+            </operand>
+         </expression>
+      </def>
+      <def localId="49" locator="40:1-41:32" name="30 weeks gestation" context="Patient" accessLevel="Public">
+         <annotation xsi:type="a:Annotation">
+            <a:s r="49">
+               <a:s>define &quot;30 weeks gestation&quot;:
+	</a:s>
+               <a:s r="48">
+                  <a:s r="46">
+                     <a:s>&quot;Gestational Age in Weeks&quot;</a:s>
+                  </a:s>
+                  <a:s r="47"> = 30</a:s>
+               </a:s>
+            </a:s>
+         </annotation>
+         <expression localId="48" locator="41:2-41:32" xsi:type="Equal">
+            <operand name="ToQuantity" libraryName="FHIRHelpers" xsi:type="FunctionRef">
+               <operand localId="46" locator="41:2-41:27" name="Gestational Age in Weeks" xsi:type="ExpressionRef"/>
+            </operand>
+            <operand xsi:type="ToQuantity">
+               <operand localId="47" locator="41:31-41:32" valueType="t:Integer" value="30" xsi:type="Literal"/>
+            </operand>
+         </expression>
+      </def>
+      <def localId="53" locator="43:1-44:32" name="34 weeks gestation" context="Patient" accessLevel="Public">
+         <annotation xsi:type="a:Annotation">
+            <a:s r="53">
+               <a:s>define &quot;34 weeks gestation&quot;:
+	</a:s>
+               <a:s r="52">
+                  <a:s r="50">
+                     <a:s>&quot;Gestational Age in Weeks&quot;</a:s>
+                  </a:s>
+                  <a:s r="51"> = 34</a:s>
+               </a:s>
+            </a:s>
+         </annotation>
+         <expression localId="52" locator="44:2-44:32" xsi:type="Equal">
+            <operand name="ToQuantity" libraryName="FHIRHelpers" xsi:type="FunctionRef">
+               <operand localId="50" locator="44:2-44:27" name="Gestational Age in Weeks" xsi:type="ExpressionRef"/>
+            </operand>
+            <operand xsi:type="ToQuantity">
+               <operand localId="51" locator="44:31-44:32" valueType="t:Integer" value="34" xsi:type="Literal"/>
+            </operand>
+         </expression>
+      </def>
+      <def localId="57" locator="46:1-47:32" name="36 weeks gestation" context="Patient" accessLevel="Public">
+         <annotation xsi:type="a:Annotation">
+            <a:s r="57">
+               <a:s>define &quot;36 weeks gestation&quot;:
+	</a:s>
+               <a:s r="56">
+                  <a:s r="54">
+                     <a:s>&quot;Gestational Age in Weeks&quot;</a:s>
+                  </a:s>
+                  <a:s r="55"> = 36</a:s>
+               </a:s>
+            </a:s>
+         </annotation>
+         <expression localId="56" locator="47:2-47:32" xsi:type="Equal">
+            <operand name="ToQuantity" libraryName="FHIRHelpers" xsi:type="FunctionRef">
+               <operand localId="54" locator="47:2-47:27" name="Gestational Age in Weeks" xsi:type="ExpressionRef"/>
+            </operand>
+            <operand xsi:type="ToQuantity">
+               <operand localId="55" locator="47:31-47:32" valueType="t:Integer" value="36" xsi:type="Literal"/>
+            </operand>
+         </expression>
+      </def>
+      <def localId="61" locator="49:1-50:32" name="38 weeks gestation" context="Patient" accessLevel="Public">
+         <annotation xsi:type="a:Annotation">
+            <a:s r="61">
+               <a:s>define &quot;38 weeks gestation&quot;:
+	</a:s>
+               <a:s r="60">
+                  <a:s r="58">
+                     <a:s>&quot;Gestational Age in Weeks&quot;</a:s>
+                  </a:s>
+                  <a:s r="59"> = 38</a:s>
+               </a:s>
+            </a:s>
+         </annotation>
+         <expression localId="60" locator="50:2-50:32" xsi:type="Equal">
+            <operand name="ToQuantity" libraryName="FHIRHelpers" xsi:type="FunctionRef">
+               <operand localId="58" locator="50:2-50:27" name="Gestational Age in Weeks" xsi:type="ExpressionRef"/>
+            </operand>
+            <operand xsi:type="ToQuantity">
+               <operand localId="59" locator="50:31-50:32" valueType="t:Integer" value="38" xsi:type="Literal"/>
+            </operand>
+         </expression>
+      </def>
+      <def localId="65" locator="52:1-53:32" name="40 weeks gestation" context="Patient" accessLevel="Public">
+         <annotation xsi:type="a:Annotation">
+            <a:s r="65">
+               <a:s>define &quot;40 weeks gestation&quot;:
+	</a:s>
+               <a:s r="64">
+                  <a:s r="62">
+                     <a:s>&quot;Gestational Age in Weeks&quot;</a:s>
+                  </a:s>
+                  <a:s r="63"> = 40</a:s>
+               </a:s>
+            </a:s>
+         </annotation>
+         <expression localId="64" locator="53:2-53:32" xsi:type="Equal">
+            <operand name="ToQuantity" libraryName="FHIRHelpers" xsi:type="FunctionRef">
+               <operand localId="62" locator="53:2-53:27" name="Gestational Age in Weeks" xsi:type="ExpressionRef"/>
+            </operand>
+            <operand xsi:type="ToQuantity">
+               <operand localId="63" locator="53:31-53:32" valueType="t:Integer" value="40" xsi:type="Literal"/>
+            </operand>
+         </expression>
+      </def>
+   </statements>
+</library>

@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Bundle xmlns="http://hl7.org/fhir">
+  <id value="12e61bd1-38dd-4a47-846b-fe9ef9727f35"/>
+  <meta>
+    <lastUpdated value="2024-11-14T19:16:54.340+00:00"/>
+  </meta>
+  <type value="collection"/>
+  <entry>
+    <fullUrl value="http://hl7.org/fhir/uv/cpg/antenatalcare/ValueSet/anc-reason-for-visit-vs"/>
+    <resource>
+      <ValueSet>
+        <meta>
+          <profile value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-publishablevalueset"/>
+        </meta>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p class="res-header-id">
+              <b>Generated Narrative: ValueSet </b>
+            </p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
+              <a href="CodeSystem-anc-reason-for-visit-cs.html">codesystem CodeSystem - ANC Reason for Visit v1.0.0 (CodeSystem)</a>
+            </p>
+            <p>This value set contains 5 concepts</p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+                <td>
+                  <b>Definition</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://hl7.org/fhir/uv/cpg/antenatalcare/CodeSystem/anc-reason-for-visit-cs-routine"> </a>  
+                  <a href="CodeSystem-anc-reason-for-visit-cs.html#anc-reason-for-visit-cs-routine">routine</a>
+                </td>
+                <td>http://hl7.org/fhir/uv/cpg/antenatalcare/CodeSystem/anc-reason-for-visit-cs</td>
+                <td>Routine</td>
+                <td>
+                  <div>
+                    <p>For a scheduled (routine) visit</p>
+
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://hl7.org/fhir/uv/cpg/antenatalcare/CodeSystem/anc-reason-for-visit-cs-specific-complaint"> </a>  
+                  <a href="CodeSystem-anc-reason-for-visit-cs.html#anc-reason-for-visit-cs-specific-complaint">specific-complaint</a>
+                </td>
+                <td>http://hl7.org/fhir/uv/cpg/antenatalcare/CodeSystem/anc-reason-for-visit-cs</td>
+                <td>Specific complaint</td>
+                <td>
+                  <div>
+                    <p>For specific complaints about you or your baby</p>
+
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://hl7.org/fhir/uv/cpg/antenatalcare/CodeSystem/anc-reason-for-visit-cs-first-visit"> </a>  
+                  <a href="CodeSystem-anc-reason-for-visit-cs.html#anc-reason-for-visit-cs-first-visit">first-visit</a>
+                </td>
+                <td>http://hl7.org/fhir/uv/cpg/antenatalcare/CodeSystem/anc-reason-for-visit-cs</td>
+                <td>First visit</td>
+                <td>
+                  <div>
+                    <p>First visit</p>
+
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://hl7.org/fhir/uv/cpg/antenatalcare/CodeSystem/anc-reason-for-visit-cs-follow-up-visit"> </a>  
+                  <a href="CodeSystem-anc-reason-for-visit-cs.html#anc-reason-for-visit-cs-follow-up-visit">follow-up-visit</a>
+                </td>
+                <td>http://hl7.org/fhir/uv/cpg/antenatalcare/CodeSystem/anc-reason-for-visit-cs</td>
+                <td>Follow-up visit</td>
+                <td>
+                  <div>
+                    <p>Follow-up visit</p>
+
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://hl7.org/fhir/uv/cpg/antenatalcare/CodeSystem/anc-reason-for-visit-cs-include-family-member"> </a>  
+                  <a href="CodeSystem-anc-reason-for-visit-cs.html#anc-reason-for-visit-cs-include-family-member">include-family-member</a>
+                </td>
+                <td>http://hl7.org/fhir/uv/cpg/antenatalcare/CodeSystem/anc-reason-for-visit-cs</td>
+                <td>Include family member</td>
+                <td>
+                  <div>
+                    <p>Do you want to include your companion or other family member (parent if adolescent) in the examination and discussion?</p>
+
+                  </div>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="http://hl7.org/fhir/uv/cpg/antenatalcare/ValueSet/anc-reason-for-visit-vs"/>
+        <version value="1.0.0"/>
+        <name value="ANCReasonForVisitVS"/>
+        <title value="ValueSet - ANC Reason for Visit"/>
+        <status value="active"/>
+        <experimental value="false"/>
+        <date value="2024-11-14T19:16:54+00:00"/>
+        <jurisdiction>
+          <coding>
+            <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+            <code value="001"/>
+            <display value="World"/>
+          </coding>
+        </jurisdiction>
+        <expansion>
+          <identifier value="urn:uuid:76ec883f-a112-4414-8ee8-1981e52d66c4"/>
+          <timestamp value="2024-11-14T19:17:05+00:00"/>
+          <total value="5"/>
+          <offset value="0"/>
+          <parameter>
+            <name value="count"/>
+            <valueInteger value="1000"/>
+          </parameter>
+          <parameter>
+            <name value="offset"/>
+            <valueInteger value="0"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="warning-experimental"/>
+            <valueUri value="http://hl7.org/fhir/uv/cpg/antenatalcare/CodeSystem/anc-reason-for-visit-cs|1.0.0"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="http://hl7.org/fhir/uv/cpg/antenatalcare/CodeSystem/anc-reason-for-visit-cs|1.0.0"/>
+          </parameter>
+          <contains>
+            <system value="http://hl7.org/fhir/uv/cpg/antenatalcare/CodeSystem/anc-reason-for-visit-cs"/>
+            <code value="routine"/>
+            <display value="Routine"/>
+          </contains>
+          <contains>
+            <system value="http://hl7.org/fhir/uv/cpg/antenatalcare/CodeSystem/anc-reason-for-visit-cs"/>
+            <code value="specific-complaint"/>
+            <display value="Specific complaint"/>
+          </contains>
+          <contains>
+            <system value="http://hl7.org/fhir/uv/cpg/antenatalcare/CodeSystem/anc-reason-for-visit-cs"/>
+            <code value="first-visit"/>
+            <display value="First visit"/>
+          </contains>
+          <contains>
+            <system value="http://hl7.org/fhir/uv/cpg/antenatalcare/CodeSystem/anc-reason-for-visit-cs"/>
+            <code value="follow-up-visit"/>
+            <display value="Follow-up visit"/>
+          </contains>
+          <contains>
+            <system value="http://hl7.org/fhir/uv/cpg/antenatalcare/CodeSystem/anc-reason-for-visit-cs"/>
+            <code value="include-family-member"/>
+            <display value="Include family member"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+</Bundle>

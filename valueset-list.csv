@@ -1,0 +1,2 @@
+URL,Version,Status,OIDs,Name,Title,Descriptino,Uses,Used,Sources
+http://hl7.org/fhir/uv/cpg/antenatalcare/ValueSet/anc-reason-for-visit-vs,1.0.0,active,,ANCReasonForVisitVS,ValueSet - ANC Reason for Visit,"Codes that identify the reason for an antenatal care visit",,"Internal"

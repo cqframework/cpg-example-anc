@@ -1,0 +1,398 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+    <title>WHO Antenatal Care Guidelines Logic for recommendation #A2 - XML Representation - Clinical Practice Guidelines Example Implementation Guide - Antenatal Care Guidelines v1.0.0</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link rel="stylesheet" href="fhir.css"/>
+
+      <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap-fhir.css"/>
+
+      <!-- Project extras -->
+    <link rel="stylesheet" href="assets/css/project.css"/>
+    <link rel="stylesheet" href="assets/css/pygments-manni.css"/>
+    <link rel="stylesheet" href="assets/css/jquery-ui.css"/>
+  	<link rel="stylesheet" href="assets/css/prism.css"/>
+      <!-- Placeholder for child template CSS declarations -->
+    <link rel="stylesheet" href="assets/css/cqf.css"/>
+
+
+    <script src="fhir-table-scripts.js" type="text/javascript"> </script>
+
+      <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+      <!-- [if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif] -->
+
+      <!-- Favicons -->
+    <link sizes="144x144" rel="fhir-logo" href="assets/ico/icon-fhir-144.png"/>
+    <link sizes="114x114" rel="fhir-logo" href="assets/ico/icon-fhir-114.png"/>
+    <link sizes="72x72" rel="fhir-logo" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+
+    <style type="text/css">h2{--heading-prefix:"2.5"}
+    h3,h4,h5,h6{--heading-prefix:"2.5"}</style>
+    <div id="segment-header" class="segment">    <!-- segment-header -->
+      <div class="container">    <!-- container -->
+          <!-- Placeholder for child template header declarations -->
+
+<div id="family-nav">
+  <a no-external="true" id="family-logo" href="https://github.com/cqframework"><img src="assets/images/cqf.png" alt="Visit the CQF github organization website" height="50"/> </a>
+</div>
+
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">Clinical Practice Guidelines Example Implementation Guide - Antenatal Care Guidelines</span>
+            <br/>
+            <span style="display:inline-block;">1.0.0 - ci-build
+
+
+
+  <img src="assets/images/001.svg" alt="International flag" title="International" height="16"/>
+
+
+            </span>
+          </p>
+        </div>
+      </div>   <!-- /container -->
+    </div>    <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">    <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">    <!-- container -->
+          <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+            <!-- status-bar -->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" data-toggle="collapse" type="button" class="navbar-toggle">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a href="http://hl7.org/fhir/R4/index.html" class="navbar-brand hidden">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+                <!-- menu.xml -->
+
+<ul class="nav navbar-nav">
+  <li>
+    <a href="index.html">Home</a>
+  </li>
+  <li>
+    <a href="artifacts.html">Artifacts</a>
+  </li>
+</ul>
+            </div>    <!-- /.nav-collapse -->
+          </div>    <!-- /.container -->
+        </nav>    <!-- /.navbar -->
+        <!-- /HEADER CONTENT -->
+      </div>    <!-- /container -->
+    </div>    <!-- /segment-navbar -->
+      <!-- status-bar -->
+
+    <div id="segment-breadcrumb" class="segment">    <!-- segment-breadcrumb -->
+      <div class="container">    <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href="toc.html"><b>Table of Contents</b></a></li><li><a href="artifacts.html"><b>Artifacts Summary</b></a></li><li><b>WHO Antenatal Care Guidelines Logic for recommendation #A2</b></li>
+
+        </ul>
+      </div>    <!-- /container -->
+    </div>    <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">    <!-- segment-content -->
+      <div class="container">    <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<div style="counter-reset: section 7" class="col-12">
+  <!-- ReleaseHeader --><p id="publish-box">Clinical Practice Guidelines Example Implementation Guide - Antenatal Care Guidelines - Local Development build (v1.0.0) built by the FHIR (HL7&reg; FHIR&reg; Standard) Build Tools. See the <a href="http://hl7.org/fhir/uv/cpg/antenatalcare/history.html">Directory of published versions</a></p>  <!-- EndReleaseHeader -->
+
+
+
+
+
+
+
+
+
+<ul class="nav nav-tabs">
+
+  <li>
+    <a href="Library-ANCRecommendationA2.html">Narrative Content</a>
+  </li>
+
+
+
+  
+    <li class="active">
+      <a href="#">XML</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="Library-ANCRecommendationA2.json.html">JSON</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="Library-ANCRecommendationA2.ttl.html">TTL</a>
+    </li>
+  
+
+
+
+</ul>
+
+
+<a name="root"> </a>
+
+
+<h2 id="root">: WHO Antenatal Care Guidelines Logic for recommendation #A2 - XML Representation</h2>
+
+  <table class="colsi">
+    <tr>
+
+      <td colspan="2">
+        
+          Active
+          
+            as of 2024-11-14
+          
+        
+      </td>
+
+    </tr>
+  </table>
+
+
+<p><a href="Library-ANCRecommendationA2.xml" no-download="true">Raw xml</a> | <a download="null" href="Library-ANCRecommendationA2.xml">Download</a></p>
+
+    <!-- insert intro if present -->
+  
+
+
+
+  <pre style="white-space: pre; text-wrap: nowrap; width: auto;" class="xml"><code style="white-space: pre; text-wrap: nowrap;" class="language-xml">
+&lt;<a href="http://hl7.org/fhir/R4/library.html#Library">Library</a> xmlns="http://hl7.org/fhir"&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/library.html#Library.id">id</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="ANCRecommendationA2"/&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/library.html#Library.text">text</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="generated"/&gt;
+    &lt;div xmlns="http://www.w3.org/1999/xhtml"&gt;&lt;p class="res-header-id"&gt;&lt;b&gt;Generated Narrative: Library ANCRecommendationA2&lt;/b&gt;&lt;/p&gt;&lt;a name="ANCRecommendationA2"&gt; &lt;/a&gt;&lt;a name="hcANCRecommendationA2"&gt; &lt;/a&gt;&lt;a name="ANCRecommendationA2-en-US"&gt; &lt;/a&gt;&lt;h2&gt;Related Artifacts&lt;/h2&gt;&lt;table class="grid"&gt;&lt;tr&gt;&lt;td&gt;Documentation&lt;/td&gt;&lt;td&gt;WHO guideline for a positive pregnancy experience&lt;/td&gt;&lt;td&gt;https://www.who.int/reproductivehealth/publications/maternal_perinatal_health/anc-positive-pregnancy-experience/en&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;h2&gt;Contents&lt;/h2&gt;&lt;p&gt;&lt;code&gt;text/cql&lt;/code&gt;&lt;/p&gt;&lt;pre&gt;&lt;code class="language-sql"&gt;library ANCRecommendationA2 version '0.1.0'
+
+using FHIR version '4.0.1'
+
+include FHIRHelpers version '4.0.1'
+include ANCCommon version '0.1.0' called Common
+
+code &amp;quot;Hb&amp;quot;: '165395AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA' from Common.OpenMRSEntity display 'Haemoglobin measured from haemoglobinometer (g/dl)'
+code &amp;quot;Iron Intake Compliance&amp;quot;: '165272AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA' from Common.OpenMRSEntity display 'Iron intake compliance'
+code &amp;quot;Iron Side Effects&amp;quot;: '165273AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA' from Common.OpenMRSEntity display 'Iron side effects' // NOTE: OpenMRS concept is just side effects from medication
+
+// TODO: How do parameters like this get configured for local/site usage
+//parameter &amp;quot;Anaemia Prevalence&amp;quot; System.Quantity default 40 '%'
+
+context Patient
+
+// TODO: Configuring in-line directly for now
+define &amp;quot;Anaemia Prevalence&amp;quot;: 40 '%'
+
+/*
+IAF - Iron and Folic Acid Supplements
+
+RECOMMENDATION A.2.1: Daily oral iron and folic acid supplementation with 30 mg to
+60 mg of elemental iron and 400 &mu;g (0.4 mg) folic acid is recommended for pregnant
+women to prevent maternal anaemia, puerperal sepsis, low birth weight, and preterm birth.
+(Recommended)
+
+RECOMMENDATION A.2.2: Intermittent oral iron and folic acid supplementation with 120 mg
+of elemental iron and 2800 &mu;g (2.8 mg) of folic acid once weekly is recommended for pregnant
+women to improve maternal and neonatal outcomes if daily iron is not acceptable due to sideeffects,
+and in populations with an anaemia prevalence among pregnant women of less than
+20%. (Context-specific recommendation)
+
+On every contact,
+  if anaemia detected
+    recommend 120 mg of elemental iron daily (Recommendation A.2.1)
+  else if population anaemia prevalence &amp;gt;= 40%
+    recommend 60 mg of elemental iron and 400 ug of folic acid, daily (Recommendation A.2.1)
+  else if population anaemia prevalence &amp;lt; 20% or daily iron not acceptable due to side-effects
+    recommend intermittent oral iron: 120 mg of oral iron, and 2.8 ug of folic acid, weekly (Recommendation A.2.2)
+  else
+    recommend 30 to 60 mg of elemental iron and 400 ug of folic acid, daily (Recommendation A.2.1)
+  check iron-intake compliance;
+  check iron-side effects;
+
+Has Anaemia
+  Hb Concentration &amp;lt; 11 g/dL and Gestational Age &amp;lt; 12 weeks or Gestational Age &amp;gt; 28 weeks
+  Hb Concentration &amp;lt; 10.5 g/dL and Gestational Age between 13 weeks and 27 weeks
+*/
+
+define &amp;quot;Has Anaemia&amp;quot;:
+  if Common.&amp;quot;Gestational Age in Weeks&amp;quot; between 13 weeks and 27 weeks then
+    &amp;quot;Hb Concentration&amp;quot; &amp;lt; 10.5 'g/dL'
+  else
+    &amp;quot;Hb Concentration&amp;quot; &amp;lt; 11 'g/dL'
+
+define &amp;quot;Hb Concentration&amp;quot;:
+  First(
+    [&amp;quot;Observation&amp;quot;: &amp;quot;Hb&amp;quot;] O
+		  where O.status = 'final'
+			  and O.effective after Common.&amp;quot;Start of Current Pregnancy&amp;quot;
+      sort by FHIRHelpers.ToDateTime(effective as FHIR.dateTime) descending
+  ).value as Quantity
+
+define &amp;quot;Has Iron Side-Effects&amp;quot;:
+  exists (
+    [&amp;quot;Condition&amp;quot;: &amp;quot;Iron Side Effects&amp;quot;] C
+		  where C.onset on or after Common.&amp;quot;Start of Current Pregnancy&amp;quot;
+			  and C.clinicalStatus in Common.&amp;quot;Active Condition&amp;quot;
+  )
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;code&gt;No Content&lt;/code&gt; (&lt;code&gt;application/elm+xml&lt;/code&gt;)&lt;/p&gt;&lt;/div&gt;<a name="end-xhtml"></a>
+  &lt;/text&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/library.html#Library.url">url</a>
+       <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>="http://hl7.org/fhir/uv/cpg/antenatalcare/Library/ANCRecommendationA2"/&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/library.html#Library.identifier">identifier</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.use">use</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="official"/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="ANCRecommendationA2"/&gt;
+  &lt;/identifier&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/library.html#Library.version">version</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="1.0.0"/&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/library.html#Library.name">name</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="ANCRecommendationA2"/&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/library.html#Library.title">title</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="WHO Antenatal Care Guidelines Logic for recommendation #A2"/&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/library.html#Library.status">status</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="active"/&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/library.html#Library.experimental">experimental</a> <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">value</a>="true"/&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/library.html#Library.type">type</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>="http://terminology.hl7.org/CodeSystem/library-type"/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="logic-library"/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="Logic Library"/&gt;
+    &lt;/coding&gt;
+  &lt;/type&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/library.html#Library.date">date</a> <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">value</a>="2024-11-14T19:16:54+00:00"/&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/library.html#Library.publisher">publisher</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="HL7 International - Clinical Decision Support WG"/&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/library.html#Library.contact">contact</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.name">name</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="HL7 International - Clinical Decision Support WG"/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.telecom">telecom</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.system">system</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="url"/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="http://www.hl7.org/Special/committees/dss/index.cfm"/&gt;
+    &lt;/telecom&gt;
+  &lt;/contact&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/library.html#Library.description">description</a>
+               <a href="http://hl7.org/fhir/R4/datatypes.html#markdown">value</a>="Decision Support Logic for use in ANC Recommendation A2"/&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/library.html#Library.useContext">useContext</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/metadatatypes.html#UsageContext#UsageContext.code">code</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>
+              <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>="http://terminology.hl7.org/CodeSystem/usage-context-type"/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="focus"/&gt;
+    &lt;/code&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/metadatatypes.html#UsageContext#UsageContext.value[x]">valueCodeableConcept</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>="http://snomed.info/sct"/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="77386006"/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="Pregnancy (finding)"/&gt;
+      &lt;/coding&gt;
+    &lt;/valueCodeableConcept&gt;
+  &lt;/useContext&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/library.html#Library.jurisdiction">jurisdiction</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>="http://unstats.un.org/unsd/methods/m49/m49.htm"/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="001"/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="World"/&gt;
+    &lt;/coding&gt;
+  &lt;/jurisdiction&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/library.html#Library.copyright">copyright</a> <a href="http://hl7.org/fhir/R4/datatypes.html#markdown">value</a>="&copy; WHO 2019+."/&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/library.html#Library.topic">topic</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.text">text</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="Pregnancy"/&gt;
+  &lt;/topic&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/library.html#Library.relatedArtifact">relatedArtifact</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/metadatatypes.html#RelatedArtifact#RelatedArtifact.type">type</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="documentation"/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/metadatatypes.html#RelatedArtifact#RelatedArtifact.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="WHO guideline for a positive pregnancy experience"/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/metadatatypes.html#RelatedArtifact#RelatedArtifact.url">url</a>
+         <a href="http://hl7.org/fhir/R4/datatypes.html#url">value</a>="https://www.who.int/reproductivehealth/publications/maternal_perinatal_health/anc-positive-pregnancy-experience/en"/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/metadatatypes.html#RelatedArtifact#RelatedArtifact.document">document</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Attachment#Attachment.url">url</a>
+           <a href="http://hl7.org/fhir/R4/datatypes.html#url">value</a>="https://www.who.int/reproductivehealth/publications/maternal_perinatal_health/anc-positive-pregnancy-experience/en"/&gt;
+    &lt;/document&gt;
+  &lt;/relatedArtifact&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/library.html#Library.content">content</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Attachment#Attachment.contentType">contentType</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="text/cql"/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Attachment#Attachment.data">data</a>
+          <a href="http://hl7.org/fhir/R4/datatypes.html#base64Binary">value</a>="bGlicmFyeSBBTkNSZWNvbW1lbmRhdGlvbkEyIHZlcnNpb24gJzAuMS4wJwoKdXNpbmcgRkhJUiB2ZXJzaW9uICc0LjAuMScKCmluY2x1ZGUgRkhJUkhlbHBlcnMgdmVyc2lvbiAnNC4wLjEnCmluY2x1ZGUgQU5DQ29tbW9uIHZlcnNpb24gJzAuMS4wJyBjYWxsZWQgQ29tbW9uCgpjb2RlICJIYiI6ICcxNjUzOTVBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUEnIGZyb20gQ29tbW9uLk9wZW5NUlNFbnRpdHkgZGlzcGxheSAnSGFlbW9nbG9iaW4gbWVhc3VyZWQgZnJvbSBoYWVtb2dsb2Jpbm9tZXRlciAoZy9kbCknCmNvZGUgIklyb24gSW50YWtlIENvbXBsaWFuY2UiOiAnMTY1MjcyQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBJyBmcm9tIENvbW1vbi5PcGVuTVJTRW50aXR5IGRpc3BsYXkgJ0lyb24gaW50YWtlIGNvbXBsaWFuY2UnCmNvZGUgIklyb24gU2lkZSBFZmZlY3RzIjogJzE2NTI3M0FBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQScgZnJvbSBDb21tb24uT3Blbk1SU0VudGl0eSBkaXNwbGF5ICdJcm9uIHNpZGUgZWZmZWN0cycgLy8gTk9URTogT3Blbk1SUyBjb25jZXB0IGlzIGp1c3Qgc2lkZSBlZmZlY3RzIGZyb20gbWVkaWNhdGlvbgoKLy8gVE9ETzogSG93IGRvIHBhcmFtZXRlcnMgbGlrZSB0aGlzIGdldCBjb25maWd1cmVkIGZvciBsb2NhbC9zaXRlIHVzYWdlCi8vcGFyYW1ldGVyICJBbmFlbWlhIFByZXZhbGVuY2UiIFN5c3RlbS5RdWFudGl0eSBkZWZhdWx0IDQwICclJwoKY29udGV4dCBQYXRpZW50CgovLyBUT0RPOiBDb25maWd1cmluZyBpbi1saW5lIGRpcmVjdGx5IGZvciBub3cKZGVmaW5lICJBbmFlbWlhIFByZXZhbGVuY2UiOiA0MCAnJScKCi8qCklBRiAtIElyb24gYW5kIEZvbGljIEFjaWQgU3VwcGxlbWVudHMKClJFQ09NTUVOREFUSU9OIEEuMi4xOiBEYWlseSBvcmFsIGlyb24gYW5kIGZvbGljIGFjaWQgc3VwcGxlbWVudGF0aW9uIHdpdGggMzAgbWcgdG8KNjAgbWcgb2YgZWxlbWVudGFsIGlyb24gYW5kIDQwMCDOvGcgKDAuNCBtZykgZm9saWMgYWNpZCBpcyByZWNvbW1lbmRlZCBmb3IgcHJlZ25hbnQKd29tZW4gdG8gcHJldmVudCBtYXRlcm5hbCBhbmFlbWlhLCBwdWVycGVyYWwgc2Vwc2lzLCBsb3cgYmlydGggd2VpZ2h0LCBhbmQgcHJldGVybSBiaXJ0aC4KKFJlY29tbWVuZGVkKQoKUkVDT01NRU5EQVRJT04gQS4yLjI6IEludGVybWl0dGVudCBvcmFsIGlyb24gYW5kIGZvbGljIGFjaWQgc3VwcGxlbWVudGF0aW9uIHdpdGggMTIwIG1nCm9mIGVsZW1lbnRhbCBpcm9uIGFuZCAyODAwIM68ZyAoMi44IG1nKSBvZiBmb2xpYyBhY2lkIG9uY2Ugd2Vla2x5IGlzIHJlY29tbWVuZGVkIGZvciBwcmVnbmFudAp3b21lbiB0byBpbXByb3ZlIG1hdGVybmFsIGFuZCBuZW9uYXRhbCBvdXRjb21lcyBpZiBkYWlseSBpcm9uIGlzIG5vdCBhY2NlcHRhYmxlIGR1ZSB0byBzaWRlZWZmZWN0cywKYW5kIGluIHBvcHVsYXRpb25zIHdpdGggYW4gYW5hZW1pYSBwcmV2YWxlbmNlIGFtb25nIHByZWduYW50IHdvbWVuIG9mIGxlc3MgdGhhbgoyMCUuIChDb250ZXh0LXNwZWNpZmljIHJlY29tbWVuZGF0aW9uKQoKT24gZXZlcnkgY29udGFjdCwKICBpZiBhbmFlbWlhIGRldGVjdGVkCiAgICByZWNvbW1lbmQgMTIwIG1nIG9mIGVsZW1lbnRhbCBpcm9uIGRhaWx5IChSZWNvbW1lbmRhdGlvbiBBLjIuMSkKICBlbHNlIGlmIHBvcHVsYXRpb24gYW5hZW1pYSBwcmV2YWxlbmNlID49IDQwJQogICAgcmVjb21tZW5kIDYwIG1nIG9mIGVsZW1lbnRhbCBpcm9uIGFuZCA0MDAgdWcgb2YgZm9saWMgYWNpZCwgZGFpbHkgKFJlY29tbWVuZGF0aW9uIEEuMi4xKQogIGVsc2UgaWYgcG9wdWxhdGlvbiBhbmFlbWlhIHByZXZhbGVuY2UgPCAyMCUgb3IgZGFpbHkgaXJvbiBub3QgYWNjZXB0YWJsZSBkdWUgdG8gc2lkZS1lZmZlY3RzCiAgICByZWNvbW1lbmQgaW50ZXJtaXR0ZW50IG9yYWwgaXJvbjogMTIwIG1nIG9mIG9yYWwgaXJvbiwgYW5kIDIuOCB1ZyBvZiBmb2xpYyBhY2lkLCB3ZWVrbHkgKFJlY29tbWVuZGF0aW9uIEEuMi4yKQogIGVsc2UKICAgIHJlY29tbWVuZCAzMCB0byA2MCBtZyBvZiBlbGVtZW50YWwgaXJvbiBhbmQgNDAwIHVnIG9mIGZvbGljIGFjaWQsIGRhaWx5IChSZWNvbW1lbmRhdGlvbiBBLjIuMSkKICBjaGVjayBpcm9uLWludGFrZSBjb21wbGlhbmNlOwogIGNoZWNrIGlyb24tc2lkZSBlZmZlY3RzOwoKSGFzIEFuYWVtaWEKICBIYiBDb25jZW50cmF0aW9uIDwgMTEgZy9kTCBhbmQgR2VzdGF0aW9uYWwgQWdlIDwgMTIgd2Vla3Mgb3IgR2VzdGF0aW9uYWwgQWdlID4gMjggd2Vla3MKICBIYiBDb25jZW50cmF0aW9uIDwgMTAuNSBnL2RMIGFuZCBHZXN0YXRpb25hbCBBZ2UgYmV0d2VlbiAxMyB3ZWVrcyBhbmQgMjcgd2Vla3MKKi8KCmRlZmluZSAiSGFzIEFuYWVtaWEiOgogIGlmIENvbW1vbi4iR2VzdGF0aW9uYWwgQWdlIGluIFdlZWtzIiBiZXR3ZWVuIDEzIHdlZWtzIGFuZCAyNyB3ZWVrcyB0aGVuCiAgICAiSGIgQ29uY2VudHJhdGlvbiIgPCAxMC41ICdnL2RMJwogIGVsc2UKICAgICJIYiBDb25jZW50cmF0aW9uIiA8IDExICdnL2RMJwoKZGVmaW5lICJIYiBDb25jZW50cmF0aW9uIjoKICBGaXJzdCgKICAgIFsiT2JzZXJ2YXRpb24iOiAiSGIiXSBPCgkJICB3aGVyZSBPLnN0YXR1cyA9ICdmaW5hbCcKCQkJICBhbmQgTy5lZmZlY3RpdmUgYWZ0ZXIgQ29tbW9uLiJTdGFydCBvZiBDdXJyZW50IFByZWduYW5jeSIKICAgICAgc29ydCBieSBGSElSSGVscGVycy5Ub0RhdGVUaW1lKGVmZmVjdGl2ZSBhcyBGSElSLmRhdGVUaW1lKSBkZXNjZW5kaW5nCiAgKS52YWx1ZSBhcyBRdWFudGl0eQoKZGVmaW5lICJIYXMgSXJvbiBTaWRlLUVmZmVjdHMiOgogIGV4aXN0cyAoCiAgICBbIkNvbmRpdGlvbiI6ICJJcm9uIFNpZGUgRWZmZWN0cyJdIEMKCQkgIHdoZXJlIEMub25zZXQgb24gb3IgYWZ0ZXIgQ29tbW9uLiJTdGFydCBvZiBDdXJyZW50IFByZWduYW5jeSIKCQkJICBhbmQgQy5jbGluaWNhbFN0YXR1cyBpbiBDb21tb24uIkFjdGl2ZSBDb25kaXRpb24iCiAgKQo="/&gt;
+  &lt;/content&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/library.html#Library.content">content</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Attachment#Attachment.contentType">contentType</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="application/elm+xml"/&gt;
+  &lt;/content&gt;
+&lt;/Library&gt;</code></pre>
+
+
+    <!-- insert notes if present -->
+  
+
+
+
+</div>
+        </div>    <!-- /inner-wrapper -->
+      </div>    <!-- /row -->
+    </div>    <!-- /container -->
+  </div>    <!-- /segment-content -->
+
+  <script src="assets/js/jquery.js" type="text/javascript"> </script>       <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script src="assets/js/jquery-ui.min.js" type="text/javascript"> </script>
+
+  <script src="assets/js/window-hash.js" type="text/javascript"> </script>
+  <a name="bottom"> </a>
+  <div igtool="footer" id="segment-footer" class="segment">    <!-- segment-footer -->
+    <div class="container">    <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &copy; 2023 <a style="color:var(--footer-hyperlink-text-color)" href="http://www.hl7.org/Special/committees/dss/index.cfm">HL7 International - Clinical Decision Support WG</a>.  Package hl7.fhir.uv.cpg.antenatalcare#1.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Nov 14, 2024 19:16+0000">2024-11-14</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)"><a name="l606">​</a>
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+| <a style="color: #81BEF7" href="http://hl7.org/fhir/uv/cpg/antenatalcare/history.html" target="_blank">Version History</a> | <a rel="license" style="color: #81BEF7" href="license.html">License</a>
+  <!-- <a style="color: #81BEF7" href="todo.html">Search</a> | -->
+          </span>
+        </p>
+      </div>    <!-- /inner-wrapper -->
+    </div>    <!-- /container -->
+  </div>    <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">    <!-- segment-post-footer -->
+    <div class="container">    <!-- container -->
+    </div>    <!-- /container -->
+  </div>    <!-- /segment-post-footer -->
+  
+    <!-- JS and analytics only. -->
+    <!-- Bootstrap core JavaScript
+  ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+  <script src="assets/js/bootstrap.min.js" type="text/javascript"> </script>
+  <script src="assets/js/respond.min.js" type="text/javascript"> </script>
+  <script src="assets/js/anchor.min.js" type="text/javascript"> </script>
+  <script src="assets/js/clipboard.min.js" type="text/javascript"> </script>
+  <script src="assets/js/clipboard-btn.js" type="text/javascript"> </script>
+  <script src="assets/js/anchor-hover.js" type="text/javascript"> </script>
+  
+    <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>

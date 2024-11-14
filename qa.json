@@ -1,0 +1,19 @@
+{
+  "url" : "http://hl7.org/fhir/uv/cpg/antenatalcare/ImplementationGuide/hl7.fhir.uv.cpg.antenatalcare",
+  "name" : "CPGExampleAntenatalCareGuidelines",
+  "title" : "Clinical Practice Guidelines Example Implementation Guide - Antenatal Care Guidelines",
+  "description" : "Examples of CPG computable content from the WHO Antenatal Care Guidelines",
+  "status" : "active",
+  "package-id" : "hl7.fhir.uv.cpg.antenatalcare",
+  "ig-ver" : "1.0.0",
+  "date" : "Thu, 14 Nov, 2024 19:16:54 +0000",
+  "dateISO8601" : "2024-11-14T19:16:54+00:00",
+  "errs" : 33,
+  "warnings" : 18,
+  "hints" : 2,
+  "suppressed-hints" : 0,
+  "suppressed-warnings" : 0,
+  "version" : "4.0.1",
+  "tool" : "5.0.0 (3)",
+  "maxMemory" : 1715364120
+}

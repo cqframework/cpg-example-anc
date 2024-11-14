@@ -1,0 +1,145 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://hl7.org/fhir/uv/cpg/antenatalcare/PlanDefinition/anc-contact> a fhir:PlanDefinition ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "anc-contact"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: PlanDefinition anc-contact</b></p><a name=\"anc-contact\"> </a><a name=\"hcanc-contact\"> </a><a name=\"anc-contact-en-US\"> </a><p><b>url</b>: <a href=\"PlanDefinition-anc-contact.html\">PlanDefinition PlanDefinition - WHO ANC Guideline Contact</a></p><p><b>identifier</b>: ANCContact (use: official, )</p><p><b>version</b>: 1.0.0</p><p><b>name</b>: ANCContact</p><p><b>title</b>: PlanDefinition - WHO ANC Guideline Contact</p><p><b>type</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/plan-definition-type workflow-definition}\">Workflow Definition</span></p><p><b>status</b>: Active</p><p><b>experimental</b>: true</p><p><b>date</b>: 2024-11-14 19:16:54+0000</p><p><b>publisher</b>: HL7 International - Clinical Decision Support WG</p><p><b>contact</b>: HL7 International - Clinical Decision Support WG: <a href=\"http://www.hl7.org/Special/committees/dss/index.cfm\">http://www.hl7.org/Special/committees/dss/index.cfm</a></p><p><b>description</b>: </p><div><p>Example of Plan Definition Strategy for an ANC Contact</p>\n</div><h3>UseContexts</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Code</b></td><td><b>Value[x]</b></td></tr><tr><td style=\"display: none\">*</td><td><a href=\"http://terminology.hl7.org/6.0.2/CodeSystem-usage-context-type.html#usage-context-type-focus\">UsageContextType focus</a>: Clinical Focus</td><td><span title=\"Codes:{http://snomed.info/sct 77386006}\">Pregnancy (finding)</span></td></tr></table><p><b>jurisdiction</b>: <span title=\"Codes:{http://unstats.un.org/unsd/methods/m49/m49.htm 001}\">World</span></p><p><b>copyright</b>: </p><div><p>© WHO 2019+.</p>\n</div><blockquote><p><b>action</b></p><p><b>title</b>: Registration</p><p><b>code</b>: <span title=\"Codes:{http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-common-process-cs registration}\">Registration</span></p><p><b>definition</b>: <a href=\"https://build.fhir.org/ig/HL7/cqf-recommendations/PlanDefinition-cpg-common-registration.html\">http://hl7.org/fhir/uv/cpg/PlanDefinition/cpg-common-registration</a></p></blockquote><blockquote><p><b>action</b></p><p><b>title</b>: Record health history</p><p><b>code</b>: <span title=\"Codes:{http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-common-process-cs history-and-physical}\">History and Physical</span></p><blockquote><p><b>action</b></p><p><b>title</b>: Record first contact information</p><blockquote><p><b>condition</b></p><p><b>kind</b>: Applicability</p><h3>Expressions</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Language</b></td><td><b>Expression</b></td></tr><tr><td style=\"display: none\">*</td><td>CQL</td><td>Is First Contact</td></tr></table></blockquote><p><b>definition</b>: <a href=\"Questionnaire-anc-first-contact.html\">Questionnaire - ANC First Contact</a></p></blockquote><blockquote><p><b>action</b></p><p><b>title</b>: Record every contact information</p><p><b>definition</b>: <a href=\"Questionnaire-anc-every-contact.html\">Questionnaire - ANC Every Contact</a></p></blockquote></blockquote><blockquote><p><b>action</b></p><p><b>title</b>: Assess danger signs</p><p><b>code</b>: <span title=\"Codes:{http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-common-process-cs triage}\">Triage</span></p><p><b>definition</b>: <a href=\"Questionnaire-anc-quick-check.html\">Questionnaire - ANC Quick Check</a></p></blockquote><blockquote><p><b>action</b></p><p><b>title</b>: Assess current pregnancy conditions, including symptoms and lab tests</p><p><b>code</b>: <span title=\"Codes:{http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-common-process-cs diagnostic-testing}\">Conduct Diagnostic Tests</span></p></blockquote><blockquote><p><b>action</b></p><p><b>title</b>: Case management or referral</p><p><b>code</b>: <span title=\"Codes:{http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-common-process-cs discharge-referral-of-patient}\">Discharge/Referral of Patient</span></p></blockquote><blockquote><p><b>action</b></p><p><b>title</b>: Schedule follow-up visit</p><p><b>code</b>: <span title=\"Codes:{http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-common-process-cs monitor-and-follow-up-of-patient}\">Monitor and Follow-up of Patient</span></p></blockquote></div>"
+  ] ; # 
+  fhir:url [ fhir:v "http://hl7.org/fhir/uv/cpg/antenatalcare/PlanDefinition/anc-contact"^^xsd:anyURI] ; # 
+  fhir:identifier ( [
+     fhir:use [ fhir:v "official" ] ;
+     fhir:value [ fhir:v "ANCContact" ]
+  ] ) ; # 
+  fhir:version [ fhir:v "1.0.0"] ; # 
+  fhir:name [ fhir:v "ANCContact"] ; # 
+  fhir:title [ fhir:v "PlanDefinition - WHO ANC Guideline Contact"] ; # 
+  fhir:type [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/plan-definition-type"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "workflow-definition" ] ;
+       fhir:display [ fhir:v "Workflow Definition" ]
+     ] )
+  ] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:date [ fhir:v "2024-11-14T19:16:54+00:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "HL7 International - Clinical Decision Support WG"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "HL7 International - Clinical Decision Support WG" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "http://www.hl7.org/Special/committees/dss/index.cfm" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Example of Plan Definition Strategy for an ANC Contact"] ; # 
+  fhir:useContext ( [
+     fhir:code [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/usage-context-type"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "focus" ]
+     ] ;
+     fhir:value [
+       a fhir:CodeableConcept ;
+       fhir:coding ( [
+         a sct:77386006 ;
+         fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "77386006" ] ;
+         fhir:display [ fhir:v "Pregnancy (finding)" ]
+       ] )
+     ]
+  ] ) ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://unstats.un.org/unsd/methods/m49/m49.htm"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "001" ] ;
+       fhir:display [ fhir:v "World" ]
+     ] )
+  ] ) ; # 
+  fhir:copyright [ fhir:v "© WHO 2019+."] ; # 
+  fhir:action ( [
+     fhir:title [ fhir:v "Registration" ] ;
+     fhir:code ( [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-common-process-cs"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "registration" ]
+       ] )
+     ] ) ;
+     fhir:definition [
+       fhir:v "http://hl7.org/fhir/uv/cpg/PlanDefinition/cpg-common-registration"^^xsd:anyURI ;
+       fhir:link <http://hl7.org/fhir/uv/cpg/PlanDefinition/cpg-common-registration>
+     ]
+  ] [
+     fhir:title [ fhir:v "Record health history" ] ;
+     fhir:code ( [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-common-process-cs"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "history-and-physical" ]
+       ] )
+     ] ) ;
+     fhir:action ( [
+       fhir:title [ fhir:v "Record first contact information" ] ;
+       fhir:condition ( [
+         fhir:kind [ fhir:v "applicability" ] ;
+         fhir:expression [
+           fhir:language [ fhir:v "text/cql" ] ;
+           fhir:expression [ fhir:v "Is First Contact" ]
+         ]
+       ] ) ;
+       fhir:definition [
+         fhir:v "http://hl7.org/fhir/uv/cpg/antenatalcare/Questionnaire/anc-first-contact"^^xsd:anyURI ;
+         fhir:link <http://hl7.org/fhir/uv/cpg/antenatalcare/Questionnaire/anc-first-contact>
+       ]
+     ] [
+       fhir:title [ fhir:v "Record every contact information" ] ;
+       fhir:definition [
+         fhir:v "http://hl7.org/fhir/uv/cpg/antenatalcare/Questionnaire/anc-every-contact"^^xsd:anyURI ;
+         fhir:link <http://hl7.org/fhir/uv/cpg/antenatalcare/Questionnaire/anc-every-contact>
+       ]
+     ] )
+  ] [
+     fhir:title [ fhir:v "Assess danger signs" ] ;
+     fhir:code ( [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-common-process-cs"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "triage" ]
+       ] )
+     ] ) ;
+     fhir:definition [
+       fhir:v "http://hl7.org/fhir/uv/cpg/antenatalcare/Questionnaire/anc-quick-check"^^xsd:anyURI ;
+       fhir:link <http://hl7.org/fhir/uv/cpg/antenatalcare/Questionnaire/anc-quick-check>
+     ]
+  ] [
+     fhir:title [ fhir:v "Assess current pregnancy conditions, including symptoms and lab tests" ] ;
+     fhir:code ( [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-common-process-cs"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "diagnostic-testing" ]
+       ] )
+     ] )
+  ] [
+     fhir:title [ fhir:v "Case management or referral" ] ;
+     fhir:code ( [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-common-process-cs"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "discharge-referral-of-patient" ]
+       ] )
+     ] )
+  ] [
+     fhir:title [ fhir:v "Schedule follow-up visit" ] ;
+     fhir:code ( [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-common-process-cs"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "monitor-and-follow-up-of-patient" ]
+       ] )
+     ] )
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

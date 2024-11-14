@@ -1,0 +1,12 @@
+{
+  "codeSystems" : [
+    {
+      "url" : "http://hl7.org/fhir/uv/cpg/antenatalcare/CodeSystem/anc-reason-for-visit-cs",
+      "version" : "1.0.0",
+      "status" : "active",
+      "name" : "ANCReasonForVisitCS",
+      "title" : "CodeSystem - ANC Reason for Visit",
+      "description" : "Codes used to identify the reason for an antenatal care visit"
+    }
+  ]
+}

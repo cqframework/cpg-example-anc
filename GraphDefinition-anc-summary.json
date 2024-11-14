@@ -1,0 +1,36 @@
+{
+  "resourceType" : "GraphDefinition",
+  "id" : "anc-summary",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: GraphDefinition anc-summary</b></p><a name=\"anc-summary\"> </a><a name=\"hcanc-summary\"> </a><a name=\"anc-summary-en-US\"> </a><p><b>url</b>: <a href=\"GraphDefinition-anc-summary.html\">GraphDefinition ANCSummary</a></p><p><b>version</b>: 1.0.0</p><p><b>name</b>: ANCSummary</p><p><b>status</b>: Active</p><p><b>experimental</b>: true</p><p><b>description</b>: </p><div><p>Example of a Graph Definition based on ANC guidleines</p>\n</div><p><b>start</b>: Patient</p><p><b>profile</b>: <code>http://fhir.org/guides/who/anc-cds/ancpatient</code></p><blockquote><p><b>link</b></p><p><b>min</b>: 0</p><p><b>max</b>: *</p><p><b>description</b>: Encounters</p><h3>Targets</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Type</b></td><td><b>Params</b></td><td><b>Profile</b></td></tr><tr><td style=\"display: none\">*</td><td>Encounter</td><td>patient={ref}</td><td><code>http://fhir.org/guides/who/anc-cds/ancencounter</code></td></tr></table></blockquote><blockquote><p><b>link</b></p><p><b>min</b>: 0</p><p><b>max</b>: *</p><p><b>description</b>: LMP</p><h3>Targets</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Type</b></td><td><b>Params</b></td><td><b>Profile</b></td></tr><tr><td style=\"display: none\">*</td><td>Observation</td><td>patient={ref}</td><td><code>http://fhir.org/guides/who/anc-cds/StructureDefinition/lmpobservation</code></td></tr></table></blockquote></div>"
+  },
+  "url" : "http://hl7.org/fhir/uv/cpg/antenatalcare/GraphDefinition/anc-summary",
+  "version" : "1.0.0",
+  "name" : "ANCSummary",
+  "status" : "active",
+  "experimental" : true,
+  "description" : "Example of a Graph Definition based on ANC guidleines",
+  "start" : "Patient",
+  "profile" : "http://fhir.org/guides/who/anc-cds/ancpatient",
+  "link" : [{
+    "min" : 0,
+    "max" : "*",
+    "description" : "Encounters",
+    "target" : [{
+      "type" : "Encounter",
+      "params" : "patient={ref}",
+      "profile" : "http://fhir.org/guides/who/anc-cds/ancencounter"
+    }]
+  },
+  {
+    "min" : 0,
+    "max" : "*",
+    "description" : "LMP",
+    "target" : [{
+      "type" : "Observation",
+      "params" : "patient={ref}",
+      "profile" : "http://fhir.org/guides/who/anc-cds/StructureDefinition/lmpobservation"
+    }]
+  }]
+}

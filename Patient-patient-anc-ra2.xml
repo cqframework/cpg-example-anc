@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Patient xmlns="http://hl7.org/fhir">
+  <id value="patient-anc-ra2"/>
+  <meta>
+    <versionId value="1"/>
+    <lastUpdated value="2019-05-15T10:37:22.568+00:00"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Patient patient-anc-ra2</b></p><a name="patient-anc-ra2"> </a><a name="hcpatient-anc-ra2"> </a><a name="patient-anc-ra2-en-US"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">version: 1; Last updated: 2019-05-15 10:37:22+0000</p></div><p style="border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;">Grace Taylor(official) Female, DoB: 1997-05-15 ( http://clinfhir.com/fhir/NamingSystem/identifier#patient-anc-ra2)</p><hr/></div>
+  </text>
+  <identifier>
+    <system value="http://clinfhir.com/fhir/NamingSystem/identifier"/>
+    <value value="patient-anc-ra2"/>
+  </identifier>
+  <name>
+    <use value="official"/>
+    <text value="Grace Taylor"/>
+    <family value="Taylor"/>
+    <given value="Grace"/>
+  </name>
+  <gender value="female"/>
+  <birthDate value="1997-05-15"/>
+</Patient>

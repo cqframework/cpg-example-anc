@@ -1,0 +1,30 @@
+{
+  "resourceType" : "Observation",
+  "id" : "observation-anc-ra2-gestational-age",
+  "meta" : {
+    "versionId" : "1",
+    "lastUpdated" : "2019-05-15T10:56:36.425+00:00"
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Observation observation-anc-ra2-gestational-age</b></p><a name=\"observation-anc-ra2-gestational-age\"> </a><a name=\"hcobservation-anc-ra2-gestational-age\"> </a><a name=\"observation-anc-ra2-gestational-age-en-US\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">version: 1; Last updated: 2019-05-15 10:56:36+0000</p></div><p><b>status</b>: Final</p><p><b>code</b>: <span title=\"Codes:{http://openmrs.org/concepts 1438AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA}\">Weeks of gestational age</span></p><p><b>subject</b>: <a href=\"Patient-patient-anc-ra2.html\">Grace Taylor(official) Female, DoB: 1997-05-15 ( http://clinfhir.com/fhir/NamingSystem/identifier#patient-anc-ra2)</a></p><p><b>effective</b>: 2019-05-01 12:37:23+0200</p><p><b>value</b>: 16 wk<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codewk = 'wk')</span></p></div>"
+  },
+  "status" : "final",
+  "code" : {
+    "coding" : [{
+      "system" : "http://openmrs.org/concepts",
+      "code" : "1438AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+    }],
+    "text" : "Weeks of gestational age"
+  },
+  "subject" : {
+    "reference" : "Patient/patient-anc-ra2"
+  },
+  "effectiveDateTime" : "2019-05-01T12:37:23+02:00",
+  "valueQuantity" : {
+    "value" : 16,
+    "unit" : "wk",
+    "system" : "http://unitsofmeasure.org",
+    "code" : "wk"
+  }
+}
