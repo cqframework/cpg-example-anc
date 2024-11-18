@@ -5,7 +5,7 @@
 
 # - resource -------------------------------------------------------------------
 
-<https://cqframework.org/cpg-example-anc/CodeSystem/anc-reason-for-visit-cs> a fhir:CodeSystem ;
+<http://cqframework.org/cpg-example-anc/CodeSystem/anc-reason-for-visit-cs> a fhir:CodeSystem ;
   fhir:nodeRole fhir:treeRoot ;
   fhir:id [ fhir:v "anc-reason-for-visit-cs"] ; # 
   fhir:meta [
@@ -16,7 +16,7 @@
   ] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem anc-reason-for-visit-cs</b></p><a name=\"anc-reason-for-visit-cs\"> </a><a name=\"hcanc-reason-for-visit-cs\"> </a><a name=\"anc-reason-for-visit-cs-en-US\"> </a><p>This case-sensitive code system <code>https://cqframework.org/cpg-example-anc/CodeSystem/anc-reason-for-visit-cs</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">routine<a name=\"anc-reason-for-visit-cs-routine\"> </a></td><td>Routine</td><td>For a scheduled (routine) visit</td></tr><tr><td style=\"white-space:nowrap\">specific-complaint<a name=\"anc-reason-for-visit-cs-specific-complaint\"> </a></td><td>Specific complaint</td><td>For specific complaints about you or your baby</td></tr><tr><td style=\"white-space:nowrap\">first-visit<a name=\"anc-reason-for-visit-cs-first-visit\"> </a></td><td>First visit</td><td>First visit</td></tr><tr><td style=\"white-space:nowrap\">follow-up-visit<a name=\"anc-reason-for-visit-cs-follow-up-visit\"> </a></td><td>Follow-up visit</td><td>Follow-up visit</td></tr><tr><td style=\"white-space:nowrap\">include-family-member<a name=\"anc-reason-for-visit-cs-include-family-member\"> </a></td><td>Include family member</td><td>Do you want to include your companion or other family member (parent if adolescent) in the examination and discussion?</td></tr></table></div>"
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem anc-reason-for-visit-cs</b></p><a name=\"anc-reason-for-visit-cs\"> </a><a name=\"hcanc-reason-for-visit-cs\"> </a><a name=\"anc-reason-for-visit-cs-en-US\"> </a><p>This case-sensitive code system <code>http://cqframework.org/cpg-example-anc/CodeSystem/anc-reason-for-visit-cs</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">routine<a name=\"anc-reason-for-visit-cs-routine\"> </a></td><td>Routine</td><td>For a scheduled (routine) visit</td></tr><tr><td style=\"white-space:nowrap\">specific-complaint<a name=\"anc-reason-for-visit-cs-specific-complaint\"> </a></td><td>Specific complaint</td><td>For specific complaints about you or your baby</td></tr><tr><td style=\"white-space:nowrap\">first-visit<a name=\"anc-reason-for-visit-cs-first-visit\"> </a></td><td>First visit</td><td>First visit</td></tr><tr><td style=\"white-space:nowrap\">follow-up-visit<a name=\"anc-reason-for-visit-cs-follow-up-visit\"> </a></td><td>Follow-up visit</td><td>Follow-up visit</td></tr><tr><td style=\"white-space:nowrap\">include-family-member<a name=\"anc-reason-for-visit-cs-include-family-member\"> </a></td><td>Include family member</td><td>Do you want to include your companion or other family member (parent if adolescent) in the examination and discussion?</td></tr></table></div>"
   ] ; # 
   fhir:extension ( [
      fhir:url [ fhir:v "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability"^^xsd:anyURI ] ;
@@ -31,13 +31,13 @@
      fhir:url [ fhir:v "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeRepresentationLevel"^^xsd:anyURI ] ;
      fhir:value [ fhir:v "structured" ]
   ] ) ; # 
-  fhir:url [ fhir:v "https://cqframework.org/cpg-example-anc/CodeSystem/anc-reason-for-visit-cs"^^xsd:anyURI] ; # 
+  fhir:url [ fhir:v "http://cqframework.org/cpg-example-anc/CodeSystem/anc-reason-for-visit-cs"^^xsd:anyURI] ; # 
   fhir:version [ fhir:v "1.0.0"] ; # 
   fhir:name [ fhir:v "ANCReasonForVisitCS"] ; # 
   fhir:title [ fhir:v "CodeSystem - ANC Reason for Visit"] ; # 
   fhir:status [ fhir:v "active"] ; # 
   fhir:experimental [ fhir:v "true"^^xsd:boolean] ; # 
-  fhir:date [ fhir:v "2024-11-18T16:22:18+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2024-11-18T16:40:29+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "HL7 International - Clinical Decision Support WG"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "HL7 International - Clinical Decision Support WG" ] ;
@@ -56,8 +56,8 @@
   ] ) ; # 
   fhir:caseSensitive [ fhir:v "true"^^xsd:boolean] ; # 
   fhir:valueSet [
-     fhir:v "https://cqframework.org/cpg-example-anc/ValueSet/anc-reason-for-visit-vs"^^xsd:anyURI ;
-     fhir:link <https://cqframework.org/cpg-example-anc/ValueSet/anc-reason-for-visit-vs>
+     fhir:v "http://cqframework.org/cpg-example-anc/ValueSet/anc-reason-for-visit-vs"^^xsd:anyURI ;
+     fhir:link <http://cqframework.org/cpg-example-anc/ValueSet/anc-reason-for-visit-vs>
   ] ; # 
   fhir:content [ fhir:v "complete"] ; # 
   fhir:count [ fhir:v "5"^^xsd:nonNegativeInteger] ; # 

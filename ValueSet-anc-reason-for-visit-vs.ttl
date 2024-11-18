@@ -5,7 +5,7 @@
 
 # - resource -------------------------------------------------------------------
 
-<https://cqframework.org/cpg-example-anc/ValueSet/anc-reason-for-visit-vs> a fhir:ValueSet ;
+<http://cqframework.org/cpg-example-anc/ValueSet/anc-reason-for-visit-vs> a fhir:ValueSet ;
   fhir:nodeRole fhir:treeRoot ;
   fhir:id [ fhir:v "anc-reason-for-visit-vs"] ; # 
   fhir:meta [
@@ -16,7 +16,7 @@
   ] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet anc-reason-for-visit-vs</b></p><a name=\"anc-reason-for-visit-vs\"> </a><a name=\"hcanc-reason-for-visit-vs\"> </a><a name=\"anc-reason-for-visit-vs-en-US\"> </a><ul><li>Include all codes defined in <a href=\"CodeSystem-anc-reason-for-visit-cs.html\"><code>https://cqframework.org/cpg-example-anc/CodeSystem/anc-reason-for-visit-cs</code></a></li></ul></div>"
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet anc-reason-for-visit-vs</b></p><a name=\"anc-reason-for-visit-vs\"> </a><a name=\"hcanc-reason-for-visit-vs\"> </a><a name=\"anc-reason-for-visit-vs-en-US\"> </a><ul><li>Include all codes defined in <a href=\"CodeSystem-anc-reason-for-visit-cs.html\"><code>http://cqframework.org/cpg-example-anc/CodeSystem/anc-reason-for-visit-cs</code></a></li></ul></div>"
   ] ; # 
   fhir:extension ( [
      fhir:url [ fhir:v "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability"^^xsd:anyURI ] ;
@@ -31,13 +31,13 @@
      fhir:url [ fhir:v "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeRepresentationLevel"^^xsd:anyURI ] ;
      fhir:value [ fhir:v "structured" ]
   ] ) ; # 
-  fhir:url [ fhir:v "https://cqframework.org/cpg-example-anc/ValueSet/anc-reason-for-visit-vs"^^xsd:anyURI] ; # 
+  fhir:url [ fhir:v "http://cqframework.org/cpg-example-anc/ValueSet/anc-reason-for-visit-vs"^^xsd:anyURI] ; # 
   fhir:version [ fhir:v "1.0.0"] ; # 
   fhir:name [ fhir:v "ANCReasonForVisitVS"] ; # 
   fhir:title [ fhir:v "ValueSet - ANC Reason for Visit"] ; # 
   fhir:status [ fhir:v "active"] ; # 
   fhir:experimental [ fhir:v "false"^^xsd:boolean] ; # 
-  fhir:date [ fhir:v "2024-11-18T16:22:18+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2024-11-18T16:40:29+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "HL7 International - Clinical Decision Support WG"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "HL7 International - Clinical Decision Support WG" ] ;
@@ -56,7 +56,7 @@
   ] ) ; # 
   fhir:compose [
      fhir:include ( [
-       fhir:system [ fhir:v "https://cqframework.org/cpg-example-anc/CodeSystem/anc-reason-for-visit-cs"^^xsd:anyURI ]
+       fhir:system [ fhir:v "http://cqframework.org/cpg-example-anc/CodeSystem/anc-reason-for-visit-cs"^^xsd:anyURI ]
      ] )
   ] . # 
 

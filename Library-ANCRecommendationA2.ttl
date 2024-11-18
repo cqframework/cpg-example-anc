@@ -6,14 +6,14 @@
 
 # - resource -------------------------------------------------------------------
 
-<https://cqframework.org/cpg-example-anc/Library/ANCRecommendationA2> a fhir:Library ;
+<http://cqframework.org/cpg-example-anc/Library/ANCRecommendationA2> a fhir:Library ;
   fhir:nodeRole fhir:treeRoot ;
   fhir:id [ fhir:v "ANCRecommendationA2"] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
      fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Library ANCRecommendationA2</b></p><a name=\"ANCRecommendationA2\"> </a><a name=\"hcANCRecommendationA2\"> </a><a name=\"ANCRecommendationA2-en-US\"> </a><h2>Related Artifacts</h2><table class=\"grid\"><tr><td>Documentation</td><td>WHO guideline for a positive pregnancy experience</td><td>https://www.who.int/reproductivehealth/publications/maternal_perinatal_health/anc-positive-pregnancy-experience/en</td></tr></table><h2>Contents</h2><p><code>text/cql</code></p><pre><code class=\"language-sql\">library ANCRecommendationA2 version '0.1.0'\n\nusing FHIR version '4.0.1'\n\ninclude FHIRHelpers version '4.0.1'\ninclude ANCCommon version '0.1.0' called Common\n\ncode &quot;Hb&quot;: '165395AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA' from Common.OpenMRSEntity display 'Haemoglobin measured from haemoglobinometer (g/dl)'\ncode &quot;Iron Intake Compliance&quot;: '165272AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA' from Common.OpenMRSEntity display 'Iron intake compliance'\ncode &quot;Iron Side Effects&quot;: '165273AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA' from Common.OpenMRSEntity display 'Iron side effects' // NOTE: OpenMRS concept is just side effects from medication\n\n// TODO: How do parameters like this get configured for local/site usage\n//parameter &quot;Anaemia Prevalence&quot; System.Quantity default 40 '%'\n\ncontext Patient\n\n// TODO: Configuring in-line directly for now\ndefine &quot;Anaemia Prevalence&quot;: 40 '%'\n\n/*\nIAF - Iron and Folic Acid Supplements\n\nRECOMMENDATION A.2.1: Daily oral iron and folic acid supplementation with 30 mg to\n60 mg of elemental iron and 400 μg (0.4 mg) folic acid is recommended for pregnant\nwomen to prevent maternal anaemia, puerperal sepsis, low birth weight, and preterm birth.\n(Recommended)\n\nRECOMMENDATION A.2.2: Intermittent oral iron and folic acid supplementation with 120 mg\nof elemental iron and 2800 μg (2.8 mg) of folic acid once weekly is recommended for pregnant\nwomen to improve maternal and neonatal outcomes if daily iron is not acceptable due to sideeffects,\nand in populations with an anaemia prevalence among pregnant women of less than\n20%. (Context-specific recommendation)\n\nOn every contact,\n  if anaemia detected\n    recommend 120 mg of elemental iron daily (Recommendation A.2.1)\n  else if population anaemia prevalence &gt;= 40%\n    recommend 60 mg of elemental iron and 400 ug of folic acid, daily (Recommendation A.2.1)\n  else if population anaemia prevalence &lt; 20% or daily iron not acceptable due to side-effects\n    recommend intermittent oral iron: 120 mg of oral iron, and 2.8 ug of folic acid, weekly (Recommendation A.2.2)\n  else\n    recommend 30 to 60 mg of elemental iron and 400 ug of folic acid, daily (Recommendation A.2.1)\n  check iron-intake compliance;\n  check iron-side effects;\n\nHas Anaemia\n  Hb Concentration &lt; 11 g/dL and Gestational Age &lt; 12 weeks or Gestational Age &gt; 28 weeks\n  Hb Concentration &lt; 10.5 g/dL and Gestational Age between 13 weeks and 27 weeks\n*/\n\ndefine &quot;Has Anaemia&quot;:\n  if Common.&quot;Gestational Age in Weeks&quot; between 13 weeks and 27 weeks then\n    &quot;Hb Concentration&quot; &lt; 10.5 'g/dL'\n  else\n    &quot;Hb Concentration&quot; &lt; 11 'g/dL'\n\ndefine &quot;Hb Concentration&quot;:\n  First(\n    [&quot;Observation&quot;: &quot;Hb&quot;] O\n		  where O.status = 'final'\n			  and O.effective after Common.&quot;Start of Current Pregnancy&quot;\n      sort by FHIRHelpers.ToDateTime(effective as FHIR.dateTime) descending\n  ).value as Quantity\n\ndefine &quot;Has Iron Side-Effects&quot;:\n  exists (\n    [&quot;Condition&quot;: &quot;Iron Side Effects&quot;] C\n		  where C.onset on or after Common.&quot;Start of Current Pregnancy&quot;\n			  and C.clinicalStatus in Common.&quot;Active Condition&quot;\n  )\n</code></pre><p><code>No Content</code> (<code>application/elm+xml</code>)</p></div>"
   ] ; # 
-  fhir:url [ fhir:v "https://cqframework.org/cpg-example-anc/Library/ANCRecommendationA2"^^xsd:anyURI] ; # 
+  fhir:url [ fhir:v "http://cqframework.org/cpg-example-anc/Library/ANCRecommendationA2"^^xsd:anyURI] ; # 
   fhir:identifier ( [
      fhir:use [ fhir:v "official" ] ;
      fhir:value [ fhir:v "ANCRecommendationA2" ]
@@ -30,7 +30,7 @@
        fhir:display [ fhir:v "Logic Library" ]
      ] )
   ] ; # 
-  fhir:date [ fhir:v "2024-11-18T16:22:18+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2024-11-18T16:40:29+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "HL7 International - Clinical Decision Support WG"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "HL7 International - Clinical Decision Support WG" ] ;

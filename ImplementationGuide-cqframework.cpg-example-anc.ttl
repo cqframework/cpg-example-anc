@@ -5,20 +5,20 @@
 
 # - resource -------------------------------------------------------------------
 
-<https://cqframework.org/cpg-example-anc/ImplementationGuide/cqframework.cpg-example-anc> a fhir:ImplementationGuide ;
+<http://cqframework.org/cpg-example-anc/ImplementationGuide/cqframework.cpg-example-anc> a fhir:ImplementationGuide ;
   fhir:nodeRole fhir:treeRoot ;
   fhir:id [ fhir:v "cqframework.cpg-example-anc"] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ImplementationGuide cqframework.cpg-example-anc</b></p><a name=\"cqframework.cpg-example-anc\"> </a><a name=\"hccqframework.cpg-example-anc\"> </a><a name=\"cqframework.cpg-example-anc-en-US\"> </a><h2>CPGExampleAntenatalCareGuidelines</h2><p>The official URL for this implementation guide is: </p><pre>https://cqframework.org/cpg-example-anc//ImplementationGuide/cqframework.cpg-example-anc</pre><div><p>Examples of CPG computable content from the WHO Antenatal Care Guidelines</p>\n</div></div>"
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ImplementationGuide cqframework.cpg-example-anc</b></p><a name=\"cqframework.cpg-example-anc\"> </a><a name=\"hccqframework.cpg-example-anc\"> </a><a name=\"cqframework.cpg-example-anc-en-US\"> </a><h2>CPGExampleAntenatalCareGuidelines</h2><p>The official URL for this implementation guide is: </p><pre>http://cqframework.org/cpg-example-anc//ImplementationGuide/cqframework.cpg-example-anc</pre><div><p>Examples of CPG computable content from the WHO Antenatal Care Guidelines</p>\n</div></div>"
   ] ; # 
-  fhir:url [ fhir:v "https://cqframework.org/cpg-example-anc//ImplementationGuide/cqframework.cpg-example-anc"^^xsd:anyURI] ; # 
+  fhir:url [ fhir:v "http://cqframework.org/cpg-example-anc//ImplementationGuide/cqframework.cpg-example-anc"^^xsd:anyURI] ; # 
   fhir:version [ fhir:v "1.0.0"] ; # 
   fhir:name [ fhir:v "CPGExampleAntenatalCareGuidelines"] ; # 
   fhir:title [ fhir:v "Clinical Practice Guidelines Example Implementation Guide - Antenatal Care Guidelines"] ; # 
   fhir:status [ fhir:v "active"] ; # 
   fhir:experimental [ fhir:v "true"^^xsd:boolean] ; # 
-  fhir:date [ fhir:v "2024-11-18T16:22:18+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2024-11-18T16:40:29+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "HL7 International - Clinical Decision Support WG"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "HL7 International - Clinical Decision Support WG" ] ;
@@ -222,7 +222,7 @@
          fhir:value [ fhir:v "path-history" ]
        ] [
          fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "https://cqframework.org/cpg-example-anc//history.html" ]
+         fhir:value [ fhir:v "http://cqframework.org/cpg-example-anc//history.html" ]
        ] ) ;
        fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
      ] [
@@ -459,7 +459,7 @@
          fhir:value [ fhir:v "path-history" ]
        ] [
          fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "https://cqframework.org/cpg-example-anc//history.html" ]
+         fhir:value [ fhir:v "http://cqframework.org/cpg-example-anc//history.html" ]
        ] ) ;
        fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
      ] [
@@ -550,7 +550,7 @@
          fhir:value [ fhir:v "CodeSystem" ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://cqframework.org/cpg-example-anc/CodeSystem/anc-reason-for-visit-cs> ;
+         fhir:link <http://cqframework.org/cpg-example-anc/CodeSystem/anc-reason-for-visit-cs> ;
          fhir:reference [ fhir:v "CodeSystem/anc-reason-for-visit-cs" ]
        ] ;
        fhir:name [ fhir:v "CodeSystem - ANC Reason for Visit" ] ;
@@ -562,7 +562,7 @@
          fhir:value [ fhir:v "Condition" ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://cqframework.org/cpg-example-anc/Condition/condition-ra2-iron-side-effects> ;
+         fhir:link <http://cqframework.org/cpg-example-anc/Condition/condition-ra2-iron-side-effects> ;
          fhir:reference [ fhir:v "Condition/condition-ra2-iron-side-effects" ]
        ] ;
        fhir:name [ fhir:v "condition-ra2-iron-side-effects" ] ;
@@ -574,7 +574,7 @@
          fhir:value [ fhir:v "GraphDefinition" ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://cqframework.org/cpg-example-anc/GraphDefinition/anc-summary> ;
+         fhir:link <http://cqframework.org/cpg-example-anc/GraphDefinition/anc-summary> ;
          fhir:reference [ fhir:v "GraphDefinition/anc-summary" ]
        ] ;
        fhir:name [ fhir:v "GraphDefinition - ANC Summary" ] ;
@@ -586,7 +586,7 @@
          fhir:value [ fhir:v "Observation" ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://cqframework.org/cpg-example-anc/Observation/observation-anc-ra2-gestational-age> ;
+         fhir:link <http://cqframework.org/cpg-example-anc/Observation/observation-anc-ra2-gestational-age> ;
          fhir:reference [ fhir:v "Observation/observation-anc-ra2-gestational-age" ]
        ] ;
        fhir:name [ fhir:v "observation-anc-ra2-gestational-age" ] ;
@@ -598,7 +598,7 @@
          fhir:value [ fhir:v "Observation" ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://cqframework.org/cpg-example-anc/Observation/observation-anc-ra2-hb-concentration> ;
+         fhir:link <http://cqframework.org/cpg-example-anc/Observation/observation-anc-ra2-hb-concentration> ;
          fhir:reference [ fhir:v "Observation/observation-anc-ra2-hb-concentration" ]
        ] ;
        fhir:name [ fhir:v "observation-anc-ra2-hb-concentration" ] ;
@@ -610,7 +610,7 @@
          fhir:value [ fhir:v "Patient" ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://cqframework.org/cpg-example-anc/Patient/patient-anc-ra2> ;
+         fhir:link <http://cqframework.org/cpg-example-anc/Patient/patient-anc-ra2> ;
          fhir:reference [ fhir:v "Patient/patient-anc-ra2" ]
        ] ;
        fhir:name [ fhir:v "patient-anc-ra2" ] ;
@@ -622,7 +622,7 @@
          fhir:value [ fhir:v "PlanDefinition" ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://cqframework.org/cpg-example-anc/PlanDefinition/anc-contact> ;
+         fhir:link <http://cqframework.org/cpg-example-anc/PlanDefinition/anc-contact> ;
          fhir:reference [ fhir:v "PlanDefinition/anc-contact" ]
        ] ;
        fhir:name [ fhir:v "PlanDefinition - WHO ANC Guideline Contact" ] ;
@@ -634,7 +634,7 @@
          fhir:value [ fhir:v "PlanDefinition" ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://cqframework.org/cpg-example-anc/PlanDefinition/anc-contact-schedule> ;
+         fhir:link <http://cqframework.org/cpg-example-anc/PlanDefinition/anc-contact-schedule> ;
          fhir:reference [ fhir:v "PlanDefinition/anc-contact-schedule" ]
        ] ;
        fhir:name [ fhir:v "PlanDefinition - WHO ANC Guideline Contact Schedule" ] ;
@@ -646,7 +646,7 @@
          fhir:value [ fhir:v "PlanDefinition" ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://cqframework.org/cpg-example-anc/PlanDefinition/anc-recommendation-a2> ;
+         fhir:link <http://cqframework.org/cpg-example-anc/PlanDefinition/anc-recommendation-a2> ;
          fhir:reference [ fhir:v "PlanDefinition/anc-recommendation-a2" ]
        ] ;
        fhir:name [ fhir:v "PlanDefinition - WHO ANC Guideline Recommendation #A2" ] ;
@@ -658,7 +658,7 @@
          fhir:value [ fhir:v "Questionnaire" ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://cqframework.org/cpg-example-anc/Questionnaire/anc-every-contact> ;
+         fhir:link <http://cqframework.org/cpg-example-anc/Questionnaire/anc-every-contact> ;
          fhir:reference [ fhir:v "Questionnaire/anc-every-contact" ]
        ] ;
        fhir:name [ fhir:v "Questionnaire - ANC Every Contact" ] ;
@@ -670,7 +670,7 @@
          fhir:value [ fhir:v "Questionnaire" ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://cqframework.org/cpg-example-anc/Questionnaire/anc-first-contact> ;
+         fhir:link <http://cqframework.org/cpg-example-anc/Questionnaire/anc-first-contact> ;
          fhir:reference [ fhir:v "Questionnaire/anc-first-contact" ]
        ] ;
        fhir:name [ fhir:v "Questionnaire - ANC First Contact" ] ;
@@ -682,7 +682,7 @@
          fhir:value [ fhir:v "Questionnaire" ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://cqframework.org/cpg-example-anc/Questionnaire/anc-quick-check> ;
+         fhir:link <http://cqframework.org/cpg-example-anc/Questionnaire/anc-quick-check> ;
          fhir:reference [ fhir:v "Questionnaire/anc-quick-check" ]
        ] ;
        fhir:name [ fhir:v "Questionnaire - ANC Quick Check" ] ;
@@ -694,7 +694,7 @@
          fhir:value [ fhir:v "ValueSet" ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://cqframework.org/cpg-example-anc/ValueSet/anc-reason-for-visit-vs> ;
+         fhir:link <http://cqframework.org/cpg-example-anc/ValueSet/anc-reason-for-visit-vs> ;
          fhir:reference [ fhir:v "ValueSet/anc-reason-for-visit-vs" ]
        ] ;
        fhir:name [ fhir:v "ValueSet - ANC Reason for Visit" ] ;
@@ -706,7 +706,7 @@
          fhir:value [ fhir:v "Library" ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://cqframework.org/cpg-example-anc/Library/ANCCommon> ;
+         fhir:link <http://cqframework.org/cpg-example-anc/Library/ANCCommon> ;
          fhir:reference [ fhir:v "Library/ANCCommon" ]
        ] ;
        fhir:name [ fhir:v "WHO Antenatal Care Guidelines Common Logic" ] ;
@@ -718,7 +718,7 @@
          fhir:value [ fhir:v "Library" ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://cqframework.org/cpg-example-anc/Library/ANCRecommendationA2> ;
+         fhir:link <http://cqframework.org/cpg-example-anc/Library/ANCRecommendationA2> ;
          fhir:reference [ fhir:v "Library/ANCRecommendationA2" ]
        ] ;
        fhir:name [ fhir:v "WHO Antenatal Care Guidelines Logic for recommendation #A2" ] ;

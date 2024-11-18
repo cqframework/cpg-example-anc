@@ -3,7 +3,7 @@ CPGExampleAntenatalCareGuidelines : Validation Results
 
 err = 33, warn = 18, info = 1
 $--
-Generated $--. FHIR version $-- for cqframework.cpg-example-anc#$-- (canonical = https://cqframework.org/cpg-example-anc/)
+Generated $--. FHIR version $-- for cqframework.cpg-example-anc#$-- (canonical = http://cqframework.org/cpg-example-anc/)
  Build Errors : 89 / 4 / 0
  /github/workspace/fsh-generated/resources/CodeSystem-anc-reason-for-visit-cs : 10 / 1 / 1
  /github/workspace/fsh-generated/resources/Condition-condition-ra2-iron-side-effects : 0 / 1 / 1
@@ -23,95 +23,95 @@ Generated $--. FHIR version $-- for cqframework.cpg-example-anc#$-- (canonical =
  /github/workspace/fsh-generated/resources/ValueSet-anc-reason-for-visit-vs : 10 / 1 / 1
 </table>
 == n/a ==
-ERROR: /github/workspace/output/CodeSystem-anc-reason-for-visit-cs-testing.html#/html/body/div/div/div/p/span/a at Line 231, column 130: The link 'license.html' for "License" cannot be resolved
-ERROR: /github/workspace/output/CodeSystem-anc-reason-for-visit-cs.change.history.html#/html/body/div/div/div/p/span/a at Line 200, column 130: The link 'license.html' for "License" cannot be resolved
-ERROR: /github/workspace/output/CodeSystem-anc-reason-for-visit-cs.html#/html/body/div/div/div/p/span/a at Line 274, column 130: The link 'license.html' for "License" cannot be resolved
-ERROR: /github/workspace/output/CodeSystem-anc-reason-for-visit-cs.json.html#/html/body/div/div/div/p/span/a at Line 316, column 130: The link 'license.html' for "License" cannot be resolved
-ERROR: /github/workspace/output/CodeSystem-anc-reason-for-visit-cs.ttl.html#/html/body/div/div/div/p/span/a at Line 308, column 130: The link 'license.html' for "License" cannot be resolved
-ERROR: /github/workspace/output/CodeSystem-anc-reason-for-visit-cs.xml.html#/html/body/div/div/div/p/span/a at Line 307, column 130: The link 'license.html' for "License" cannot be resolved
-ERROR: /github/workspace/output/Condition-condition-ra2-iron-side-effects.change.history.html#/html/body/div/div/div/p/span/a at Line 200, column 130: The link 'license.html' for "License" cannot be resolved
-ERROR: /github/workspace/output/Condition-condition-ra2-iron-side-effects.html#/html/body/div/div/div/p/span/a at Line 209, column 130: The link 'license.html' for "License" cannot be resolved
-ERROR: /github/workspace/output/Condition-condition-ra2-iron-side-effects.json.html#/html/body/div/div/div/p/span/a at Line 260, column 130: The link 'license.html' for "License" cannot be resolved
-ERROR: /github/workspace/output/Condition-condition-ra2-iron-side-effects.ttl.html#/html/body/div/div/div/p/span/a at Line 263, column 130: The link 'license.html' for "License" cannot be resolved
-ERROR: /github/workspace/output/Condition-condition-ra2-iron-side-effects.xml.html#/html/body/div/div/div/p/span/a at Line 252, column 130: The link 'license.html' for "License" cannot be resolved
-ERROR: /github/workspace/output/GraphDefinition-anc-summary-testing.html#/html/body/div/div/div/p/span/a at Line 231, column 130: The link 'license.html' for "License" cannot be resolved
-ERROR: /github/workspace/output/GraphDefinition-anc-summary.change.history.html#/html/body/div/div/div/p/span/a at Line 200, column 130: The link 'license.html' for "License" cannot be resolved
-ERROR: /github/workspace/output/GraphDefinition-anc-summary.html#/html/body/div/div/div/p/span/a at Line 257, column 130: The link 'license.html' for "License" cannot be resolved
-ERROR: /github/workspace/output/GraphDefinition-anc-summary.json.html#/html/body/div/div/div/p/span/a at Line 265, column 130: The link 'license.html' for "License" cannot be resolved
-ERROR: /github/workspace/output/GraphDefinition-anc-summary.ttl.html#/html/body/div/div/div/p/span/a at Line 273, column 130: The link 'license.html' for "License" cannot be resolved
-ERROR: /github/workspace/output/GraphDefinition-anc-summary.xml.html#/html/body/div/div/div/p/span/a at Line 262, column 130: The link 'license.html' for "License" cannot be resolved
-ERROR: /github/workspace/output/Library-ANCCommon-testing.html#/html/body/div/div/div/p/span/a at Line 231, column 130: The link 'license.html' for "License" cannot be resolved
-ERROR: /github/workspace/output/Library-ANCCommon.change.history.html#/html/body/div/div/div/p/span/a at Line 200, column 130: The link 'license.html' for "License" cannot be resolved
-ERROR: /github/workspace/output/Library-ANCCommon.html#/html/body/div/div/div/p/span/a at Line 324, column 130: The link 'license.html' for "License" cannot be resolved
-ERROR: /github/workspace/output/Library-ANCCommon.json.html#/html/body/div/div/div/p/span/a at Line 422, column 130: The link 'license.html' for "License" cannot be resolved
-ERROR: /github/workspace/output/Library-ANCCommon.ttl.html#/html/body/div/div/div/p/span/a at Line 388, column 130: The link 'license.html' for "License" cannot be resolved
-ERROR: /github/workspace/output/Library-ANCCommon.xml.html#/html/body/div/div/div/p/span/a at Line 449, column 130: The link 'license.html' for "License" cannot be resolved
-ERROR: /github/workspace/output/Library-ANCRecommendationA2-testing.html#/html/body/div/div/div/p/span/a at Line 231, column 130: The link 'license.html' for "License" cannot be resolved
-ERROR: /github/workspace/output/Library-ANCRecommendationA2.change.history.html#/html/body/div/div/div/p/span/a at Line 200, column 130: The link 'license.html' for "License" cannot be resolved
-ERROR: /github/workspace/output/Library-ANCRecommendationA2.html#/html/body/div/div/div/p/span/a at Line 342, column 130: The link 'license.html' for "License" cannot be resolved
-ERROR: /github/workspace/output/Library-ANCRecommendationA2.json.html#/html/body/div/div/div/p/span/a at Line 319, column 130: The link 'license.html' for "License" cannot be resolved
-ERROR: /github/workspace/output/Library-ANCRecommendationA2.ttl.html#/html/body/div/div/div/p/span/a at Line 302, column 130: The link 'license.html' for "License" cannot be resolved
-ERROR: /github/workspace/output/Library-ANCRecommendationA2.xml.html#/html/body/div/div/div/p/span/a at Line 373, column 130: The link 'license.html' for "License" cannot be resolved
-ERROR: /github/workspace/output/Observation-observation-anc-ra2-gestational-age.change.history.html#/html/body/div/div/div/p/span/a at Line 200, column 130: The link 'license.html' for "License" cannot be resolved
-ERROR: /github/workspace/output/Observation-observation-anc-ra2-gestational-age.html#/html/body/div/div/div/p/span/a at Line 209, column 130: The link 'license.html' for "License" cannot be resolved
-ERROR: /github/workspace/output/Observation-observation-anc-ra2-gestational-age.json.html#/html/body/div/div/div/p/span/a at Line 240, column 130: The link 'license.html' for "License" cannot be resolved
-ERROR: /github/workspace/output/Observation-observation-anc-ra2-gestational-age.ttl.html#/html/body/div/div/div/p/span/a at Line 248, column 130: The link 'license.html' for "License" cannot be resolved
-ERROR: /github/workspace/output/Observation-observation-anc-ra2-gestational-age.xml.html#/html/body/div/div/div/p/span/a at Line 238, column 130: The link 'license.html' for "License" cannot be resolved
-ERROR: /github/workspace/output/Observation-observation-anc-ra2-hb-concentration.change.history.html#/html/body/div/div/div/p/span/a at Line 200, column 130: The link 'license.html' for "License" cannot be resolved
-ERROR: /github/workspace/output/Observation-observation-anc-ra2-hb-concentration.html#/html/body/div/div/div/p/span/a at Line 209, column 130: The link 'license.html' for "License" cannot be resolved
-ERROR: /github/workspace/output/Observation-observation-anc-ra2-hb-concentration.json.html#/html/body/div/div/div/p/span/a at Line 240, column 130: The link 'license.html' for "License" cannot be resolved
-ERROR: /github/workspace/output/Observation-observation-anc-ra2-hb-concentration.ttl.html#/html/body/div/div/div/p/span/a at Line 248, column 130: The link 'license.html' for "License" cannot be resolved
-ERROR: /github/workspace/output/Observation-observation-anc-ra2-hb-concentration.xml.html#/html/body/div/div/div/p/span/a at Line 238, column 130: The link 'license.html' for "License" cannot be resolved
-ERROR: /github/workspace/output/Patient-patient-anc-ra2.change.history.html#/html/body/div/div/div/p/span/a at Line 200, column 130: The link 'license.html' for "License" cannot be resolved
-ERROR: /github/workspace/output/Patient-patient-anc-ra2.html#/html/body/div/div/div/p/span/a at Line 209, column 130: The link 'license.html' for "License" cannot be resolved
-ERROR: /github/workspace/output/Patient-patient-anc-ra2.json.html#/html/body/div/div/div/p/span/a at Line 238, column 130: The link 'license.html' for "License" cannot be resolved
-ERROR: /github/workspace/output/Patient-patient-anc-ra2.ttl.html#/html/body/div/div/div/p/span/a at Line 242, column 130: The link 'license.html' for "License" cannot be resolved
-ERROR: /github/workspace/output/Patient-patient-anc-ra2.xml.html#/html/body/div/div/div/p/span/a at Line 232, column 130: The link 'license.html' for "License" cannot be resolved
-ERROR: /github/workspace/output/PlanDefinition-anc-contact-schedule-testing.html#/html/body/div/div/div/p/span/a at Line 231, column 130: The link 'license.html' for "License" cannot be resolved
-ERROR: /github/workspace/output/PlanDefinition-anc-contact-schedule.change.history.html#/html/body/div/div/div/p/span/a at Line 200, column 130: The link 'license.html' for "License" cannot be resolved
-ERROR: /github/workspace/output/PlanDefinition-anc-contact-schedule.html#/html/body/div/div/div/p/span/a at Line 274, column 130: The link 'license.html' for "License" cannot be resolved
-ERROR: /github/workspace/output/PlanDefinition-anc-contact-schedule.json.html#/html/body/div/div/div/p/span/a at Line 800, column 130: The link 'license.html' for "License" cannot be resolved
-ERROR: /github/workspace/output/PlanDefinition-anc-contact-schedule.ttl.html#/html/body/div/div/div/p/span/a at Line 566, column 130: The link 'license.html' for "License" cannot be resolved
-ERROR: /github/workspace/output/PlanDefinition-anc-contact-schedule.xml.html#/html/body/div/div/div/p/span/a at Line 714, column 130: The link 'license.html' for "License" cannot be resolved
-ERROR: /github/workspace/output/PlanDefinition-anc-contact-testing.html#/html/body/div/div/div/p/span/a at Line 231, column 130: The link 'license.html' for "License" cannot be resolved
-ERROR: /github/workspace/output/PlanDefinition-anc-contact.change.history.html#/html/body/div/div/div/p/span/a at Line 200, column 130: The link 'license.html' for "License" cannot be resolved
-ERROR: /github/workspace/output/PlanDefinition-anc-contact.html#/html/body/div/div/div/p/span/a at Line 274, column 130: The link 'license.html' for "License" cannot be resolved
-ERROR: /github/workspace/output/PlanDefinition-anc-contact.json.html#/html/body/div/div/div/p/span/a at Line 396, column 130: The link 'license.html' for "License" cannot be resolved
-ERROR: /github/workspace/output/PlanDefinition-anc-contact.ttl.html#/html/body/div/div/div/p/span/a at Line 343, column 130: The link 'license.html' for "License" cannot be resolved
-ERROR: /github/workspace/output/PlanDefinition-anc-contact.xml.html#/html/body/div/div/div/p/span/a at Line 367, column 130: The link 'license.html' for "License" cannot be resolved
-ERROR: /github/workspace/output/PlanDefinition-anc-recommendation-a2-testing.html#/html/body/div/div/div/p/span/a at Line 231, column 130: The link 'license.html' for "License" cannot be resolved
-ERROR: /github/workspace/output/PlanDefinition-anc-recommendation-a2.change.history.html#/html/body/div/div/div/p/span/a at Line 200, column 130: The link 'license.html' for "License" cannot be resolved
-ERROR: /github/workspace/output/PlanDefinition-anc-recommendation-a2.html#/html/body/div/div/div/p/span/a at Line 269, column 130: The link 'license.html' for "License" cannot be resolved
-ERROR: /github/workspace/output/PlanDefinition-anc-recommendation-a2.json.html#/html/body/div/div/div/p/span/a at Line 302, column 130: The link 'license.html' for "License" cannot be resolved
-ERROR: /github/workspace/output/PlanDefinition-anc-recommendation-a2.ttl.html#/html/body/div/div/div/p/span/a at Line 289, column 130: The link 'license.html' for "License" cannot be resolved
-ERROR: /github/workspace/output/PlanDefinition-anc-recommendation-a2.xml.html#/html/body/div/div/div/p/span/a at Line 289, column 130: The link 'license.html' for "License" cannot be resolved
-ERROR: /github/workspace/output/Questionnaire-anc-every-contact-testing.html#/html/body/div/div/div/p/span/a at Line 231, column 130: The link 'license.html' for "License" cannot be resolved
-ERROR: /github/workspace/output/Questionnaire-anc-every-contact.change.history.html#/html/body/div/div/div/p/span/a at Line 200, column 130: The link 'license.html' for "License" cannot be resolved
-ERROR: /github/workspace/output/Questionnaire-anc-every-contact.html#/html/body/div/div/div/p/span/a at Line 259, column 130: The link 'license.html' for "License" cannot be resolved
-ERROR: /github/workspace/output/Questionnaire-anc-every-contact.json.html#/html/body/div/div/div/p/span/a at Line 278, column 130: The link 'license.html' for "License" cannot be resolved
-ERROR: /github/workspace/output/Questionnaire-anc-every-contact.ttl.html#/html/body/div/div/div/p/span/a at Line 273, column 130: The link 'license.html' for "License" cannot be resolved
-ERROR: /github/workspace/output/Questionnaire-anc-every-contact.xml.html#/html/body/div/div/div/p/span/a at Line 270, column 130: The link 'license.html' for "License" cannot be resolved
-ERROR: /github/workspace/output/Questionnaire-anc-first-contact-testing.html#/html/body/div/div/div/p/span/a at Line 231, column 130: The link 'license.html' for "License" cannot be resolved
-ERROR: /github/workspace/output/Questionnaire-anc-first-contact.change.history.html#/html/body/div/div/div/p/span/a at Line 200, column 130: The link 'license.html' for "License" cannot be resolved
-ERROR: /github/workspace/output/Questionnaire-anc-first-contact.html#/html/body/div/div/div/p/span/a at Line 259, column 130: The link 'license.html' for "License" cannot be resolved
-ERROR: /github/workspace/output/Questionnaire-anc-first-contact.json.html#/html/body/div/div/div/p/span/a at Line 278, column 130: The link 'license.html' for "License" cannot be resolved
-ERROR: /github/workspace/output/Questionnaire-anc-first-contact.ttl.html#/html/body/div/div/div/p/span/a at Line 273, column 130: The link 'license.html' for "License" cannot be resolved
-ERROR: /github/workspace/output/Questionnaire-anc-first-contact.xml.html#/html/body/div/div/div/p/span/a at Line 270, column 130: The link 'license.html' for "License" cannot be resolved
-ERROR: /github/workspace/output/Questionnaire-anc-quick-check-testing.html#/html/body/div/div/div/p/span/a at Line 231, column 130: The link 'license.html' for "License" cannot be resolved
-ERROR: /github/workspace/output/Questionnaire-anc-quick-check.change.history.html#/html/body/div/div/div/p/span/a at Line 200, column 130: The link 'license.html' for "License" cannot be resolved
-ERROR: /github/workspace/output/Questionnaire-anc-quick-check.html#/html/body/div/div/div/p/span/a at Line 258, column 130: The link 'license.html' for "License" cannot be resolved
-ERROR: /github/workspace/output/Questionnaire-anc-quick-check.json.html#/html/body/div/div/div/p/span/a at Line 340, column 130: The link 'license.html' for "License" cannot be resolved
-ERROR: /github/workspace/output/Questionnaire-anc-quick-check.ttl.html#/html/body/div/div/div/p/span/a at Line 307, column 130: The link 'license.html' for "License" cannot be resolved
-ERROR: /github/workspace/output/Questionnaire-anc-quick-check.xml.html#/html/body/div/div/div/p/span/a at Line 323, column 130: The link 'license.html' for "License" cannot be resolved
-ERROR: /github/workspace/output/ValueSet-anc-reason-for-visit-vs-testing.html#/html/body/div/div/div/p/span/a at Line 231, column 130: The link 'license.html' for "License" cannot be resolved
-ERROR: /github/workspace/output/ValueSet-anc-reason-for-visit-vs.change.history.html#/html/body/div/div/div/p/span/a at Line 200, column 130: The link 'license.html' for "License" cannot be resolved
-ERROR: /github/workspace/output/ValueSet-anc-reason-for-visit-vs.html#/html/body/div/div/div/p/span/a at Line 303, column 130: The link 'license.html' for "License" cannot be resolved
-ERROR: /github/workspace/output/ValueSet-anc-reason-for-visit-vs.json.html#/html/body/div/div/div/p/span/a at Line 292, column 130: The link 'license.html' for "License" cannot be resolved
-ERROR: /github/workspace/output/ValueSet-anc-reason-for-visit-vs.ttl.html#/html/body/div/div/div/p/span/a at Line 284, column 130: The link 'license.html' for "License" cannot be resolved
-ERROR: /github/workspace/output/ValueSet-anc-reason-for-visit-vs.xml.html#/html/body/div/div/div/p/span/a at Line 282, column 130: The link 'license.html' for "License" cannot be resolved
-ERROR: /github/workspace/output/artifacts.html#/html/body/div/div/div/p/span/a at Line 379, column 130: The link 'license.html' for "License" cannot be resolved
-ERROR: /github/workspace/output/index.html#/html/body/div/div/div/p/span/a at Line 274, column 130: The link 'license.html' for "License" cannot be resolved
-ERROR: /github/workspace/output/toc.html#/html/body/div/div/div/p/span/a at Line 156, column 130: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/CodeSystem-anc-reason-for-visit-cs-testing.html#/html/body/div/div/div/p/span/a at Line 231, column 129: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/CodeSystem-anc-reason-for-visit-cs.change.history.html#/html/body/div/div/div/p/span/a at Line 200, column 129: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/CodeSystem-anc-reason-for-visit-cs.html#/html/body/div/div/div/p/span/a at Line 274, column 129: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/CodeSystem-anc-reason-for-visit-cs.json.html#/html/body/div/div/div/p/span/a at Line 316, column 129: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/CodeSystem-anc-reason-for-visit-cs.ttl.html#/html/body/div/div/div/p/span/a at Line 308, column 129: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/CodeSystem-anc-reason-for-visit-cs.xml.html#/html/body/div/div/div/p/span/a at Line 307, column 129: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/Condition-condition-ra2-iron-side-effects.change.history.html#/html/body/div/div/div/p/span/a at Line 200, column 129: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/Condition-condition-ra2-iron-side-effects.html#/html/body/div/div/div/p/span/a at Line 209, column 129: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/Condition-condition-ra2-iron-side-effects.json.html#/html/body/div/div/div/p/span/a at Line 260, column 129: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/Condition-condition-ra2-iron-side-effects.ttl.html#/html/body/div/div/div/p/span/a at Line 263, column 129: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/Condition-condition-ra2-iron-side-effects.xml.html#/html/body/div/div/div/p/span/a at Line 252, column 129: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/GraphDefinition-anc-summary-testing.html#/html/body/div/div/div/p/span/a at Line 231, column 129: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/GraphDefinition-anc-summary.change.history.html#/html/body/div/div/div/p/span/a at Line 200, column 129: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/GraphDefinition-anc-summary.html#/html/body/div/div/div/p/span/a at Line 257, column 129: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/GraphDefinition-anc-summary.json.html#/html/body/div/div/div/p/span/a at Line 265, column 129: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/GraphDefinition-anc-summary.ttl.html#/html/body/div/div/div/p/span/a at Line 273, column 129: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/GraphDefinition-anc-summary.xml.html#/html/body/div/div/div/p/span/a at Line 262, column 129: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/Library-ANCCommon-testing.html#/html/body/div/div/div/p/span/a at Line 231, column 129: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/Library-ANCCommon.change.history.html#/html/body/div/div/div/p/span/a at Line 200, column 129: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/Library-ANCCommon.html#/html/body/div/div/div/p/span/a at Line 324, column 129: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/Library-ANCCommon.json.html#/html/body/div/div/div/p/span/a at Line 422, column 129: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/Library-ANCCommon.ttl.html#/html/body/div/div/div/p/span/a at Line 388, column 129: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/Library-ANCCommon.xml.html#/html/body/div/div/div/p/span/a at Line 449, column 129: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/Library-ANCRecommendationA2-testing.html#/html/body/div/div/div/p/span/a at Line 231, column 129: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/Library-ANCRecommendationA2.change.history.html#/html/body/div/div/div/p/span/a at Line 200, column 129: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/Library-ANCRecommendationA2.html#/html/body/div/div/div/p/span/a at Line 342, column 129: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/Library-ANCRecommendationA2.json.html#/html/body/div/div/div/p/span/a at Line 319, column 129: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/Library-ANCRecommendationA2.ttl.html#/html/body/div/div/div/p/span/a at Line 302, column 129: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/Library-ANCRecommendationA2.xml.html#/html/body/div/div/div/p/span/a at Line 373, column 129: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/Observation-observation-anc-ra2-gestational-age.change.history.html#/html/body/div/div/div/p/span/a at Line 200, column 129: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/Observation-observation-anc-ra2-gestational-age.html#/html/body/div/div/div/p/span/a at Line 209, column 129: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/Observation-observation-anc-ra2-gestational-age.json.html#/html/body/div/div/div/p/span/a at Line 240, column 129: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/Observation-observation-anc-ra2-gestational-age.ttl.html#/html/body/div/div/div/p/span/a at Line 248, column 129: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/Observation-observation-anc-ra2-gestational-age.xml.html#/html/body/div/div/div/p/span/a at Line 238, column 129: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/Observation-observation-anc-ra2-hb-concentration.change.history.html#/html/body/div/div/div/p/span/a at Line 200, column 129: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/Observation-observation-anc-ra2-hb-concentration.html#/html/body/div/div/div/p/span/a at Line 209, column 129: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/Observation-observation-anc-ra2-hb-concentration.json.html#/html/body/div/div/div/p/span/a at Line 240, column 129: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/Observation-observation-anc-ra2-hb-concentration.ttl.html#/html/body/div/div/div/p/span/a at Line 248, column 129: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/Observation-observation-anc-ra2-hb-concentration.xml.html#/html/body/div/div/div/p/span/a at Line 238, column 129: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/Patient-patient-anc-ra2.change.history.html#/html/body/div/div/div/p/span/a at Line 200, column 129: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/Patient-patient-anc-ra2.html#/html/body/div/div/div/p/span/a at Line 209, column 129: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/Patient-patient-anc-ra2.json.html#/html/body/div/div/div/p/span/a at Line 238, column 129: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/Patient-patient-anc-ra2.ttl.html#/html/body/div/div/div/p/span/a at Line 242, column 129: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/Patient-patient-anc-ra2.xml.html#/html/body/div/div/div/p/span/a at Line 232, column 129: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/PlanDefinition-anc-contact-schedule-testing.html#/html/body/div/div/div/p/span/a at Line 231, column 129: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/PlanDefinition-anc-contact-schedule.change.history.html#/html/body/div/div/div/p/span/a at Line 200, column 129: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/PlanDefinition-anc-contact-schedule.html#/html/body/div/div/div/p/span/a at Line 274, column 129: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/PlanDefinition-anc-contact-schedule.json.html#/html/body/div/div/div/p/span/a at Line 800, column 129: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/PlanDefinition-anc-contact-schedule.ttl.html#/html/body/div/div/div/p/span/a at Line 566, column 129: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/PlanDefinition-anc-contact-schedule.xml.html#/html/body/div/div/div/p/span/a at Line 714, column 129: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/PlanDefinition-anc-contact-testing.html#/html/body/div/div/div/p/span/a at Line 231, column 129: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/PlanDefinition-anc-contact.change.history.html#/html/body/div/div/div/p/span/a at Line 200, column 129: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/PlanDefinition-anc-contact.html#/html/body/div/div/div/p/span/a at Line 274, column 129: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/PlanDefinition-anc-contact.json.html#/html/body/div/div/div/p/span/a at Line 396, column 129: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/PlanDefinition-anc-contact.ttl.html#/html/body/div/div/div/p/span/a at Line 343, column 129: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/PlanDefinition-anc-contact.xml.html#/html/body/div/div/div/p/span/a at Line 367, column 129: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/PlanDefinition-anc-recommendation-a2-testing.html#/html/body/div/div/div/p/span/a at Line 231, column 129: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/PlanDefinition-anc-recommendation-a2.change.history.html#/html/body/div/div/div/p/span/a at Line 200, column 129: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/PlanDefinition-anc-recommendation-a2.html#/html/body/div/div/div/p/span/a at Line 269, column 129: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/PlanDefinition-anc-recommendation-a2.json.html#/html/body/div/div/div/p/span/a at Line 302, column 129: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/PlanDefinition-anc-recommendation-a2.ttl.html#/html/body/div/div/div/p/span/a at Line 289, column 129: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/PlanDefinition-anc-recommendation-a2.xml.html#/html/body/div/div/div/p/span/a at Line 289, column 129: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/Questionnaire-anc-every-contact-testing.html#/html/body/div/div/div/p/span/a at Line 231, column 129: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/Questionnaire-anc-every-contact.change.history.html#/html/body/div/div/div/p/span/a at Line 200, column 129: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/Questionnaire-anc-every-contact.html#/html/body/div/div/div/p/span/a at Line 259, column 129: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/Questionnaire-anc-every-contact.json.html#/html/body/div/div/div/p/span/a at Line 278, column 129: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/Questionnaire-anc-every-contact.ttl.html#/html/body/div/div/div/p/span/a at Line 273, column 129: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/Questionnaire-anc-every-contact.xml.html#/html/body/div/div/div/p/span/a at Line 270, column 129: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/Questionnaire-anc-first-contact-testing.html#/html/body/div/div/div/p/span/a at Line 231, column 129: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/Questionnaire-anc-first-contact.change.history.html#/html/body/div/div/div/p/span/a at Line 200, column 129: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/Questionnaire-anc-first-contact.html#/html/body/div/div/div/p/span/a at Line 259, column 129: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/Questionnaire-anc-first-contact.json.html#/html/body/div/div/div/p/span/a at Line 278, column 129: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/Questionnaire-anc-first-contact.ttl.html#/html/body/div/div/div/p/span/a at Line 273, column 129: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/Questionnaire-anc-first-contact.xml.html#/html/body/div/div/div/p/span/a at Line 270, column 129: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/Questionnaire-anc-quick-check-testing.html#/html/body/div/div/div/p/span/a at Line 231, column 129: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/Questionnaire-anc-quick-check.change.history.html#/html/body/div/div/div/p/span/a at Line 200, column 129: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/Questionnaire-anc-quick-check.html#/html/body/div/div/div/p/span/a at Line 258, column 129: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/Questionnaire-anc-quick-check.json.html#/html/body/div/div/div/p/span/a at Line 340, column 129: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/Questionnaire-anc-quick-check.ttl.html#/html/body/div/div/div/p/span/a at Line 307, column 129: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/Questionnaire-anc-quick-check.xml.html#/html/body/div/div/div/p/span/a at Line 323, column 129: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/ValueSet-anc-reason-for-visit-vs-testing.html#/html/body/div/div/div/p/span/a at Line 231, column 129: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/ValueSet-anc-reason-for-visit-vs.change.history.html#/html/body/div/div/div/p/span/a at Line 200, column 129: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/ValueSet-anc-reason-for-visit-vs.html#/html/body/div/div/div/p/span/a at Line 303, column 129: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/ValueSet-anc-reason-for-visit-vs.json.html#/html/body/div/div/div/p/span/a at Line 292, column 129: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/ValueSet-anc-reason-for-visit-vs.ttl.html#/html/body/div/div/div/p/span/a at Line 284, column 129: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/ValueSet-anc-reason-for-visit-vs.xml.html#/html/body/div/div/div/p/span/a at Line 282, column 129: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/artifacts.html#/html/body/div/div/div/p/span/a at Line 379, column 129: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/index.html#/html/body/div/div/div/p/span/a at Line 274, column 129: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/toc.html#/html/body/div/div/div/p/span/a at Line 156, column 129: The link 'license.html' for "License" cannot be resolved
 WARNING: 1: The HTML fragment 'ip-statements.xhtml' is not included anywhere in the produced implementation guide
 WARNING: 2: An HTML fragment from the set [cross-version-analysis.xhtml, cross-version-analysis-inline.xhtml] is not included anywhere in the produced implementation guide
 WARNING: 3: An HTML fragment from the set [dependency-table.xhtml, dependency-table-short.xhtml] is not included anywhere in the produced implementation guide
@@ -127,20 +127,20 @@ ERROR: CodeSystem/anc-reason-for-visit-cs: CodeSystem.extension[2].url: URL valu
 ERROR: CodeSystem/anc-reason-for-visit-cs: CodeSystem.extension[3]: The extension http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeRepresentationLevel could not be found so is not allowed here
 ERROR: CodeSystem/anc-reason-for-visit-cs: CodeSystem.extension[3].url: URL value 'http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeRepresentationLevel' does not resolve
 WARNING: CodeSystem/anc-reason-for-visit-cs: CodeSystem.meta.profile[0]: Profile reference 'http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-publishablecodesystem' has not been checked because it could not be found, and the validator is set to not fetch unknown profiles
-ERROR: /github/workspace/fsh-generated/resources/CodeSystem-anc-reason-for-visit-cs: URL Mismatch https://cqframework.org/cpg-example-anc//CodeSystem/anc-reason-for-visit-cs vs https://cqframework.org/cpg-example-anc/CodeSystem/anc-reason-for-visit-cs
+ERROR: /github/workspace/fsh-generated/resources/CodeSystem-anc-reason-for-visit-cs: URL Mismatch http://cqframework.org/cpg-example-anc//CodeSystem/anc-reason-for-visit-cs vs http://cqframework.org/cpg-example-anc/CodeSystem/anc-reason-for-visit-cs
 == fsh-generated/resources/Condition-condition-ra2-iron-side-effects.json ==
 WARNING: Condition/condition-ra2-iron-side-effects: Condition.code.coding[0].system: A definition for CodeSystem 'http://openmrs.org/concepts' could not be found, so the code cannot be validated
 == fsh-generated/resources/GraphDefinition-anc-summary.json ==
-WARNING: GraphDefinition.where(url = 'https://cqframework.org/cpg-example-anc/GraphDefinition/anc-summary'): The resource needed to modified during loading to apply common headers version=1.0.0, contact, copyright=null, jurisdiction, publisher=HL7 International - Clinical Decision Support WG, date but this isn't possible for the type GraphDefinition because version conversion isn't working completely
-ERROR: /github/workspace/fsh-generated/resources/GraphDefinition-anc-summary: URL Mismatch https://cqframework.org/cpg-example-anc//GraphDefinition/anc-summary vs https://cqframework.org/cpg-example-anc/GraphDefinition/anc-summary
+WARNING: GraphDefinition.where(url = 'http://cqframework.org/cpg-example-anc/GraphDefinition/anc-summary'): The resource needed to modified during loading to apply common headers version=1.0.0, contact, copyright=null, jurisdiction, publisher=HL7 International - Clinical Decision Support WG, date but this isn't possible for the type GraphDefinition because version conversion isn't working completely
+ERROR: /github/workspace/fsh-generated/resources/GraphDefinition-anc-summary: URL Mismatch http://cqframework.org/cpg-example-anc//GraphDefinition/anc-summary vs http://cqframework.org/cpg-example-anc/GraphDefinition/anc-summary
 == fsh-generated/resources/ImplementationGuide-cqframework.cpg-example-anc.json ==
-ERROR: ImplementationGuide.where(url = 'https://cqframework.org/cpg-example-anc//ImplementationGuide/cqframework.cpg-example-anc'): Conformance resource /github/workspace/fsh-generated/resources/ImplementationGuide-cqframework.cpg-example-anc.json - the canonical URL (https://cqframework.org/cpg-example-anc/ImplementationGuide/cqframework.cpg-example-anc) does not match the URL (https://cqframework.org/cpg-example-anc//ImplementationGuide/cqframework.cpg-example-anc)
+ERROR: ImplementationGuide.where(url = 'http://cqframework.org/cpg-example-anc//ImplementationGuide/cqframework.cpg-example-anc'): Conformance resource /github/workspace/fsh-generated/resources/ImplementationGuide-cqframework.cpg-example-anc.json - the canonical URL (http://cqframework.org/cpg-example-anc/ImplementationGuide/cqframework.cpg-example-anc) does not match the URL (http://cqframework.org/cpg-example-anc//ImplementationGuide/cqframework.cpg-example-anc)
 == fsh-generated/resources/Library-ANCCommon.json ==
 WARNING: /github/workspace/./input/cql/ANCCommon.cql: The function FHIRHelpers.ToInterval has multiple overloads and due to the SignatureLevel setting (None), the overload signature is not being included in the output. This may result in ambiguous function resolution at runtime, consider setting the SignatureLevel to Overloads or All to ensure that the output includes sufficient information to support correct overload selection at runtime.
 WARNING: /github/workspace/./input/cql/ANCCommon.cql: The function FHIRHelpers.ToString has multiple overloads and due to the SignatureLevel setting (None), the overload signature is not being included in the output. This may result in ambiguous function resolution at runtime, consider setting the SignatureLevel to Overloads or All to ensure that the output includes sufficient information to support correct overload selection at runtime.
 WARNING: /github/workspace/./input/cql/ANCCommon.cql: The function FHIRHelpers.ToDateTime has multiple overloads and due to the SignatureLevel setting (None), the overload signature is not being included in the output. This may result in ambiguous function resolution at runtime, consider setting the SignatureLevel to Overloads or All to ensure that the output includes sufficient information to support correct overload selection at runtime.
 INFORMATION: Library/ANCCommon: Library.dataRequirement[0].codeFilter[0].code[0]: A definition for CodeSystem 'http://openmrs.org/concepts' could not be found, so the code cannot be validated
-ERROR: /github/workspace/fsh-generated/resources/Library-ANCCommon: URL Mismatch https://cqframework.org/cpg-example-anc//Library/ANCCommon vs https://cqframework.org/cpg-example-anc/Library/ANCCommon
+ERROR: /github/workspace/fsh-generated/resources/Library-ANCCommon: URL Mismatch http://cqframework.org/cpg-example-anc//Library/ANCCommon vs http://cqframework.org/cpg-example-anc/Library/ANCCommon
 == fsh-generated/resources/Library-ANCRecommendationA2.json ==
 WARNING: /github/workspace/./input/cql/ANCRecommendationA2.cql: The function FHIRHelpers.ToInterval has multiple overloads and due to the SignatureLevel setting (None), the overload signature is not being included in the output. This may result in ambiguous function resolution at runtime, consider setting the SignatureLevel to Overloads or All to ensure that the output includes sufficient information to support correct overload selection at runtime.
 WARNING: /github/workspace/./input/cql/ANCRecommendationA2.cql: The function FHIRHelpers.ToString has multiple overloads and due to the SignatureLevel setting (None), the overload signature is not being included in the output. This may result in ambiguous function resolution at runtime, consider setting the SignatureLevel to Overloads or All to ensure that the output includes sufficient information to support correct overload selection at runtime.
@@ -148,7 +148,7 @@ ERROR: ANCRecommendationA2: Could not resolve identifier Start of Current Pregna
 WARNING: /github/workspace/./input/cql/ANCRecommendationA2.cql: The function FHIRHelpers.ToDateTime has multiple overloads and due to the SignatureLevel setting (None), the overload signature is not being included in the output. This may result in ambiguous function resolution at runtime, consider setting the SignatureLevel to Overloads or All to ensure that the output includes sufficient information to support correct overload selection at runtime.
 ERROR: ANCRecommendationA2: Could not resolve identifier Start of Current Pregnancy in library ANCCommon.
 ERROR: ANCRecommendationA2.cql: CQL Processing failed with (2) errors.
-ERROR: /github/workspace/fsh-generated/resources/Library-ANCRecommendationA2: URL Mismatch https://cqframework.org/cpg-example-anc//Library/ANCRecommendationA2 vs https://cqframework.org/cpg-example-anc/Library/ANCRecommendationA2
+ERROR: /github/workspace/fsh-generated/resources/Library-ANCRecommendationA2: URL Mismatch http://cqframework.org/cpg-example-anc//Library/ANCRecommendationA2 vs http://cqframework.org/cpg-example-anc/Library/ANCRecommendationA2
 == fsh-generated/resources/Observation-observation-anc-ra2-gestational-age.json ==
 WARNING: Observation/observation-anc-ra2-gestational-age: Observation.code.coding[0]: A definition for CodeSystem 'http://openmrs.org/concepts' could not be found, so the code cannot be validated
 WARNING: Observation/observation-anc-ra2-gestational-age: Observation: Best Practice Recommendation: In general, all observations should have a performer
@@ -157,17 +157,17 @@ WARNING: Observation/observation-anc-ra2-hb-concentration: Observation.code.codi
 WARNING: Observation/observation-anc-ra2-hb-concentration: Observation: Best Practice Recommendation: In general, all observations should have a performer
 == fsh-generated/resources/Patient-patient-anc-ra2.json ==
 == fsh-generated/resources/PlanDefinition-anc-contact.json ==
-ERROR: /github/workspace/fsh-generated/resources/PlanDefinition-anc-contact: URL Mismatch https://cqframework.org/cpg-example-anc//PlanDefinition/anc-contact vs https://cqframework.org/cpg-example-anc/PlanDefinition/anc-contact
+ERROR: /github/workspace/fsh-generated/resources/PlanDefinition-anc-contact: URL Mismatch http://cqframework.org/cpg-example-anc//PlanDefinition/anc-contact vs http://cqframework.org/cpg-example-anc/PlanDefinition/anc-contact
 == fsh-generated/resources/PlanDefinition-anc-contact-schedule.json ==
-ERROR: /github/workspace/fsh-generated/resources/PlanDefinition-anc-contact-schedule: URL Mismatch https://cqframework.org/cpg-example-anc//PlanDefinition/anc-contact-schedule vs https://cqframework.org/cpg-example-anc/PlanDefinition/anc-contact-schedule
+ERROR: /github/workspace/fsh-generated/resources/PlanDefinition-anc-contact-schedule: URL Mismatch http://cqframework.org/cpg-example-anc//PlanDefinition/anc-contact-schedule vs http://cqframework.org/cpg-example-anc/PlanDefinition/anc-contact-schedule
 == fsh-generated/resources/PlanDefinition-anc-recommendation-a2.json ==
-ERROR: /github/workspace/fsh-generated/resources/PlanDefinition-anc-recommendation-a2: URL Mismatch https://cqframework.org/cpg-example-anc//PlanDefinition/anc-recommendation-a2 vs https://cqframework.org/cpg-example-anc/PlanDefinition/anc-recommendation-a2
+ERROR: /github/workspace/fsh-generated/resources/PlanDefinition-anc-recommendation-a2: URL Mismatch http://cqframework.org/cpg-example-anc//PlanDefinition/anc-recommendation-a2 vs http://cqframework.org/cpg-example-anc/PlanDefinition/anc-recommendation-a2
 == fsh-generated/resources/Questionnaire-anc-every-contact.json ==
-ERROR: /github/workspace/fsh-generated/resources/Questionnaire-anc-every-contact: URL Mismatch https://cqframework.org/cpg-example-anc//Questionnaire/anc-every-contact vs https://cqframework.org/cpg-example-anc/Questionnaire/anc-every-contact
+ERROR: /github/workspace/fsh-generated/resources/Questionnaire-anc-every-contact: URL Mismatch http://cqframework.org/cpg-example-anc//Questionnaire/anc-every-contact vs http://cqframework.org/cpg-example-anc/Questionnaire/anc-every-contact
 == fsh-generated/resources/Questionnaire-anc-first-contact.json ==
-ERROR: /github/workspace/fsh-generated/resources/Questionnaire-anc-first-contact: URL Mismatch https://cqframework.org/cpg-example-anc//Questionnaire/anc-first-contact vs https://cqframework.org/cpg-example-anc/Questionnaire/anc-first-contact
+ERROR: /github/workspace/fsh-generated/resources/Questionnaire-anc-first-contact: URL Mismatch http://cqframework.org/cpg-example-anc//Questionnaire/anc-first-contact vs http://cqframework.org/cpg-example-anc/Questionnaire/anc-first-contact
 == fsh-generated/resources/Questionnaire-anc-quick-check.json ==
-ERROR: /github/workspace/fsh-generated/resources/Questionnaire-anc-quick-check: URL Mismatch https://cqframework.org/cpg-example-anc//Questionnaire/anc-quick-check vs https://cqframework.org/cpg-example-anc/Questionnaire/anc-quick-check
+ERROR: /github/workspace/fsh-generated/resources/Questionnaire-anc-quick-check: URL Mismatch http://cqframework.org/cpg-example-anc//Questionnaire/anc-quick-check vs http://cqframework.org/cpg-example-anc/Questionnaire/anc-quick-check
 == fsh-generated/resources/ValueSet-anc-reason-for-visit-vs.json ==
 ERROR: ValueSet/anc-reason-for-visit-vs: ValueSet.meta.profile[0]: Canonical URL 'http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-publishablevalueset' does not resolve
 ERROR: ValueSet/anc-reason-for-visit-vs: ValueSet.extension[0]: The extension http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability could not be found so is not allowed here
@@ -179,4 +179,4 @@ ERROR: ValueSet/anc-reason-for-visit-vs: ValueSet.extension[2].url: URL value 'h
 ERROR: ValueSet/anc-reason-for-visit-vs: ValueSet.extension[3]: The extension http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeRepresentationLevel could not be found so is not allowed here
 ERROR: ValueSet/anc-reason-for-visit-vs: ValueSet.extension[3].url: URL value 'http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeRepresentationLevel' does not resolve
 WARNING: ValueSet/anc-reason-for-visit-vs: ValueSet.meta.profile[0]: Profile reference 'http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-publishablevalueset' has not been checked because it could not be found, and the validator is set to not fetch unknown profiles
-ERROR: /github/workspace/fsh-generated/resources/ValueSet-anc-reason-for-visit-vs: URL Mismatch https://cqframework.org/cpg-example-anc//ValueSet/anc-reason-for-visit-vs vs https://cqframework.org/cpg-example-anc/ValueSet/anc-reason-for-visit-vs
+ERROR: /github/workspace/fsh-generated/resources/ValueSet-anc-reason-for-visit-vs: URL Mismatch http://cqframework.org/cpg-example-anc//ValueSet/anc-reason-for-visit-vs vs http://cqframework.org/cpg-example-anc/ValueSet/anc-reason-for-visit-vs

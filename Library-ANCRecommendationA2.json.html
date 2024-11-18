@@ -117,7 +117,7 @@
           <div class="inner-wrapper">
 
 <div style="counter-reset: section 8" class="col-12">
-  <!-- ReleaseHeader --><p id="publish-box">Clinical Practice Guidelines Example Implementation Guide - Antenatal Care Guidelines - Local Development build (v1.0.0) built by the FHIR (HL7&reg; FHIR&reg; Standard) Build Tools. See the <a href="https://cqframework.org/cpg-example-anc//history.html">Directory of published versions</a></p>  <!-- EndReleaseHeader -->
+  <!-- ReleaseHeader --><p id="publish-box">Clinical Practice Guidelines Example Implementation Guide - Antenatal Care Guidelines - Local Development build (v1.0.0) built by the FHIR (HL7&reg; FHIR&reg; Standard) Build Tools. See the <a href="http://cqframework.org/cpg-example-anc//history.html">Directory of published versions</a></p>  <!-- EndReleaseHeader -->
 
 
 
@@ -195,7 +195,7 @@
     "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a>" : "generated",
     "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\"http://www.w3.org/1999/xhtml\"&gt;&lt;p class=\"res-header-id\"&gt;&lt;b&gt;Generated Narrative: Library ANCRecommendationA2&lt;/b&gt;&lt;/p&gt;&lt;a name=\"ANCRecommendationA2\"&gt; &lt;/a&gt;&lt;a name=\"hcANCRecommendationA2\"&gt; &lt;/a&gt;&lt;a name=\"ANCRecommendationA2-en-US\"&gt; &lt;/a&gt;&lt;h2&gt;Related Artifacts&lt;/h2&gt;&lt;table class=\"grid\"&gt;&lt;tr&gt;&lt;td&gt;Documentation&lt;/td&gt;&lt;td&gt;WHO guideline for a positive pregnancy experience&lt;/td&gt;&lt;td&gt;https://www.who.int/reproductivehealth/publications/maternal_perinatal_health/anc-positive-pregnancy-experience/en&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;h2&gt;Contents&lt;/h2&gt;&lt;p&gt;&lt;code&gt;text/cql&lt;/code&gt;&lt;/p&gt;&lt;pre&gt;&lt;code class=\"language-sql\"&gt;library ANCRecommendationA2 version '0.1.0'\n\nusing FHIR version '4.0.1'\n\ninclude FHIRHelpers version '4.0.1'\ninclude ANCCommon version '0.1.0' called Common\n\ncode &amp;quot;Hb&amp;quot;: '165395AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA' from Common.OpenMRSEntity display 'Haemoglobin measured from haemoglobinometer (g/dl)'\ncode &amp;quot;Iron Intake Compliance&amp;quot;: '165272AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA' from Common.OpenMRSEntity display 'Iron intake compliance'\ncode &amp;quot;Iron Side Effects&amp;quot;: '165273AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA' from Common.OpenMRSEntity display 'Iron side effects' // NOTE: OpenMRS concept is just side effects from medication\n\n// TODO: How do parameters like this get configured for local/site usage\n//parameter &amp;quot;Anaemia Prevalence&amp;quot; System.Quantity default 40 '%'\n\ncontext Patient\n\n// TODO: Configuring in-line directly for now\ndefine &amp;quot;Anaemia Prevalence&amp;quot;: 40 '%'\n\n/*\nIAF - Iron and Folic Acid Supplements\n\nRECOMMENDATION A.2.1: Daily oral iron and folic acid supplementation with 30 mg to\n60 mg of elemental iron and 400 &mu;g (0.4 mg) folic acid is recommended for pregnant\nwomen to prevent maternal anaemia, puerperal sepsis, low birth weight, and preterm birth.\n(Recommended)\n\nRECOMMENDATION A.2.2: Intermittent oral iron and folic acid supplementation with 120 mg\nof elemental iron and 2800 &mu;g (2.8 mg) of folic acid once weekly is recommended for pregnant\nwomen to improve maternal and neonatal outcomes if daily iron is not acceptable due to sideeffects,\nand in populations with an anaemia prevalence among pregnant women of less than\n20%. (Context-specific recommendation)\n\nOn every contact,\n  if anaemia detected\n    recommend 120 mg of elemental iron daily (Recommendation A.2.1)\n  else if population anaemia prevalence &amp;gt;= 40%\n    recommend 60 mg of elemental iron and 400 ug of folic acid, daily (Recommendation A.2.1)\n  else if population anaemia prevalence &amp;lt; 20% or daily iron not acceptable due to side-effects\n    recommend intermittent oral iron: 120 mg of oral iron, and 2.8 ug of folic acid, weekly (Recommendation A.2.2)\n  else\n    recommend 30 to 60 mg of elemental iron and 400 ug of folic acid, daily (Recommendation A.2.1)\n  check iron-intake compliance;\n  check iron-side effects;\n\nHas Anaemia\n  Hb Concentration &amp;lt; 11 g/dL and Gestational Age &amp;lt; 12 weeks or Gestational Age &amp;gt; 28 weeks\n  Hb Concentration &amp;lt; 10.5 g/dL and Gestational Age between 13 weeks and 27 weeks\n*/\n\ndefine &amp;quot;Has Anaemia&amp;quot;:\n  if Common.&amp;quot;Gestational Age in Weeks&amp;quot; between 13 weeks and 27 weeks then\n    &amp;quot;Hb Concentration&amp;quot; &amp;lt; 10.5 'g/dL'\n  else\n    &amp;quot;Hb Concentration&amp;quot; &amp;lt; 11 'g/dL'\n\ndefine &amp;quot;Hb Concentration&amp;quot;:\n  First(\n    [&amp;quot;Observation&amp;quot;: &amp;quot;Hb&amp;quot;] O\n\t\t  where O.status = 'final'\n\t\t\t  and O.effective after Common.&amp;quot;Start of Current Pregnancy&amp;quot;\n      sort by FHIRHelpers.ToDateTime(effective as FHIR.dateTime) descending\n  ).value as Quantity\n\ndefine &amp;quot;Has Iron Side-Effects&amp;quot;:\n  exists (\n    [&amp;quot;Condition&amp;quot;: &amp;quot;Iron Side Effects&amp;quot;] C\n\t\t  where C.onset on or after Common.&amp;quot;Start of Current Pregnancy&amp;quot;\n\t\t\t  and C.clinicalStatus in Common.&amp;quot;Active Condition&amp;quot;\n  )\n&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;code&gt;No Content&lt;/code&gt; (&lt;code&gt;application/elm+xml&lt;/code&gt;)&lt;/p&gt;&lt;/div&gt;"
   },
-  "<a href="http://hl7.org/fhir/R4/library.html#Library.url">url</a>" : "https://cqframework.org/cpg-example-anc/Library/ANCRecommendationA2",
+  "<a href="http://hl7.org/fhir/R4/library.html#Library.url">url</a>" : "http://cqframework.org/cpg-example-anc/Library/ANCRecommendationA2",
   "<a href="http://hl7.org/fhir/R4/library.html#Library.identifier">identifier</a>" : [
     {
       "<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.use">use</a>" : "official",
@@ -216,7 +216,7 @@
       }
     ]
   },
-  "<a href="http://hl7.org/fhir/R4/library.html#Library.date">date</a>" : "2024-11-18T16:22:18+00:00",
+  "<a href="http://hl7.org/fhir/R4/library.html#Library.date">date</a>" : "2024-11-18T16:40:29+00:00",
   "<a href="http://hl7.org/fhir/R4/library.html#Library.publisher">publisher</a>" : "HL7 International - Clinical Decision Support WG",
   "<a href="http://hl7.org/fhir/R4/library.html#Library.contact">contact</a>" : [
     {
@@ -307,14 +307,14 @@
 
       <div class="inner-wrapper">
         <p>
-          IG &copy; 2023 <a style="color:var(--footer-hyperlink-text-color)" href="http://www.hl7.org/Special/committees/dss/index.cfm">HL7 International - Clinical Decision Support WG</a>.  Package cqframework.cpg-example-anc#1.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Nov 18, 2024 16:22+0000">2024-11-18</span>
+          IG &copy; 2023 <a style="color:var(--footer-hyperlink-text-color)" href="http://www.hl7.org/Special/committees/dss/index.cfm">HL7 International - Clinical Decision Support WG</a>.  Package cqframework.cpg-example-anc#1.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Nov 18, 2024 16:40+0000">2024-11-18</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"><a name="l496">​</a>
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
                  <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
                  
                 
-| <a style="color: #81BEF7" href="https://cqframework.org/cpg-example-anc//history.html" target="_blank">Version History</a> | <a rel="license" style="color: #81BEF7" href="license.html">License</a>
+| <a style="color: #81BEF7" href="http://cqframework.org/cpg-example-anc//history.html" target="_blank">Version History</a> | <a rel="license" style="color: #81BEF7" href="license.html">License</a>
   <!-- <a style="color: #81BEF7" href="todo.html">Search</a> | -->
           </span>
         </p>

@@ -6,7 +6,7 @@
 
 # - resource -------------------------------------------------------------------
 
-<https://cqframework.org/cpg-example-anc/Condition/condition-ra2-iron-side-effects> a fhir:Condition ;
+<http://cqframework.org/cpg-example-anc/Condition/condition-ra2-iron-side-effects> a fhir:Condition ;
   fhir:nodeRole fhir:treeRoot ;
   fhir:id [ fhir:v "condition-ra2-iron-side-effects"] ; # 
   fhir:meta [
@@ -44,7 +44,7 @@
      fhir:text [ fhir:v "Iron side effects" ]
   ] ; # 
   fhir:subject [
-     fhir:link <https://cqframework.org/cpg-example-anc/Patient/patient-anc-ra2> ;
+     fhir:link <http://cqframework.org/cpg-example-anc/Patient/patient-anc-ra2> ;
      fhir:reference [ fhir:v "Patient/patient-anc-ra2" ]
   ] ; # 
   fhir:onset [

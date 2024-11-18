@@ -6,7 +6,7 @@
     <profile value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-publishablevalueset"/>
   </meta>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet anc-reason-for-visit-vs</b></p><a name="anc-reason-for-visit-vs"> </a><a name="hcanc-reason-for-visit-vs"> </a><a name="anc-reason-for-visit-vs-en-US"> </a><ul><li>Include all codes defined in <a href="CodeSystem-anc-reason-for-visit-cs.html"><code>https://cqframework.org/cpg-example-anc/CodeSystem/anc-reason-for-visit-cs</code></a></li></ul></div>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet anc-reason-for-visit-vs</b></p><a name="anc-reason-for-visit-vs"> </a><a name="hcanc-reason-for-visit-vs"> </a><a name="anc-reason-for-visit-vs-en-US"> </a><ul><li>Include all codes defined in <a href="CodeSystem-anc-reason-for-visit-cs.html"><code>http://cqframework.org/cpg-example-anc/CodeSystem/anc-reason-for-visit-cs</code></a></li></ul></div>
   </text>
   <extension url="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability">
     <valueCode value="shareable"/>
@@ -20,13 +20,13 @@
   <extension url="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeRepresentationLevel">
     <valueCode value="structured"/>
   </extension>
-  <url value="https://cqframework.org/cpg-example-anc/ValueSet/anc-reason-for-visit-vs"/>
+  <url value="http://cqframework.org/cpg-example-anc/ValueSet/anc-reason-for-visit-vs"/>
   <version value="1.0.0"/>
   <name value="ANCReasonForVisitVS"/>
   <title value="ValueSet - ANC Reason for Visit"/>
   <status value="active"/>
   <experimental value="false"/>
-  <date value="2024-11-18T16:22:18+00:00"/>
+  <date value="2024-11-18T16:40:29+00:00"/>
   <publisher value="HL7 International - Clinical Decision Support WG"/>
   <contact>
     <name value="HL7 International - Clinical Decision Support WG"/>
@@ -45,7 +45,7 @@
   </jurisdiction>
   <compose>
     <include>
-      <system value="https://cqframework.org/cpg-example-anc/CodeSystem/anc-reason-for-visit-cs"/>
+      <system value="http://cqframework.org/cpg-example-anc/CodeSystem/anc-reason-for-visit-cs"/>
     </include>
   </compose>
 </ValueSet>

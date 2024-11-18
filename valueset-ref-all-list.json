@@ -1,14 +1,14 @@
 {
   "codeSystems" : [
     {
-      "url" : "https://cqframework.org/cpg-example-anc/ValueSet/anc-reason-for-visit-vs",
+      "url" : "http://cqframework.org/cpg-example-anc/ValueSet/anc-reason-for-visit-vs",
       "version" : "1.0.0",
       "status" : "active",
       "name" : "ANCReasonForVisitVS",
       "title" : "ValueSet - ANC Reason for Visit",
       "description" : "Codes that identify the reason for an antenatal care visit",
       "systems" : [
-        "https://cqframework.org/cpg-example-anc/CodeSystem/anc-reason-for-visit-cs"
+        "http://cqframework.org/cpg-example-anc/CodeSystem/anc-reason-for-visit-cs"
       ]
     }
   ]

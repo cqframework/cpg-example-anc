@@ -2,84 +2,84 @@
   {
     "id" : "cqframework.cpg-example-anc",
     "type" : "ImplementationGuide",
-    "url" : "https://cqframework.org/cpg-example-anc//ImplementationGuide/cqframework.cpg-example-anc",
+    "url" : "http://cqframework.org/cpg-example-anc//ImplementationGuide/cqframework.cpg-example-anc",
     "version" : "1.0.0",
     "name" : "CPGExampleAntenatalCareGuidelines"
   },
   {
     "id" : "anc-reason-for-visit-cs",
     "type" : "CodeSystem",
-    "url" : "https://cqframework.org/cpg-example-anc/CodeSystem/anc-reason-for-visit-cs",
+    "url" : "http://cqframework.org/cpg-example-anc/CodeSystem/anc-reason-for-visit-cs",
     "version" : "1.0.0",
     "name" : "ANCReasonForVisitCS"
   },
   {
     "id" : "anc-summary",
     "type" : "GraphDefinition",
-    "url" : "https://cqframework.org/cpg-example-anc/GraphDefinition/anc-summary",
+    "url" : "http://cqframework.org/cpg-example-anc/GraphDefinition/anc-summary",
     "version" : "1.0.0",
     "name" : "ANCSummary"
   },
   {
     "id" : "ANCCommon",
     "type" : "Library",
-    "url" : "https://cqframework.org/cpg-example-anc/Library/ANCCommon",
+    "url" : "http://cqframework.org/cpg-example-anc/Library/ANCCommon",
     "version" : "1.0.0",
     "name" : "ANCCommon"
   },
   {
     "id" : "ANCRecommendationA2",
     "type" : "Library",
-    "url" : "https://cqframework.org/cpg-example-anc/Library/ANCRecommendationA2",
+    "url" : "http://cqframework.org/cpg-example-anc/Library/ANCRecommendationA2",
     "version" : "1.0.0",
     "name" : "ANCRecommendationA2"
   },
   {
     "id" : "anc-contact",
     "type" : "PlanDefinition",
-    "url" : "https://cqframework.org/cpg-example-anc/PlanDefinition/anc-contact",
+    "url" : "http://cqframework.org/cpg-example-anc/PlanDefinition/anc-contact",
     "version" : "1.0.0",
     "name" : "ANCContact"
   },
   {
     "id" : "anc-contact-schedule",
     "type" : "PlanDefinition",
-    "url" : "https://cqframework.org/cpg-example-anc/PlanDefinition/anc-contact-schedule",
+    "url" : "http://cqframework.org/cpg-example-anc/PlanDefinition/anc-contact-schedule",
     "version" : "1.0.0",
     "name" : "ANCContactSchedule"
   },
   {
     "id" : "anc-recommendation-a2",
     "type" : "PlanDefinition",
-    "url" : "https://cqframework.org/cpg-example-anc/PlanDefinition/anc-recommendation-a2",
+    "url" : "http://cqframework.org/cpg-example-anc/PlanDefinition/anc-recommendation-a2",
     "version" : "1.0.0",
     "name" : "Recommendation_A2"
   },
   {
     "id" : "anc-every-contact",
     "type" : "Questionnaire",
-    "url" : "https://cqframework.org/cpg-example-anc/Questionnaire/anc-every-contact",
+    "url" : "http://cqframework.org/cpg-example-anc/Questionnaire/anc-every-contact",
     "version" : "1.0.0",
     "name" : "ANCEveryContact"
   },
   {
     "id" : "anc-first-contact",
     "type" : "Questionnaire",
-    "url" : "https://cqframework.org/cpg-example-anc/Questionnaire/anc-first-contact",
+    "url" : "http://cqframework.org/cpg-example-anc/Questionnaire/anc-first-contact",
     "version" : "1.0.0",
     "name" : "ANCFirstContact"
   },
   {
     "id" : "anc-quick-check",
     "type" : "Questionnaire",
-    "url" : "https://cqframework.org/cpg-example-anc/Questionnaire/anc-quick-check",
+    "url" : "http://cqframework.org/cpg-example-anc/Questionnaire/anc-quick-check",
     "version" : "1.0.0",
     "name" : "ANCQuickCheck"
   },
   {
     "id" : "anc-reason-for-visit-vs",
     "type" : "ValueSet",
-    "url" : "https://cqframework.org/cpg-example-anc/ValueSet/anc-reason-for-visit-vs",
+    "url" : "http://cqframework.org/cpg-example-anc/ValueSet/anc-reason-for-visit-vs",
     "version" : "1.0.0",
     "name" : "ANCReasonForVisitVS"
   }

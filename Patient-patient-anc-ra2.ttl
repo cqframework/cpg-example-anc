@@ -5,7 +5,7 @@
 
 # - resource -------------------------------------------------------------------
 
-<https://cqframework.org/cpg-example-anc/Patient/patient-anc-ra2> a fhir:Patient ;
+<http://cqframework.org/cpg-example-anc/Patient/patient-anc-ra2> a fhir:Patient ;
   fhir:nodeRole fhir:treeRoot ;
   fhir:id [ fhir:v "patient-anc-ra2"] ; # 
   fhir:meta [

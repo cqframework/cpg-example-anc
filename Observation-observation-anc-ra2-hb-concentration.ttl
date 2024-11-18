@@ -5,7 +5,7 @@
 
 # - resource -------------------------------------------------------------------
 
-<https://cqframework.org/cpg-example-anc/Observation/observation-anc-ra2-hb-concentration> a fhir:Observation ;
+<http://cqframework.org/cpg-example-anc/Observation/observation-anc-ra2-hb-concentration> a fhir:Observation ;
   fhir:nodeRole fhir:treeRoot ;
   fhir:id [ fhir:v "observation-anc-ra2-hb-concentration"] ; # 
   fhir:meta [
@@ -25,7 +25,7 @@
      fhir:text [ fhir:v "Haemoglobin measured from haemoglobinometer (g/dl)" ]
   ] ; # 
   fhir:subject [
-     fhir:link <https://cqframework.org/cpg-example-anc/Patient/patient-anc-ra2> ;
+     fhir:link <http://cqframework.org/cpg-example-anc/Patient/patient-anc-ra2> ;
      fhir:reference [ fhir:v "Patient/patient-anc-ra2" ]
   ] ; # 
   fhir:effective [ fhir:v "2019-05-01T12:37:23+02:00"^^xsd:dateTime] ; # 
