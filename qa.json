@@ -1,13 +1,13 @@
 {
-  "url" : "http://github.com/cqframework/cpg-example-anc//ImplementationGuide/cqframework.cpg-example-anc",
+  "url" : "https://cqframework.org/cpg-example-anc//ImplementationGuide/cqframework.cpg-example-anc",
   "name" : "CPGExampleAntenatalCareGuidelines",
   "title" : "Clinical Practice Guidelines Example Implementation Guide - Antenatal Care Guidelines",
   "description" : "Examples of CPG computable content from the WHO Antenatal Care Guidelines",
   "status" : "active",
   "package-id" : "cqframework.cpg-example-anc",
   "ig-ver" : "1.0.0",
-  "date" : "Thu, 14 Nov, 2024 21:47:49 +0000",
-  "dateISO8601" : "2024-11-14T21:47:49+00:00",
+  "date" : "Mon, 18 Nov, 2024 16:22:18 +0000",
+  "dateISO8601" : "2024-11-18T16:22:18+00:00",
   "errs" : 33,
   "warnings" : 18,
   "hints" : 1,
@@ -15,5 +15,5 @@
   "suppressed-warnings" : 0,
   "version" : "4.0.1",
   "tool" : "5.0.0 (3)",
-  "maxMemory" : 2260305744
+  "maxMemory" : 1725441736
 }

@@ -1,7 +1,7 @@
 {
   "codeSystems" : [
     {
-      "url" : "http://github.com/cqframework/cpg-example-anc/CodeSystem/anc-reason-for-visit-cs",
+      "url" : "https://cqframework.org/cpg-example-anc/CodeSystem/anc-reason-for-visit-cs",
       "version" : "1.0.0",
       "status" : "active",
       "name" : "ANCReasonForVisitCS",
