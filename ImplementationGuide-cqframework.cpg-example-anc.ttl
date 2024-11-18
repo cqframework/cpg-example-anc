@@ -10,15 +10,15 @@
   fhir:id [ fhir:v "cqframework.cpg-example-anc"] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ImplementationGuide cqframework.cpg-example-anc</b></p><a name=\"cqframework.cpg-example-anc\"> </a><a name=\"hccqframework.cpg-example-anc\"> </a><a name=\"cqframework.cpg-example-anc-en-US\"> </a><h2>CPGExampleAntenatalCareGuidelines</h2><p>The official URL for this implementation guide is: </p><pre>http://cqframework.org/cpg-example-anc//ImplementationGuide/cqframework.cpg-example-anc</pre><div><p>Examples of CPG computable content from the WHO Antenatal Care Guidelines</p>\n</div></div>"
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ImplementationGuide cqframework.cpg-example-anc</b></p><a name=\"cqframework.cpg-example-anc\"> </a><a name=\"hccqframework.cpg-example-anc\"> </a><a name=\"cqframework.cpg-example-anc-en-US\"> </a><h2>CPGExampleAntenatalCareGuidelines</h2><p>The official URL for this implementation guide is: </p><pre>http://cqframework.org/cpg-example-anc/ImplementationGuide/cqframework.cpg-example-anc</pre><div><p>Examples of CPG computable content from the WHO Antenatal Care Guidelines</p>\n</div></div>"
   ] ; # 
-  fhir:url [ fhir:v "http://cqframework.org/cpg-example-anc//ImplementationGuide/cqframework.cpg-example-anc"^^xsd:anyURI] ; # 
+  fhir:url [ fhir:v "http://cqframework.org/cpg-example-anc/ImplementationGuide/cqframework.cpg-example-anc"^^xsd:anyURI] ; # 
   fhir:version [ fhir:v "1.0.0"] ; # 
   fhir:name [ fhir:v "CPGExampleAntenatalCareGuidelines"] ; # 
   fhir:title [ fhir:v "Clinical Practice Guidelines Example Implementation Guide - Antenatal Care Guidelines"] ; # 
   fhir:status [ fhir:v "active"] ; # 
   fhir:experimental [ fhir:v "true"^^xsd:boolean] ; # 
-  fhir:date [ fhir:v "2024-11-18T16:40:29+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2024-11-18T17:56:55+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "HL7 International - Clinical Decision Support WG"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "HL7 International - Clinical Decision Support WG" ] ;
@@ -222,7 +222,7 @@
          fhir:value [ fhir:v "path-history" ]
        ] [
          fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "http://cqframework.org/cpg-example-anc//history.html" ]
+         fhir:value [ fhir:v "http://cqframework.org/cpg-example-anc/history.html" ]
        ] ) ;
        fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
      ] [
@@ -459,7 +459,7 @@
          fhir:value [ fhir:v "path-history" ]
        ] [
          fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "http://cqframework.org/cpg-example-anc//history.html" ]
+         fhir:value [ fhir:v "http://cqframework.org/cpg-example-anc/history.html" ]
        ] ) ;
        fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
      ] [

@@ -1,12 +1,5 @@
 [
   {
-    "id" : "cqframework.cpg-example-anc",
-    "type" : "ImplementationGuide",
-    "url" : "http://cqframework.org/cpg-example-anc//ImplementationGuide/cqframework.cpg-example-anc",
-    "version" : "1.0.0",
-    "name" : "CPGExampleAntenatalCareGuidelines"
-  },
-  {
     "id" : "anc-reason-for-visit-cs",
     "type" : "CodeSystem",
     "url" : "http://cqframework.org/cpg-example-anc/CodeSystem/anc-reason-for-visit-cs",
@@ -19,6 +12,13 @@
     "url" : "http://cqframework.org/cpg-example-anc/GraphDefinition/anc-summary",
     "version" : "1.0.0",
     "name" : "ANCSummary"
+  },
+  {
+    "id" : "cqframework.cpg-example-anc",
+    "type" : "ImplementationGuide",
+    "url" : "http://cqframework.org/cpg-example-anc/ImplementationGuide/cqframework.cpg-example-anc",
+    "version" : "1.0.0",
+    "name" : "CPGExampleAntenatalCareGuidelines"
   },
   {
     "id" : "ANCCommon",
